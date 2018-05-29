@@ -70,7 +70,7 @@ class Dokumen extends CI_Controller{
 		$data['kat'] = $kat;
 
 		if($id){
-			$data['dokumen']     = $this->web_dokumen_model->get_dokumen($id);
+			$data['dokumen']     = $this->web_dokumen_model->get_dokumen($id,$kat);
 			$data['form_action'] = site_url("dokumen/update/$kat/$id/$p/$o");
 		}
 		else{
@@ -118,7 +118,7 @@ class Dokumen extends CI_Controller{
 		$kategori = $this->input->post('kategori');
 		if (!empty($kategori))
 			$kat = $this->input->post('kategori');
-		$outp = $this->web_dokumen_model->update($id);
+		$outp = $this->web_dokumen_model->update($id,$kat);
 		if (!$outp) $_SESSION['success']=-1;
 		redirect("dokumen/index/$kat/$p/$o");
 	}

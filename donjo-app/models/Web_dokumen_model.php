@@ -202,12 +202,22 @@ class Web_dokumen_model extends CI_Model{
 		}
 	}
 
-	function update($id=0){
+	function update($id=0,$kat){
 	  $data = $_POST;
-		if (!$this->upload_dokumen($data, $data['old_file']))
-			unset($data['satuan']);
-		$data['attr'] = json_encode($data['attr']);
-		return $this->db->where('id',$id)->update('dokumen',$data);;
+
+	  	if($kat == "6"){
+			if (!$this->upload_dokumen($data, $data['old_file']))
+				unset($data['satuan']);
+			$data['attr'] = json_encode($data['attr']);
+			return $this->db->where('id',$id)->update('dokumen_ekspedisi',$data);
+		}else{
+			if (!$this->upload_dokumen($data, $data['old_file']))
+				unset($data['satuan']);
+			$data['attr'] = json_encode($data['attr']);
+			return $this->db->where('id',$id)->update('dokumen',$data);
+		}
+
+
 	}
 
 	function delete($id=''){
@@ -257,12 +267,22 @@ class Web_dokumen_model extends CI_Model{
 			else $_SESSION['success']=-1;
 	}
 
-	function get_dokumen($id=0){
-		$sql   = "SELECT * FROM dokumen WHERE id=?";
-		$query = $this->db->query($sql,$id);
-		$data  = $query->row_array();
-		$data['attr'] = json_decode($data['attr'], true);
-		return $data;
+	function get_dokumen($id=0,$kat){
+
+		if($kat == "6"){
+			$sql   = "SELECT * FROM dokumen_ekspedisi WHERE id=?";
+			$query = $this->db->query($sql,$id);
+			$data  = $query->row_array();
+			$data['attr'] = json_decode($data['attr'], true);
+			return $data;
+		}else{
+			$sql   = "SELECT * FROM dokumen WHERE id=?";
+			$query = $this->db->query($sql,$id);
+			$data  = $query->row_array();
+			$data['attr'] = json_decode($data['attr'], true);
+			return $data;
+		}
+		
 	}
 
 	function dokumen_show(){
