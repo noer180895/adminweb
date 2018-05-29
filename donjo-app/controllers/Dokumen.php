@@ -125,13 +125,13 @@ class Dokumen extends CI_Controller{
 
 	function delete($kat=1,$p=1,$o=0,$id=''){
 		$_SESSION['success']=1;
-		$this->web_dokumen_model->delete($id);
+		$this->web_dokumen_model->delete($id,$kat);
 		redirect("dokumen/index/$kat/$p/$o");
 	}
 
 	function delete_all($kat=1,$p=1,$o=0){
 		$_SESSION['success']=1;
-		$this->web_dokumen_model->delete_all();
+		$this->web_dokumen_model->delete_all($kat);
 		redirect("dokumen/index/$kat/$p/$o");
 	}	
 

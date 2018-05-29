@@ -220,19 +220,28 @@ class Web_dokumen_model extends CI_Model{
 
 	}
 
-	function delete($id=''){
-		$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen')->row()->satuan;
-		$outp = $this->db->where('id',$id)->delete('dokumen');
-		if($outp)
-			unlink(LOKASI_DOKUMEN . $old_dokumen);
-		else $_SESSION['success']=-1;
+	function delete($id='',$kat){
+		if($kat == "6"){
+			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_ekspedisi')->row()->satuan;
+			$outp = $this->db->where('id',$id)->delete('dokumen_ekspedisi');
+			if($outp)
+				unlink(LOKASI_DOKUMEN . $old_dokumen);
+			else $_SESSION['success']=-1;
+		}else{
+			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen')->row()->satuan;
+			$outp = $this->db->where('id',$id)->delete('dokumen');
+			if($outp)
+				unlink(LOKASI_DOKUMEN . $old_dokumen);
+			else $_SESSION['success']=-1;
+		}
 	}
 
-	function delete_all(){
+	function delete_all($kat){
+
 		$id_cb = $_POST['id_cb'];
 		if(count($id_cb)){
 			foreach($id_cb as $id){
-				$this->delete($id);
+				$this->delete($id,$kat);
 			}
 		}
 		else $_SESSION['success']=-1;
