@@ -179,9 +179,7 @@ class Web_dokumen_model extends CI_Model{
 			$nama_file = $data['nama']."_".generator(6)."_".$nama_file;
 		$nama_file = urlencode($nama_file);
 		UploadDocument($nama_file, $file_lama);
-		if($data['kategori'] == 1){
-			$data['satuan'] = $nama_file;
-		}
+		$data['satuan'] = $nama_file;
 		return true;
 	}
 
