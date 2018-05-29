@@ -1,0 +1,10 @@
+[11-May-2018 15:37:56 Asia/Jakarta] PHP Fatal error:  Call to a member function find() on boolean in /home/admh8515/public_html/donjo-app/models/Surat_master_model.php on line 316
+[11-May-2018 15:38:00 Asia/Jakarta] PHP Fatal error:  Call to a member function find() on boolean in /home/admh8515/public_html/donjo-app/models/Surat_master_model.php on line 316
+[13-May-2018 10:41:31 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/admh8515/public_html/donjo-app/views/surat/nav.php on line 18
+[13-May-2018 10:41:36 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/admh8515/public_html/donjo-app/views/surat/nav.php on line 18
+[13-May-2018 10:41:39 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/admh8515/public_html/donjo-app/views/surat/nav.php on line 18
+[13-May-2018 10:41:40 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/admh8515/public_html/donjo-app/views/surat/nav.php on line 18
+[13-May-2018 10:42:05 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/admh8515/public_html/donjo-app/views/surat/nav.php on line 18
+[13-May-2018 10:47:11 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/admh8515/public_html/donjo-app/views/surat/nav.php on line 25
+[13-May-2018 10:47:15 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/admh8515/public_html/donjo-app/views/surat/nav.php on line 25
+[13-May-2018 10:47:31 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/admh8515/public_html/donjo-app/views/surat/nav.php on line 25

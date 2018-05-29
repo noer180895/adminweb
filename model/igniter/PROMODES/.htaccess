@@ -1,0 +1,383 @@
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+<files koneksi2.php>
+order allow,deny
+deny from all
+</files>
+
+<files koneksi.php>
+order allow,deny
+deny from all
+</files>
+
+Options All -Indexes
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#================
+# B A C K E N D #
+#================
+RewriteRule ^beckend/$ /desa/promodes/master/ [L]
+RewriteRule ^beckend/pengguna$ /desa/promodes/master/akun.php [L]
+RewriteRule ^beckend/engine$ /desa/promodes/master/input.php [L]
+RewriteRule ^beckend/inti$ /desa/promodes/master/master.php [L]
+RewriteRule ^beckend/logout$ /desa/promodes/master/logout.php [L]
+RewriteRule ^beckend/login$ /desa/promodes/master/login.php [L]
+
+#PSDA Pertanian Perkebunan Kehutanan
+RewriteRule ^beckend/psda/pertanian_perkebunan_kehutanan/kepemilikan_lahan/$ /desa/promodes/master/potensi_sda/pertanian_perkebunan_kehutanan/kepemilikan_lahan/master.php [L]
+RewriteRule ^beckend/psda/pertanian_perkebunan_kehutanan/produktivitas_pertanian/$ /desa/promodes/master/potensi_sda/pertanian_perkebunan_kehutanan/produktivitas_pertanian/master.php [L]
+RewriteRule ^beckend/psda/pertanian_perkebunan_kehutanan/hasil_perkebunan/$ /desa/promodes/master/potensi_sda/pertanian_perkebunan_kehutanan/hasil_perkebunan/master.php [L]
+RewriteRule ^beckend/psda/pertanian_perkebunan_kehutanan/hasil_hutan/$ /desa/promodes/master/potensi_sda/pertanian_perkebunan_kehutanan/hasil_hutan/master.php [L]
+RewriteRule ^beckend/psda/pertanian_perkebunan_kehutanan/kondisi_hutan/$ /desa/promodes/master/potensi_sda/pertanian_perkebunan_kehutanan/kondisi_hutan/master.php [L]
+RewriteRule ^beckend/psda/pertanian_perkebunan_kehutanan/dampak_pengolahan/$ /desa/promodes/master/potensi_sda/pertanian_perkebunan_kehutanan/dampak_pengolahan/master.php [L]
+RewriteRule ^beckend/psda/pertanian_perkebunan_kehutanan/mekanisme/$ /desa/promodes/master/potensi_sda/pertanian_perkebunan_kehutanan/mekanisme/master.php [L]
+
+#PSDA Pertanian Perkebunan Kehutanan (Engine)
+RewriteRule ^engine/psda/pertanian_perkebunan_kehutanan/kepemilikan_lahan/$ /desa/promodes/master/potensi_sda/pertanian_perkebunan_kehutanan/kepemilikan_lahan/index.php [L]
+RewriteRule ^engine/psda/pertanian_perkebunan_kehutanan/kepemilikan_lahan/lihat/2015/$ /desa/promodes/master/potensi_sda/pertanian_perkebunan_kehutanan/kepemilikan_lahan/lihat.php?tahun=2015 [L]
+
+RewriteRule ^engine/psda/pertanian_perkebunan_kehutanan/produktivitas_pertanian/$ /desa/promodes/master/potensi_sda/pertanian_perkebunan_kehutanan/produktivitas_pertanian/index.php [L]
+RewriteRule ^engine/psda/pertanian_perkebunan_kehutanan/hasil_perkebunan/$ /desa/promodes/master/potensi_sda/pertanian_perkebunan_kehutanan/hasil_perkebunan/index.php [L]
+RewriteRule ^engine/psda/pertanian_perkebunan_kehutanan/hasil_hutan/$ /desa/promodes/master/potensi_sda/pertanian_perkebunan_kehutanan/hasil_hutan/index.php [L]
+RewriteRule ^engine/psda/pertanian_perkebunan_kehutanan/kondisi_hutan/$ /desa/promodes/master/potensi_sda/pertanian_perkebunan_kehutanan/kondisi_hutan/index.php [L]
+RewriteRule ^engine/psda/pertanian_perkebunan_kehutanan/dampak_pengolahan/$ /desa/promodes/master/potensi_sda/pertanian_perkebunan_kehutanan/dampak_pengolahan/index.php [L]
+RewriteRule ^engine/psda/pertanian_perkebunan_kehutanan/mekanisme/$ /desa/promodes/master/potensi_sda/pertanian_perkebunan_kehutanan/mekanisme/index.php [L]
+
+#PSDA perternakan dan perikanan
+RewriteRule ^beckend/psda/peternakan_perikanan/populasi_ternak/$ /desa/promodes/master/potensi_sda/peternakan_perikanan/populasi_ternak/master.php [L]
+RewriteRule ^beckend/psda/peternakan_perikanan/produksi_ternak/$ /desa/promodes/master/potensi_sda/peternakan_perikanan/produksi_ternak/master.php [L]
+RewriteRule ^beckend/psda/peternakan_perikanan/pakan_ternak/$ /desa/promodes/master/potensi_sda/peternakan_perikanan/pakan_ternak/master.php [L]
+RewriteRule ^beckend/psda/peternakan_perikanan/hasil_ternak/$ /desa/promodes/master/potensi_sda/peternakan_perikanan/hasil_ternak/master.php [L]
+RewriteRule ^beckend/psda/peternakan_perikanan/pemeliharaan_ternak/$ /desa/promodes/master/potensi_sda/peternakan_perikanan/pemeliharaan_ternak/master.php [L]
+RewriteRule ^beckend/psda/peternakan_perikanan/alat_produksi/$ /desa/promodes/master/potensi_sda/peternakan_perikanan/alat_produksi/master.php [L]
+RewriteRule ^beckend/psda/peternakan_perikanan/sarana_produksi/$ /desa/promodes/master/potensi_sda/peternakan_perikanan/sarana_produksi/master.php [L]
+RewriteRule ^beckend/psda/peternakan_perikanan/jenis_ikan/$ /desa/promodes/master/potensi_sda/peternakan_perikanan/jenis_ikan/master.php [L]
+RewriteRule ^beckend/psda/peternakan_perikanan/mekanisme/$ /desa/promodes/master/potensi_sda/peternakan_perikanan/mekanisme/master.php [L]
+
+#PSDA perternakan dan perikanan (engine)
+RewriteRule ^engine/psda/peternakan_perikanan/populasi_ternak/$ /desa/promodes/master/potensi_sda/peternakan_perikanan/populasi_ternak/index.php [L]
+RewriteRule ^engine/psda/peternakan_perikanan/produksi_ternak/$ /desa/promodes/master/potensi_sda/peternakan_perikanan/produksi_ternak/index.php [L]
+RewriteRule ^engine/psda/peternakan_perikanan/pakan_ternak/$ /desa/promodes/master/potensi_sda/peternakan_perikanan/pakan_ternak/index.php [L]
+RewriteRule ^engine/psda/peternakan_perikanan/hasil_ternak/$ /desa/promodes/master/potensi_sda/peternakan_perikanan/hasil_ternak/index.php [L]
+RewriteRule ^engine/psda/peternakan_perikanan/pemeliharaan_ternak/$ /desa/promodes/master/potensi_sda/peternakan_perikanan/pemeliharaan_ternak/index.php [L]
+RewriteRule ^engine/psda/peternakan_perikanan/alat_produksi/$ /desa/promodes/master/potensi_sda/peternakan_perikanan/alat_produksi/index.php [L]
+RewriteRule ^engine/psda/peternakan_perikanan/sarana_produksi/$ /desa/promodes/master/potensi_sda/peternakan_perikanan/sarana_produksi/index.php [L]
+RewriteRule ^engine/psda/peternakan_perikanan/jenis_ikan/$ /desa/promodes/master/potensi_sda/peternakan_perikanan/jenis_ikan/index.php [L]
+RewriteRule ^engine/psda/peternakan_perikanan/mekanisme/$ /desa/promodes/master/potensi_sda/peternakan_perikanan/mekanisme/index.php [L]
+
+#PSDA bahan galian
+RewriteRule ^beckend/psda/bahan_galian/jenis_bahan/$ /desa/promodes/master/potensi_sda/bahan_galian/jenis_bahan/master.php [L]
+RewriteRule ^beckend/psda/bahan_galian/pemasaran_galian/$ /desa/promodes/master/potensi_sda/bahan_galian/pemasaran_galian/master.php [L]
+
+#PSDA bahan galian (Engine)
+RewriteRule ^engine/psda/bahan_galian/jenis_bahan/$ /desa/promodes/master/potensi_sda/bahan_galian/jenis_bahan/index.php [L]
+RewriteRule ^engine/psda/bahan_galian/pemasaran_galian/$ /desa/promodes/master/potensi_sda/bahan_galian/pemasaran_galian/index.php [L]
+
+#PSDA Sumber Daya Air
+RewriteRule ^beckend/psda/sumber_daya_air/potensi_air/$ /desa/promodes/master/potensi_sda/sumber_daya_air/potensi_air/master.php [L]
+RewriteRule ^beckend/psda/sumber_daya_air/sumber_air/$ /desa/promodes/master/potensi_sda/sumber_daya_air/sumber_air/master.php [L]
+RewriteRule ^beckend/psda/sumber_daya_air/sungai_rawa/$ /desa/promodes/master/potensi_sda/sumber_daya_air/sungai_rawa/master.php [L]
+RewriteRule ^beckend/psda/sumber_daya_air/pemanfaatan/$ /desa/promodes/master/potensi_sda/sumber_daya_air/pemanfaatan/master.php [L]
+RewriteRule ^beckend/psda/sumber_daya_air/air_panas/$ /desa/promodes/master/potensi_sda/sumber_daya_air/air_panas/master.php [L]
+
+#PSDA Sumber Daya Air (Engine)
+RewriteRule ^engine/psda/sumber_daya_air/potensi_air/$ /desa/promodes/master/potensi_sda/sumber_daya_air/potensi_air/index.php [L]
+RewriteRule ^engine/psda/sumber_daya_air/sumber_air/$ /desa/promodes/master/potensi_sda/sumber_daya_air/sumber_air/index.php [L]
+RewriteRule ^engine/psda/sumber_daya_air/sungai_rawa/$ /desa/promodes/master/potensi_sda/sumber_daya_air/sungai_rawa/index.php [L]
+RewriteRule ^engine/psda/sumber_daya_air/pemanfaatan/$ /desa/promodes/master/potensi_sda/sumber_daya_air/pemanfaatan/index.php [L]
+RewriteRule ^engine/psda/sumber_daya_air/air_panas/$ /desa/promodes/master/potensi_sda/sumber_daya_air/air_panas/index.php [L]
+
+#PSDA lain lain
+RewriteRule ^beckend/psda/lain-lain/kebisingan/$ /desa/promodes/master/potensi_sda/kebisingan/master.php [L]
+RewriteRule ^beckend/psda/lain-lain/ruang_publik_taman/$ /desa/promodes/master/potensi_sda/ruang_publik_taman/master.php [L]
+RewriteRule ^beckend/psda/lain-lain/potensi_wisata/$ /desa/promodes/master/potensi_sda/potensi_wisata/master.php [L]
+RewriteRule ^beckend/psda/lain-lain/kualitas_udara/$ /desa/promodes/master/potensi_sda/kualitas_udara/master.php [L]
+
+#PSDA lain lain (engine)
+RewriteRule ^engine/psda/lain-lain/kebisingan/$ /desa/promodes/master/potensi_sda/kebisingan/index.php [L]
+RewriteRule ^engine/psda/lain-lain/ruang_publik_taman/$ /desa/promodes/master/potensi_sda/ruang_publik_taman/index.php [L]
+RewriteRule ^engine/psda/lain-lain/potensi_wisata/$ /desa/promodes/master/potensi_sda/potensi_wisata/index.php [L]
+RewriteRule ^engine/psda/lain-lain/kualitas_udara/$ /desa/promodes/master/potensi_sda/kualitas_udara/index.php [L]
+
+
+#PSDM
+RewriteRule ^beckend/psdm/lain-lain/kepadatan/$ /desa/promodes/master/potensi_sdm/kepadatan/master.php [L]
+RewriteRule ^beckend/psdm/lain-lain/perkembangan_usia/$ /desa/promodes/master/potensi_sdm/perkembangan_usia/master.php [L]
+RewriteRule ^beckend/psdm/lain-lain/tingkat_pendidikan/$ /desa/promodes/master/potensi_sdm/tingkat_pendidikan/master.php [L]
+RewriteRule ^beckend/psdm/lain-lain/mata_pencarian/$ /desa/promodes/master/potensi_sdm/mata_pencarian/master.php [L]
+RewriteRule ^beckend/psdm/lain-lain/aliran_kepercayaan/$ /desa/promodes/master/potensi_sdm/aliran_kepercayaan/master.php [L]
+RewriteRule ^beckend/psdm/lain-lain/kewarganegaraan/$ /desa/promodes/master/potensi_sdm/kewarganegaraan/master.php [L]
+RewriteRule ^beckend/psdm/lain-lain/etnis/$ /desa/promodes/master/potensi_sdm/etnis/master.php [L]
+RewriteRule ^beckend/psdm/lain-lain/cacat_mental/$ /desa/promodes/master/potensi_sdm/cacat_mental/master.php [L]
+RewriteRule ^beckend/psdm/lain-lain/tenaga_kerja/$ /desa/promodes/master/potensi_sdm/tenaga_kerja/master.php [L]
+RewriteRule ^beckend/psdm/lain-lain/kualitas_angker/$ /desa/promodes/master/potensi_sdm/kualitas_angker/master.php [L]
+
+#PSDM (engine)
+RewriteRule ^engine/psdm/kepadatan/$ /desa/promodes/master/potensi_sdm/kepadatan/index.php [L]
+RewriteRule ^engine/psdm/perkembangan_usia/$ /desa/promodes/master/potensi_sdm/perkembangan_usia/index.php [L]
+RewriteRule ^engine/psdm/tingkat_pendidikan/$ /desa/promodes/master/potensi_sdm/tingkat_pendidikan/index.php [L]
+RewriteRule ^engine/psdm/mata_pencarian/$ /desa/promodes/master/potensi_sdm/mata_pencarian/index.php [L]
+RewriteRule ^engine/psdm/aliran_kepercayaan/$ /desa/promodes/master/potensi_sdm/aliran_kepercayaan/index.php [L]
+RewriteRule ^engine/psdm/kewarganegaraan/$ /desa/promodes/master/potensi_sdm/kewarganegaraan/index.php [L]
+RewriteRule ^engine/psdm/etnis/$ /desa/promodes/master/potensi_sdm/etnis/index.php [L]
+RewriteRule ^engine/psdm/cacat_mental/$ /desa/promodes/master/potensi_sdm/cacat_mental/index.php [L]
+RewriteRule ^engine/psdm/tenaga_kerja/$ /desa/promodes/master/potensi_sdm/tenaga_kerja/index.php [L]
+RewriteRule ^engine/psdm/kualitas_angker/$ /desa/promodes/master/potensi_sdm/kualitas_angker/index.php [L]
+
+
+
+#Potensi Saranda dan Prasarana
+RewriteRule ^beckend/potensi_sarpras/sarpras_pemerintah/desa/$ /desa/promodes/master/potensi_sarpras/sarpras_pemerintah/desa/master.php [L]
+RewriteRule ^beckend/potensi_sarpras/sarpras_pemerintah/badan/$ /desa/promodes/master/potensi_sarpras/sarpras_pemerintah/badan/master.php [L]
+RewriteRule ^beckend/potensi_sarpras/sarpras_pemerintah/dusun/$ /desa/promodes/master/potensi_sarpras/sarpras_pemerintah/dusun/master.php [L]
+RewriteRule ^beckend/potensi_sarpras/lain-lain/sarpras_lembaga/$ /desa/promodes/master/potensi_sarpras/sarpras_lembaga/master.php [L]
+RewriteRule ^beckend/potensi_sarpras/lain-lain/sarpras_kesehatan/$ /desa/promodes/master/potensi_sarpras/sarpras_kesehatan/master.php [L]
+RewriteRule ^beckend/potensi_sarpras/sarpras_transportasi/prasarana_darat/$ /desa/promodes/master/potensi_sarpras/sarpras_transportasi/prasarana_darat/master.php [L]
+RewriteRule ^beckend/potensi_sarpras/sarpras_transportasi/sarana_darat/$ /desa/promodes/master/potensi_sarpras/sarpras_transportasi/sarana_darat/master.php [L]
+RewriteRule ^beckend/potensi_sarpras/sarpras_transportasi/sarpras_laut/$ /desa/promodes/master/potensi_sarpras/sarpras_transportasi/sarpras_laut/master.php [L]
+RewriteRule ^beckend/potensi_sarpras/sarpras_transportasi/prasarana_udara/$ /desa/promodes/master/potensi_sarpras/sarpras_transportasi/prasarana_udara/master.php [L]
+RewriteRule ^beckend/potensi_sarpras/lain-lain/sarpras_kebersihan/$ /desa/promodes/master/potensi_sarpras/sarpras_kebersihan/master.php [L]
+RewriteRule ^beckend/potensi_sarpras/lain-lain/sarpras_pendidikan/$ /desa/promodes/master/potensi_sarpras/sarpras_pendidikan/master.php [L]
+RewriteRule ^beckend/potensi_sarpras/lain-lain/prasarana_kominfo/$ /desa/promodes/master/potensi_sarpras/prasarana_kominfo/master.php [L]
+RewriteRule ^beckend/potensi_sarpras/lain-lain/prasarana_air/$ /desa/promodes/master/potensi_sarpras/prasarana_air/master.php [L]
+RewriteRule ^beckend/potensi_sarpras/lain-lain/prasarana_irigasi/$ /desa/promodes/master/potensi_sarpras/prasarana_irigasi/master.php [L]
+RewriteRule ^beckend/potensi_sarpras/lain-lain/prasarana_peribadatan/$ /desa/promodes/master/potensi_sarpras/prasarana_peribadatan/master.php [L]
+RewriteRule ^beckend/potensi_sarpras/lain-lain/prasarana_olga/$ /desa/promodes/master/potensi_sarpras/prasarana_olga/master.php [L]
+RewriteRule ^beckend/potensi_sarpras/lain-lain/prasarana_energi/$ /desa/promodes/master/potensi_sarpras/prasarana_energi/master.php [L]
+RewriteRule ^beckend/potensi_sarpras/lain-lain/prasarana_hiburan/$ /desa/promodes/master/potensi_sarpras/prasarana_hiburan/master.php [L]
+
+#Potensi Saranda dan Prasarana (engine)
+RewriteRule ^engine/potensi_sarpras/sarpras_pemerintah/desa/$ /desa/promodes/master/potensi_sarpras/sarpras_pemerintah/desa/index.php [L]
+RewriteRule ^engine/potensi_sarpras/sarpras_pemerintah/badan/$ /desa/promodes/master/potensi_sarpras/sarpras_pemerintah/badan/index.php [L]
+RewriteRule ^engine/potensi_sarpras/sarpras_pemerintah/dusun/$ /desa/promodes/master/potensi_sarpras/sarpras_pemerintah/dusun/index.php [L]
+RewriteRule ^engine/potensi_sarpras/sarpras_lembaga/$ /desa/promodes/master/potensi_sarpras/sarpras_lembaga/index.php [L]
+RewriteRule ^engine/potensi_sarpras/sarpras_kesehatan/$ /desa/promodes/master/potensi_sarpras/sarpras_kesehatan/index.php [L]
+RewriteRule ^engine/potensi_sarpras/sarpras_transportasi/prasarana_darat/$ /desa/promodes/master/potensi_sarpras/sarpras_transportasi/prasarana_darat/index.php [L]
+RewriteRule ^engine/potensi_sarpras/sarpras_transportasi/sarana_darat/$ /desa/promodes/master/potensi_sarpras/sarpras_transportasi/sarana_darat/index.php [L]
+RewriteRule ^engine/potensi_sarpras/sarpras_transportasi/sarpras_laut/$ /desa/promodes/master/potensi_sarpras/sarpras_transportasi/sarpras_laut/index.php [L]
+RewriteRule ^engine/potensi_sarpras/sarpras_transportasi/prasarana_udara/$ /desa/promodes/master/potensi_sarpras/sarpras_transportasi/prasarana_udara/index.php [L]
+RewriteRule ^engine/potensi_sarpras/sarpras_kebersihan/$ /desa/promodes/master/potensi_sarpras/sarpras_kebersihan/index.php [L]
+RewriteRule ^engine/potensi_sarpras/sarpras_pendidikan/$ /desa/promodes/master/potensi_sarpras/sarpras_pendidikan/index.php [L]
+RewriteRule ^engine/potensi_sarpras/prasarana_kominfo/$ /desa/promodes/master/potensi_sarpras/prasarana_kominfo/index.php [L]
+RewriteRule ^engine/potensi_sarpras/prasarana_air/$ /desa/promodes/master/potensi_sarpras/prasarana_air/index.php [L]
+RewriteRule ^engine/potensi_sarpras/prasarana_irigasi/$ /desa/promodes/master/potensi_sarpras/prasarana_irigasi/index.php [L]
+RewriteRule ^engine/potensi_sarpras/prasarana_peribadatan/$ /desa/promodes/master/potensi_sarpras/prasarana_peribadatan/index.php [L]
+RewriteRule ^engine/potensi_sarpras/prasarana_olga/$ /desa/promodes/master/potensi_sarpras/prasarana_olga/index.php [L]
+RewriteRule ^engine/potensi_sarpras/prasarana_energi/$ /desa/promodes/master/potensi_sarpras/prasarana_energi/index.php [L]
+RewriteRule ^engine/potensi_sarpras/prasarana_hiburan/$ /desa/promodes/master/potensi_sarpras/prasarana_hiburan/index.php [L]
+
+
+
+
+#LembagaEkonomi
+RewriteRule ^beckend/lembaga_ekonomi/lain-lain/lembaga_ekonomi/$ /desa/promodes/master/lembaga_ekonomi/lembaga_ekonomi/master.php [L]
+RewriteRule ^beckend/lembaga_ekonomi/lain-lain/jasa_pengangkutan/$ /desa/promodes/master/lembaga_ekonomi/jasa_pengangkutan/master.php [L]
+RewriteRule ^beckend/lembaga_ekonomi/lain-lain/jasa_hiburan/$ /desa/promodes/master/lembaga_ekonomi/jasa_hiburan/master.php [L]
+RewriteRule ^beckend/lembaga_ekonomi/lain-lain/jasa_perdagangan/$ /desa/promodes/master/lembaga_ekonomi/jasa_perdagangan/master.php [L]
+RewriteRule ^beckend/lembaga_ekonomi/lain-lain/jasa_gas/$ /desa/promodes/master/lembaga_ekonomi/jasa_gas/master.php [L]
+RewriteRule ^beckend/lembaga_ekonomi/lain-lain/jasa_keterampilan/$ /desa/promodes/master/lembaga_ekonomi/jasa_keterampilan/master.php [L]
+RewriteRule ^beckend/lembaga_ekonomi/lain-lain/jasa_hukum/$ /desa/promodes/master/lembaga_ekonomi/jasa_hukum/master.php [L]
+RewriteRule ^beckend/lembaga_ekonomi/lain-lain/jasa_penginapan/$ /desa/promodes/master/lembaga_ekonomi/jasa_penginapan/master.php [L]
+
+#LembagaEkonomi (engine)
+RewriteRule ^engine/lembaga_ekonomi/lembaga_ekonomi/$ /desa/promodes/master/lembaga_ekonomi/lembaga_ekonomi/index.php [L]
+RewriteRule ^engine/lembaga_ekonomi/jasa_pengangkutan/$ /desa/promodes/master/lembaga_ekonomi/jasa_pengangkutan/index.php [L]
+RewriteRule ^engine/lembaga_ekonomi/jasa_hiburan/$ /desa/promodes/master/lembaga_ekonomi/jasa_hiburan/index.php [L]
+RewriteRule ^engine/lembaga_ekonomi/jasa_perdagangan/$ /desa/promodes/master/lembaga_ekonomi/jasa_perdagangan/index.php [L]
+RewriteRule ^engine/lembaga_ekonomi/jasa_gas/$ /desa/promodes/master/lembaga_ekonomi/jasa_gas/index.php [L]
+RewriteRule ^engine/lembaga_ekonomi/jasa_keterampilan/$ /desa/promodes/master/lembaga_ekonomi/jasa_keterampilan/index.php [L]
+RewriteRule ^engine/lembaga_ekonomi/jasa_hukum/$ /desa/promodes/master/lembaga_ekonomi/jasa_hukum/index.php [L]
+RewriteRule ^engine/lembaga_ekonomi/jasa_penginapan/$ /desa/promodes/master/lembaga_ekonomi/jasa_penginapan/index.php [L]
+
+
+#Monograrfi
+RewriteRule ^beckend/monografi/lain-lain/data_dasar/$ /desa/promodes/master/monografi/data_dasar/master.php [L]
+RewriteRule ^beckend/monografi/lain-lain/data_umum/$ /desa/promodes/master/monografi/data_umum/master.php [L]
+RewriteRule ^beckend/monografi/lain-lain/data_personil/$ /desa/promodes/master/monografi/data_personil/master.php [L]
+RewriteRule ^beckend/monografi/lain-lain/data_kewenangan/$ /desa/promodes/master/monografi/data_kewenangan/master.php [L]
+RewriteRule ^beckend/monografi/lain-lain/data_keuangan/$ /desa/promodes/master/monografi/data_keuangan/master.php [L]
+RewriteRule ^beckend/monografi/lain-lain/data_kelembagaan/$ /desa/promodes/master/monografi/data_kelembagaan/master.php [L]
+RewriteRule ^beckend/monografi/lain-lain/data_trantib/$ /desa/promodes/master/monografi/data_trantib/master.php [L]
+
+#Monograrfi (engine)
+RewriteRule ^engine/monografi/data_dasar/$ /desa/promodes/master/monografi/data_dasar/index.php [L]
+RewriteRule ^engine/monografi/data_umum/$ /desa/promodes/master/monografi/data_umum/index.php [L]
+RewriteRule ^engine/monografi/data_personil/$ /desa/promodes/master/monografi/data_personil/index.php [L]
+RewriteRule ^engine/monografi/data_kewenangan/$ /desa/promodes/master/monografi/data_kewenangan/index.php [L]
+RewriteRule ^engine/monografi/data_keuangan/$ /desa/promodes/master/monografi/data_keuangan/index.php [L]
+RewriteRule ^engine/monografi/data_kelembagaan/$ /desa/promodes/master/monografi/data_kelembagaan/index.php [L]
+RewriteRule ^engine/monografi/data_trantib/$ /desa/promodes/master/monografi/data_trantib/index.php [L]
+
+#RewriteRule ^beckend/$ /desa/promodes/master/potensi_sarpras/folder//master.php [L]
+
+
+#================
+# INPUT   DATA  #
+#================
+
+RewriteRule ^engine/psda/pertanian_perkebunan_kehutanan/kepemilikan_lahan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/pertanian_perkebunan_kehutanan/kepemilikan_lahan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/pertanian_perkebunan_kehutanan/produktivitas_pertanian/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/pertanian_perkebunan_kehutanan/produktivitas_pertanian/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/pertanian_perkebunan_kehutanan/hasil_perkebunan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/pertanian_perkebunan_kehutanan/hasil_perkebunan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/pertanian_perkebunan_kehutanan/hasil_hutan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/pertanian_perkebunan_kehutanan/hasil_hutan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/pertanian_perkebunan_kehutanan/kondisi_hutan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/pertanian_perkebunan_kehutanan/kondisi_hutan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/pertanian_perkebunan_kehutanan/dampak_pengolahan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/pertanian_perkebunan_kehutanan/dampak_pengolahan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/pertanian_perkebunan_kehutanan/mekanisme/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/pertanian_perkebunan_kehutanan/mekanisme/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/peternakan_perikanan/produksi_ternak/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/peternakan_perikanan/produksi_ternak/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/peternakan_perikanan/populasi_ternak/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/peternakan_perikanan/populasi_ternak/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/peternakan_perikanan/pemeliharaan_ternak/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/peternakan_perikanan/pemeliharaan_ternak/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/peternakan_perikanan/pakan_ternak/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/peternakan_perikanan/pakan_ternak/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/peternakan_perikanan/hasil_ternak/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/peternakan_perikanan/hasil_ternak/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/peternakan_perikanan/sarana_produksi/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/peternakan_perikanan/sarana_produksi/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/peternakan_perikanan/jenis_ikan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/peternakan_perikanan/jenis_ikan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/peternakan_perikanan/alat_produksi/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/peternakan_perikanan/alat_produksi/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/peternakan_perikanan/mekanisme/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/peternakan_perikanan/mekanisme/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/bahan_galian/jenis_bahan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/bahan_galian/jenis_bahan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/bahan_galian/pemasaran_galian/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/bahan_galian/pemasaran_galian/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/sumber_daya_air/air_panas/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/sumber_daya_air/air_panas/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/sumber_daya_air/potensi_air/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/sumber_daya_air/potensi_air/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/sumber_daya_air/sumber_air/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/sumber_daya_air/sumber_air/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/sumber_daya_air/sungai_rawa/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/sumber_daya_air/sungai_rawa/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/sumber_daya_air/pemanfaatan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/sumber_daya_air/pemanfaatan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/lain-lain/kebisingan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/kebisingan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/lain-lain/ruang_publik_taman/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/ruang_publik_taman/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/lain-lain/potensi_wisata/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/potensi_wisata/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psda/lain-lain/kualitas_udara/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sda/kualitas_udara/lihat.php?tahun=$1 [L]
+
+#PSDM input
+RewriteRule ^engine/psdm/kepadatan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sdm/kepadatan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psdm/perkembangan_usia/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sdm/perkembangan_usia/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psdm/tingkat_pendidikan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sdm/tingkat_pendidikan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psdm/mata_pencarian/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sdm/mata_pencarian/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psdm/aliran_kepercayaan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sdm/aliran_kepercayaan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psdm/kewarganegaraan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sdm/kewarganegaraan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psdm/etnis/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sdm/etnis/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psdm/cacat_mental/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sdm/cacat_mental/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psdm/tenaga_kerja/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sdm/tenaga_kerja/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/psdm/kualitas_angker/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sdm/kualitas_angker/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/potensi_sarpras/sarpras_pemerintah/badan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sarpras/sarpras_pemerintah/badan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/potensi_sarpras/sarpras_pemerintah/desa/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sarpras/sarpras_pemerintah/desa/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/potensi_sarpras/sarpras_pemerintah/dusun/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sarpras/sarpras_pemerintah/dusun/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/potensi_sarpras/sarpras_lembaga/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sarpras/sarpras_lembaga/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/potensi_sarpras/sarpras_kesehatan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sarpras/sarpras_kesehatan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/potensi_sarpras/sarpras_transportasi/sarana_darat/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sarpras/sarpras_transportasi/sarana_darat/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/potensi_sarpras/sarpras_transportasi/prasarana_darat/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sarpras/sarpras_transportasi/prasarana_darat/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/potensi_sarpras/sarpras_transportasi/prasarana_udara/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sarpras/sarpras_transportasi/prasarana_udara/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/potensi_sarpras/sarpras_transportasi/sarpras_laut/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sarpras/sarpras_transportasi/sarpras_laut/lihat.php?tahun=$1 [L]
+
+# ! transportasi
+RewriteRule ^engine/potensi_sarpras/sarpras_kebersihan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sarpras/sarpras_kebersihan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/potensi_sarpras/sarpras_pendidikan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sarpras/sarpras_pendidikan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/potensi_sarpras/prasarana_kominfo/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sarpras/prasarana_kominfo/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/potensi_sarpras/prasarana_air/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sarpras/prasarana_air/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/potensi_sarpras/prasarana_irigasi/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sarpras/prasarana_irigasi/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/potensi_sarpras/prasarana_keibadatan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sarpras/prasarana_keibadatan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/potensi_sarpras/prasarana_olga/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sarpras/prasarana_olga/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/potensi_sarpras/prasarana_energi/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sarpras/prasarana_energi/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/potensi_sarpras/prasarana_hiburan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/potensi_sarpras/prasarana_hiburan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/lembaga_ekonomi/jasa_gas/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/lembaga_ekonomi/jasa_gas/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/lembaga_ekonomi/jasa_hiburan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/lembaga_ekonomi/jasa_hiburan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/lembaga_ekonomi/jasa_hukum/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/lembaga_ekonomi/jasa_hukum/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/lembaga_ekonomi/jasa_keterampilan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/lembaga_ekonomi/jasa_keterampilan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/lembaga_ekonomi/jasa_pengangkutan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/lembaga_ekonomi/jasa_pengangkutan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/lembaga_ekonomi/jasa_penginapan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/lembaga_ekonomi/jasa_penginapan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/lembaga_ekonomi/jasa_perdagangan/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/lembaga_ekonomi/jasa_perdagangan/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/lembaga_ekonomi/lembaga_ekonomi/tahun/([a-zA-Z0-9_-]+)$ /desa/promodes/master/lembaga_ekonomi/lembaga_ekonomi/lihat.php?tahun=$1 [L]
+
+RewriteRule ^engine/monografi/data_dasar/tahun/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ /desa/promodes/master/monografi/data_dasar/lihat.php?tahun=$1&bulan=$2 [L]
+
+RewriteRule ^engine/monografi/data_kelembagaan/tahun/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ /desa/promodes/master/monografi/data_kelembagaan/lihat.php?tahun=$1&bulan=$2 [L]
+
+RewriteRule ^engine/monografi/data_keuangan/tahun/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ /desa/promodes/master/monografi/data_keuangan/lihat.php?tahun=$1&bulan=$2 [L]
+
+RewriteRule ^engine/monografi/data_kewenangan/tahun/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ /desa/promodes/master/monografi/data_kewenangan/lihat.php?tahun=$1&bulan=$2 [L]
+
+RewriteRule ^engine/monografi/data_personil/tahun/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ /desa/promodes/master/monografi/data_personil/lihat.php?tahun=$1&bulan=$2 [L]
+
+RewriteRule ^engine/monografi/data_trantib/tahun/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ /desa/promodes/master/monografi/data_trantib/lihat.php?tahun=$1&bulan=$2 [L]
+
+RewriteRule ^engine/monografi/data_umum/tahun/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ /desa/promodes/master/monografi/data_umum/lihat.php?tahun=$1&bulan=$2 [L]
+
+
+#================
+# F R O N T E N #
+#================
+RewriteRule ^utama/$ /desa/promodes/source/ [L]
+RewriteRule ^utama/beckend$ /desa/promodes/source/ [L]
+RewriteRule ^utama/psda$ /desa/promodes/source/?req=sda [L]
+RewriteRule ^utama/psdm$ /desa/promodes/source/?req=sdm [L]
+RewriteRule ^utama/ppdsba$ /desa/promodes/source/?req=sarpas [L]
+RewriteRule ^utama/ppdsbb$ /desa/promodes/source/?req=sarpas2 [L]
+RewriteRule ^utama/lembaga_ekonomi$ /desa/promodes/source/?req=le [L]
+RewriteRule ^utama/monografi_desa$ /desa/promodes/source/?req=mono [L]
+
+
+
+#=================
+# J A V A SCRIPT #
+#=================
+#Rewrite Rule ^beckend/lib/js/confirmDelete.js$ /desa/promodes/lib/js/confirmDelete.js [L]

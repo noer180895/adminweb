@@ -1,0 +1,296 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2018-05-24 18:23:11 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:23:15 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:27:07 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:27:12 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:27:13 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:27:25 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:29:17 --> 404 Page Not Found: Daftardesa/index
+ERROR - 2018-05-24 18:29:24 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:29:26 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 23:29:31 --> Severity: Error --> Call to a member function list_data() on null C:\xampp\htdocs\admindesa\donjo-app\controllers\Hom_desa.php 69
+ERROR - 2018-05-24 23:29:40 --> Severity: Error --> Call to a member function list_data() on null C:\xampp\htdocs\admindesa\donjo-app\controllers\Hom_desa.php 69
+ERROR - 2018-05-24 23:29:52 --> Severity: Error --> Call to a member function list_data() on null C:\xampp\htdocs\admindesa\donjo-app\controllers\Hom_desa.php 69
+ERROR - 2018-05-24 23:29:55 --> Severity: Error --> Call to a member function list_data() on null C:\xampp\htdocs\admindesa\donjo-app\controllers\Hom_desa.php 69
+ERROR - 2018-05-24 23:30:08 --> Severity: Error --> Call to a member function list_data() on null C:\xampp\htdocs\admindesa\donjo-app\controllers\Hom_desa.php 69
+ERROR - 2018-05-24 23:30:09 --> Severity: Error --> Call to a member function list_data() on null C:\xampp\htdocs\admindesa\donjo-app\controllers\Hom_desa.php 69
+ERROR - 2018-05-24 23:30:09 --> Severity: Error --> Call to a member function list_data() on null C:\xampp\htdocs\admindesa\donjo-app\controllers\Hom_desa.php 69
+ERROR - 2018-05-24 23:30:10 --> Severity: Error --> Call to a member function list_data() on null C:\xampp\htdocs\admindesa\donjo-app\controllers\Hom_desa.php 69
+ERROR - 2018-05-24 23:30:45 --> Severity: Error --> Call to a member function list_data() on null C:\xampp\htdocs\admindesa\donjo-app\controllers\Hom_desa.php 69
+ERROR - 2018-05-24 23:31:22 --> Severity: Error --> Call to a member function list_data() on null C:\xampp\htdocs\admindesa\donjo-app\controllers\Hom_desa.php 68
+ERROR - 2018-05-24 23:31:23 --> Severity: Error --> Call to a member function list_data() on null C:\xampp\htdocs\admindesa\donjo-app\controllers\Hom_desa.php 68
+ERROR - 2018-05-24 23:31:24 --> Severity: Error --> Call to a member function list_data() on null C:\xampp\htdocs\admindesa\donjo-app\controllers\Hom_desa.php 68
+ERROR - 2018-05-24 18:31:25 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 23:32:15 --> Severity: Error --> Call to a member function list_data() on null C:\xampp\htdocs\admindesa\donjo-app\controllers\Hom_desa.php 68
+ERROR - 2018-05-24 23:32:15 --> Severity: Error --> Call to a member function list_data() on null C:\xampp\htdocs\admindesa\donjo-app\controllers\Hom_desa.php 68
+ERROR - 2018-05-24 18:32:31 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:33:05 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:33:13 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 23:34:21 --> Severity: Error --> Call to a member function list_data() on null C:\xampp\htdocs\admindesa\donjo-app\controllers\Hom_desa.php 70
+ERROR - 2018-05-24 23:34:34 --> Severity: Error --> Call to a member function list_data() on null C:\xampp\htdocs\admindesa\donjo-app\controllers\Hom_desa.php 70
+ERROR - 2018-05-24 23:34:35 --> Severity: Error --> Call to a member function list_data() on null C:\xampp\htdocs\admindesa\donjo-app\controllers\Hom_desa.php 70
+ERROR - 2018-05-24 18:35:13 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:35:13 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:35:35 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:36:07 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:36:10 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:36:29 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:36:33 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:37:16 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:38:58 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:39:02 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:39:09 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:39:09 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:46:34 --> 404 Page Not Found: Hom_desa/daftardesa
+ERROR - 2018-05-24 18:46:38 --> 404 Page Not Found: Daftardesa/index
+ERROR - 2018-05-24 18:46:42 --> 404 Page Not Found: Daftardesa/index
+ERROR - 2018-05-24 18:47:09 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:47:09 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:47:32 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:48:13 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:48:18 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:48:21 --> 404 Page Not Found: Daftardesa/form
+ERROR - 2018-05-24 18:49:00 --> 404 Page Not Found: Daftar_desa/index
+ERROR - 2018-05-24 18:49:01 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:49:05 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:49:57 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:51:19 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:51:20 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:51:21 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:51:21 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:51:43 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:51:50 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:51:58 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:51:58 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 18:51:59 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:00:53 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:01:09 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:01:09 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:06:47 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:06:48 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:08:17 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:08:17 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:08:23 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:08:24 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:12:47 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:12:48 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:12:53 --> 404 Page Not Found: Assets/images
+ERROR - 2018-05-24 19:12:54 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:13:11 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:13:15 --> 404 Page Not Found: Assets/images
+ERROR - 2018-05-24 19:13:15 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:13:25 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:13:26 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:16:30 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:16:30 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:16:57 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:16:57 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:23:05 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:23:06 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:26:56 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:27:22 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:27:23 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:27:49 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:27:49 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:30:18 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:30:18 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:32:02 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:32:38 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:32:38 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:32:40 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:32:40 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:32:41 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:32:41 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:32:42 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:32:43 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:43:52 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:43:53 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:44:02 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:44:02 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:48:10 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:48:10 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:48:36 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:48:37 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:48:44 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:48:44 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:48:48 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:48:48 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:49:02 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:49:02 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:49:06 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:49:06 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:49:25 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:49:25 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:49:32 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:49:33 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:49:34 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:49:34 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:50:19 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:50:20 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:50:21 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:50:22 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:50:26 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:50:26 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:52:51 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:52:51 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:54:58 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:54:58 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:57:15 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:57:15 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:57:52 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:57:52 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:57:59 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:58:00 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:58:06 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:58:06 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:58:09 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 19:58:10 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:00:04 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:00:04 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:20:59 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:21:00 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:21:27 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:21:28 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:21:36 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:21:36 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:21:40 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:21:40 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:21:42 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:21:46 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:21:47 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:23:32 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:23:32 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:23:41 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:23:41 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:23:44 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:23:45 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:23:50 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:23:50 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:24:01 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:24:02 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:26:16 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:26:16 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:33:20 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:33:20 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:33:40 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:33:40 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:34:28 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:34:28 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:34:36 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 20:34:36 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:07:06 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:07:06 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:07:16 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:07:17 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:09:04 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:09:04 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:09:08 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:09:08 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:09:15 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:09:15 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:09:32 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:09:32 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:09:36 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:09:36 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:09:41 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:09:44 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:09:45 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:09:48 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:09:48 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:10:04 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:10:04 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:11:16 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:11:16 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:11:25 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:11:26 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:11:33 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:11:33 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:11:36 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:11:36 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:11:42 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:11:42 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:12:26 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:12:26 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:12:30 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:12:30 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:13:11 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:13:11 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:13:17 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:13:17 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:14:05 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:14:05 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:14:08 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:14:08 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:14:22 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:14:23 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:15:15 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:15:15 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:15:49 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:15:49 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:15:53 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:15:54 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:16:55 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:16:55 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:20:13 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:20:13 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:22:09 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:22:09 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:23:16 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:23:16 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:23:19 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:23:27 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:23:31 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:23:32 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:23:40 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:23:40 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:25:55 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:25:55 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:25:58 --> 404 Page Not Found: Assets/images
+ERROR - 2018-05-24 21:25:58 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:26:07 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:26:07 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:26:14 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:26:15 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:27:57 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:27:57 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:29:08 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:29:08 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:30:08 --> Severity: Parsing Error --> syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\admindesa\donjo-app\controllers\Daftardesa.php 85
+ERROR - 2018-05-24 21:30:10 --> Severity: Parsing Error --> syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\admindesa\donjo-app\controllers\Daftardesa.php 85
+ERROR - 2018-05-24 21:30:25 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:30:26 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:30:28 --> Severity: Parsing Error --> syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\admindesa\donjo-app\controllers\Daftardesa.php 85
+ERROR - 2018-05-24 21:30:43 --> Severity: Parsing Error --> syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\admindesa\donjo-app\controllers\Daftardesa.php 85
+ERROR - 2018-05-24 21:30:44 --> Severity: Parsing Error --> syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\admindesa\donjo-app\controllers\Daftardesa.php 85
+ERROR - 2018-05-24 21:30:44 --> Severity: Parsing Error --> syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\admindesa\donjo-app\controllers\Daftardesa.php 85
+ERROR - 2018-05-24 21:30:44 --> Severity: Parsing Error --> syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\admindesa\donjo-app\controllers\Daftardesa.php 85
+ERROR - 2018-05-24 21:31:03 --> Severity: Parsing Error --> syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\admindesa\donjo-app\controllers\Daftardesa.php 85
+ERROR - 2018-05-24 21:31:14 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:31:14 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:31:19 --> Severity: Parsing Error --> syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\admindesa\donjo-app\controllers\Daftardesa.php 85
+ERROR - 2018-05-24 21:31:28 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:31:28 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:31:43 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 21:31:44 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 22:27:49 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 22:27:50 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 22:29:31 --> 404 Page Not Found: Daftardesa/assets
+ERROR - 2018-05-24 22:29:34 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 22:29:35 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 22:29:55 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 22:30:01 --> 404 Page Not Found: Assets/images
+ERROR - 2018-05-24 22:30:01 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 22:30:05 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 22:34:33 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 22:34:33 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 22:34:37 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 22:34:38 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 22:37:38 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 22:37:39 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 22:37:44 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 22:37:44 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 22:37:47 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 22:37:47 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 22:40:31 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-24 22:40:31 --> 404 Page Not Found: Desa/upload

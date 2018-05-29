@@ -1,0 +1,151 @@
+
+
+.tombolsimpanubah{
+  background:#2C97DF;
+  color:white;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:5px solid #2A80B9;
+  padding:10px 20px;
+  text-decoration:none;
+  font-family:sans-serif;
+  font-size:11pt;
+}
+.tombolsimpanubah:hover{
+  background:#0184dd;
+  color:#FFFFFF;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:5px solid #027acb;
+  padding:10px 20px;
+  text-decoration:none;
+  font-family:sans-serif;
+  font-size:11pt;
+}
+
+.tombolputih{
+  background:#FFFFFF;
+  color:#000000;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:5px solid #f8f8f8;
+  padding:10px 20px;
+  text-decoration:none;
+  font-family:sans-serif;
+  font-size:11pt;
+}
+.tombolputih:hover{
+  background:#ededed;
+  color:#000000;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:5px solid #e3e3e2;
+  padding:10px 20px;
+  text-decoration:none;
+  font-family:sans-serif;
+  font-size:11pt;
+}
+
+.tombollihat{
+  background:#00ccff;
+  color:white;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:5px solid #1cbee6;
+  padding:10px 20px;
+  text-decoration:none;
+  font-family:sans-serif;
+  font-size:11pt;
+}
+.tombollihat:hover{
+  background:#03bfee;
+  color:#FFFFFF;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:5px solid #22aed1;
+  padding:10px 20px;
+  text-decoration:none;
+  font-family:sans-serif;
+  font-size:11pt;
+}
+
+.tombolexport{
+  background:#989798;
+  color:white;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:5px solid #696969;
+  padding:10px 20px;
+  text-decoration:none;
+  font-family:sans-serif;
+  font-size:11pt;
+}
+.tombolexport:hover{
+  background:#696969;
+  color:#FFFFFF;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:5px solid #3b3745;
+  padding:10px 20px;
+  text-decoration:none;
+  font-family:sans-serif;
+  font-size:11pt;
+}
+
+.tombolhapus{
+  background:#f33415;
+  color:white;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:5px solid #ee2302;
+  padding:10px 20px;
+  text-decoration:none;
+  font-family:sans-serif;
+  font-size:11pt;
+}
+.tombolhapus:hover{
+  background:#dc3115;
+  color:#FFFFFF;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:5px solid #dc2203;
+  padding:10px 20px;
+  text-decoration:none;
+  font-family:sans-serif;
+  font-size:11pt;
+}
+
+.tombolsukses{
+  background:#2ecc71;
+  color:white;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:5px solid #2bbf6a;
+  padding:10px 20px;
+  text-decoration:none;
+  font-family:sans-serif;
+  font-size:11pt;
+}
+.tombolsukses:hover{
+  background:#27ae60;
+  color:#FFFFFF;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:5px solid #24a359;
+  padding:10px 20px;
+  text-decoration:none;
+  font-family:sans-serif;
+  font-size:11pt;
+}
