@@ -267,3 +267,13 @@ ERROR - 2018-05-29 21:26:34 --> 404 Page Not Found: Desa/upload
 ERROR - 2018-05-29 21:26:37 --> 404 Page Not Found: Desa/upload
 ERROR - 2018-05-29 21:26:45 --> 404 Page Not Found: Desa/upload
 ERROR - 2018-05-29 21:26:48 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-29 22:29:39 --> Severity: Parsing Error --> syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\admindesa\donjo-app\controllers\Dokumen.php 96
+ERROR - 2018-05-29 22:29:45 --> Severity: Parsing Error --> syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\admindesa\donjo-app\controllers\Dokumen.php 96
+ERROR - 2018-05-29 22:29:52 --> Severity: Parsing Error --> syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\admindesa\donjo-app\controllers\Dokumen.php 96
+ERROR - 2018-05-29 22:29:53 --> Severity: Parsing Error --> syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\admindesa\donjo-app\controllers\Dokumen.php 96
+ERROR - 2018-05-29 22:30:04 --> Severity: Parsing Error --> syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\admindesa\donjo-app\controllers\Dokumen.php 96
+ERROR - 2018-05-29 22:32:09 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-29 22:32:09 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-29 22:32:12 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-29 22:32:13 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-29 22:32:19 --> 404 Page Not Found: Desa/upload

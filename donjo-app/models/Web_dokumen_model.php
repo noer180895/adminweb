@@ -57,7 +57,7 @@ class Web_dokumen_model extends CI_Model{
 		if($kat == "6") // jika dia request ekspedisi
 		{
 			$sql = " FROM dokumen_ekspedisi where kategori = 6";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 			
 		}else{
