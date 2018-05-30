@@ -292,6 +292,11 @@ class Web_dokumen_model extends CI_Model{
 		
 	}
 
+
+
+
+
+
 	function dokumen_show(){
 		$sql   = "SELECT * FROM dokumen WHERE enabled=?";
 		$query = $this->db->query($sql,1);
@@ -306,6 +311,17 @@ class Web_dokumen_model extends CI_Model{
 		if (empty($kat_nama)) $kat_nama = $kategori[1];
 		return $kat_nama;
 	}
+
+
+	function getDetailEkpedisi($id=0){
+		$sql   = "SELECT * FROM dokumen_ekspedisi WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+
+    }
+
 
 	function list_kategori(){
 		return unserialize(KODE_KATEGORI);
