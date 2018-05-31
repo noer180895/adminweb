@@ -68,8 +68,8 @@
 <tr class="formEkspedisi">  
   <th>Kewarganeraraan</th>
   <td>
-    <input type="checkbox" name="flag_baca" value="wni"> WNI
-    <input type="checkbox" name="flag_baca" value="wna"> WNA
+    <input type="checkbox" name="warganegara" value="wni"> WNI
+    <input type="checkbox" name="warganegara" value="wna"> WNA
   </td>
 </tr>
 
