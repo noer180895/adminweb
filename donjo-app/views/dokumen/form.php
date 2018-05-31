@@ -83,7 +83,38 @@
                 include ("donjo-app/views/dokumen/_formLaporankeuanganBPD.php");
               elseif($kat == 22)
                 include ("donjo-app/views/dokumen/_formperaturandidesa.php");
-				
+              elseif($kat == 23)
+                include ("donjo-app/views/dokumen/_formDataInventarisBpd.php");
+              elseif($kat == 24)
+                include ("donjo-app/views/dokumen/_formIndukPenduduk.php");
+              elseif($kat == 25)
+                include ("donjo-app/views/dokumen/_formMutasiPenduduk.php");
+               elseif($kat == 26)
+                include ("donjo-app/views/dokumen/_formRekapitulasiPenduduk.php");
+              elseif($kat == 27)
+                include ("donjo-app/views/dokumen/_formPendudukSementara.php");
+				      elseif($kat == 28)
+                include ("donjo-app/views/dokumen/_formKartuTandaPendudukdanKeluarga.php");
+              elseif($kat == 29)
+                include ("donjo-app/views/dokumen/_formAnggaranPendapatamBelanja.php");
+               elseif($kat == 30)
+                include ("donjo-app/views/dokumen/_formRencanaAnggaranBiaya.php");
+               elseif($kat == 31)
+                include ("donjo-app/views/dokumen/_formKasPembantuKegiatan.php");
+              elseif($kat == 32)
+                include ("donjo-app/views/dokumen/_formBukuKasUmum.php");
+              elseif($kat == 33)
+                include ("donjo-app/views/dokumen/_formBankDesa.php");
+              elseif($kat == 34)
+                include ("donjo-app/views/dokumen/_formRencanaKerjaPembangunan.php");
+              elseif($kat == 35)
+                include ("donjo-app/views/dokumen/_formKegiatanPembangunan.php");
+                elseif($kat == 36)
+                include ("donjo-app/views/dokumen/_formAgendaSuratKeluar.php");
+                elseif($kat == 37)
+                include ("donjo-app/views/dokumen/_formAgendaSuratMasuk.php");
+        
+
               
             ?>
         </table>

@@ -40,7 +40,23 @@
 					<a href="<?php echo site_url("dokumen/index/21")?>"><li <?php if($kat==21)echo "class='selected'";?>>Laporan Keuangan BPD</li></a>
 					<a href="<?php echo site_url("dokumen/index/22")?>"><li <?php if($kat==22)echo "class='selected'";?>>Peraturan Didesa</li></a>
 				<!-- 	<a href="<?php echo site_url("dokumen/index/8")?>"><li <?php if($kat==8)echo "class='selected'";?>>Data Induk Kependudukan</li></a> -->
-					
+					<a href="<?php echo site_url("dokumen/index/23")?>"><li <?php if($kat==23)echo "class='selected'";?>>Data Inventaris Bpd</li></a>
+					<a href="<?php echo site_url("dokumen/index/24")?>"><li <?php if($kat==24)echo "class='selected'";?>>Data Induk Penduduk</li></a>
+					<a href="<?php echo site_url("dokumen/index/25")?>"><li <?php if($kat==25)echo "class='selected'";?>>Data Mutasi Penduduk</li></a>
+					<a href="<?php echo site_url("dokumen/index/26")?>"><li <?php if($kat==26)echo "class='selected'";?>>Rekapitulasi Penduduk</li></a>
+					<a href="<?php echo site_url("dokumen/index/27")?>"><li <?php if($kat==27)echo "class='selected'";?>>Data Penduduk Sementara</li></a>
+					<a href="<?php echo site_url("dokumen/index/28")?>"><li <?php if($kat==28)echo "class='selected'";?>>Ktp dan Data Keluarga</li></a>
+					<a href="<?php echo site_url("dokumen/index/29")?>"><li <?php if($kat==29)echo "class='selected'";?>>Anggaran Pendapatan dan Belanja</li></a>
+					<a href="<?php echo site_url("dokumen/index/30")?>"><li <?php if($kat==30)echo "class='selected'";?>>Rencana Anggaran Biaya</li></a>
+					<a href="<?php echo site_url("dokumen/index/31")?>"><li <?php if($kat==31)echo "class='selected'";?>>Kas Pembantu Kegiatan</li></a>
+					<a href="<?php echo site_url("dokumen/index/32")?>"><li <?php if($kat==32)echo "class='selected'";?>>Kas Umum</li></a>
+					<a href="<?php echo site_url("dokumen/index/33")?>"><li <?php if($kat==33)echo "class='selected'";?>>Data Bank Desa</li></a>
+					<a href="<?php echo site_url("dokumen/index/34")?>"><li <?php if($kat==34)echo "class='selected'";?>>Rencana Kerja Pembangunan</li></a>
+					<a href="<?php echo site_url("dokumen/index/35")?>"><li <?php if($kat==35)echo "class='selected'";?>>Kegiatan Pembangunan</li></a>
+					<a href="<?php echo site_url("dokumen/index/36")?>"><li <?php if($kat==36)echo "class='selected'";?>>Agenda Surat Keluar</li></a>
+						<a href="<?php echo site_url("dokumen/index/37")?>"><li <?php if($kat==37)echo "class='selected'";?>>Agenda Surat Masuk</li></a>
+
+											
 				</ul>
 			</div>
 		</td>
@@ -52,7 +68,7 @@
 				<input name="kategori" type="hidden" value="<?php echo $kat?>">
 		    <div class="ui-layout-north panel">
 					<div class="content">
-						<h3>Dokumen: <?php if($kat == 6){ echo 'Ekspedisi'; }else{ echo 'Umum'; }?></h3>
+						<h3>Dokumen</h3>
 					</div>
 		      <div class="left">
 		        <div class="uibutton-group">
