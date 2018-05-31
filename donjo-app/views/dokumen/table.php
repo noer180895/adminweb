@@ -23,6 +23,22 @@
 					<a href="<?php echo site_url("dokumen/index/5")?>"><li <?php if($kat==5)echo "class='selected'";?>>Agenda</li></a>
 					<a href="<?php echo site_url("dokumen/index/6")?>"><li <?php if($kat==6)echo "class='selected'";?>>Ekspedisi</li></a>
 					<a href="<?php echo site_url("dokumen/index/7")?>"><li <?php if($kat==7)echo "class='selected'";?>>Lembaran Desa dan Berita Desa</li></a>
+					<a href="<?php echo site_url("dokumen/index/8")?>"><li <?php if($kat==8)echo "class='selected'";?>>Buku tamu BPD</li></a>
+					<a href="<?php echo site_url("dokumen/index/9")?>"><li <?php if($kat==9)echo "class='selected'";?>>Buku daftar hadir Rapat BPD</li></a>
+					<a href="<?php echo site_url("dokumen/index/10")?>"><li <?php if($kat==10)echo "class='selected'";?>>Data Anggota BPD</li></a>
+					<a href="<?php echo site_url("dokumen/index/11")?>"><li <?php if($kat==11)echo "class='selected'";?>>Data Aspirasi Masyarakat</li></a>
+					<a href="<?php echo site_url("dokumen/index/12")?>"><li <?php if($kat==12)echo "class='selected'";?>>Data Kegiatan BPD</li></a>
+					<!--batas-->
+					<a href="<?php echo site_url("dokumen/index/13")?>"><li <?php if($kat==13)echo "class='selected'";?>>Data Notulen rapat BPD</li></a>
+					<a href="<?php echo site_url("dokumen/index/14")?>"><li <?php if($kat==14)echo "class='selected'";?>>Data Peraturan Keputusan BPD</li></a>
+					<a href="<?php echo site_url("dokumen/index/15")?>"><li <?php if($kat==15)echo "class='selected'";?>>Data tanah didesa</li></a>
+					<a href="<?php echo site_url("dokumen/index/16")?>"><li <?php if($kat==16)echo "class='selected'";?>>Inventaris Hasil Pembangunan</li></a>
+					<a href="<?php echo site_url("dokumen/index/17")?>"><li <?php if($kat==17)echo "class='selected'";?>>Kader Pemberdayaan Masyarakat</li></a>
+					<a href="<?php echo site_url("dokumen/index/18")?>"><li <?php if($kat==18)echo "class='selected'";?>>Keputusan Kepala Desa</li></a>
+					<a href="<?php echo site_url("dokumen/index/19")?>"><li <?php if($kat==19)echo "class='selected'";?>>Keputusan Musyawarah Desa</li></a>
+					<a href="<?php echo site_url("dokumen/index/20")?>"><li <?php if($kat==20)echo "class='selected'";?>>Keputusan Musyawarah Perencanaan Pembangunan Desa</li></a>
+					<a href="<?php echo site_url("dokumen/index/21")?>"><li <?php if($kat==21)echo "class='selected'";?>>Laporan Keuangan BPD</li></a>
+					<a href="<?php echo site_url("dokumen/index/22")?>"><li <?php if($kat==22)echo "class='selected'";?>>Peraturan Didesa</li></a>
 				<!-- 	<a href="<?php echo site_url("dokumen/index/8")?>"><li <?php if($kat==8)echo "class='selected'";?>>Data Induk Kependudukan</li></a> -->
 					
 				</ul>
@@ -79,30 +95,24 @@
 								<?php  endif; ?>&nbsp;</span></a></th>
 
 							  <?php if ($kat == 2) : ?>
-							  	<th style="    width: 28px;">Jenis Barang / Bangunan</th>
-							  	<th colspan="3" style="width: 28px!important;">Asal Barang / Bangunan</th>
-							  	<tr>
-							  		<th style="width: 28px;">Dibeli Sendiri</th> 
-							  		<th style="width: 28px;">Bantuan</th>
-							  		<th style="width: 28px;">Sumbangan</th>
-							  	</tr>
-							  	<th colspan="2" style="width: 28px;">Keadaan Barang / Bangunan Awal tahun</th>
-							  	<tr> 							  		
-							  		<th style="width: 28px;">Baik</th> 
-							  		<th style="width: 28px;">Rusak</th> 
-							  	</tr>
-							  	<th colspan="4" style="width: 28px;">Penghapusan Barang dan bangunan</th>
-							  	<tr> 							  		
-							  		<th style="width: 28px;">Rusak</th> 
-							  		<th style="width: 28px;">Dijual</th> 
-							  		<th style="width: 28px;">Disumbangkan</th> 
-							  		<th style="width: 28px;">Tanggal Penghapusan</th> 
-							  	</tr>
-							  	<th style="width: 28px;">Keterangann</th>
+							  	<th></th>
+							  	<th></th>
+							  	<th>No.Urut</th>
+							  	<th>Jenis Barang / Bangunan</th>
+							  	<th>Asal Barang / Bangunan</th>
+							  	<th>Keadaan Barang / Bangunan Awal tahun</th>
+							  	<th>Penghapusan Barang dan bangunan</th>
+							  	<th>Tanggal Penghapusan</th>
+							  	<th>Keterangann</th>
 							  <?php elseif ($kat == 3) : ?>
+							  	<th>No.Urut</th>
+							  	<th>Jenis Peraturan Desa</th>
 							  	<th>Nomor Dan Tanggal Ditetapkan</th>
-							  	<th>Uraian Singkat</th>
+							  	<th>Tentang</th>
+							  	<th>Diundangkan</th>
+							  	<th>Keterangan</th>
 							  <?php elseif ($kat == 4) : ?>
+							  	<th>No.Urut</th>
 							  	<th>Nama Lengkap</th>
 							  	<th>Nomor Induk Aparat Pemerintah Desa(NIAP)</th>
 							  	<th>Nomor Induk Pegawai(NIP)</th>
@@ -112,7 +122,21 @@
 							  	<th>Pangkat Golongan</th>
 							  	<th>Jabatan</th>
 							  	<th>Pendidikan Terakhir</th>
+							  	<th>Nomor dan Tanggal Keputusan Pengangkatan</th>
 							  	<th>Nomor dan Tanggal Keputusan Pemberhentian</th>
+							  	<th>Keterangan</th>
+							  	<?php elseif ($kat == 5) : ?>
+							  	<th>No.Urut</th>
+							  	<th>Tanggal Penerimaan Surat</th>
+							  	<th>Nomor Surat Masuk</th>
+							  	<th>Tanggal Surat Masuk</th>
+							  	<th>Pengiriman Surat Masuk</th>
+							  	<th>Nomor Surat Keluar</th>
+							  	<th>Isi Surat Masuk</th>
+							  	<th>Nomor Surat Keluar</th>
+							  	<th>Tanggal Surat Keluar</th>
+							  	<th>Ditujukan Kepada</th>
+							  	<th>Isi Surat Keluar</th>
 							  	<th>Keterangan</th>
 							  <?php elseif ($kat == 6) : ?>
 							  	<th>No.Urut</th>
@@ -121,6 +145,130 @@
 				            	<th>Isi Singkat Surat Yang Dikirim</th>
 				            	<th>Ditujukan Kepada</th>
 				            	<th>Keterangan</th>
+				            	<?php echo $dokumen['keterangan'];?>
+				            	<?php elseif ($kat == 7) : ?>
+							  	<th>No.Urut</th>
+							  	<th>Jenis Peraturan Desa</th>
+							  	<th>Nomor dan Tanggal ditetapkan </th>
+							  	<th>Tentang</th>
+							  	<th>Tanggal Diundangkan</th>
+							  	<th>Nomor Diundangkan</th>
+							  	<th>Keterangan</th>
+							  	<?php elseif ($kat == 8) : ?>
+							  	<th>No.Urut</th>
+							  	<th>Tanggal</th>
+							  	<th>Nama Lengkap </th>
+							  	<th>Jabatan</th>
+							  	<th>Alamat</th>
+							  	<th>Keperluan</th>
+							  	<th>ttd</th>
+							  	<?php elseif ($kat == 9) : ?>
+							  	<th>No.Urut</th>
+							  	<th>Hari/ Tanggal</th>
+							  	<th>Nama Lembaga </th>
+							  	<th>Aspirasi yang disampaikan</th>
+							  	<th>Tindak Lanjut</th>
+							  	<?php elseif ($kat == 10) : ?>
+							  	<th>No.Urut</th>
+							  	<th>Nama Lengkap</th>
+							  	<th>NIP</th>
+							  	<th>Jenis Kelamin </th>
+							  	<th>Tempat & Tanggal Lahir</th>
+							  	<th>Agama</th>
+							  	<th>Jabatan</th>
+							  	<th>Pendidikan Terakhir</th>
+							  	<th>Tanggal Keputusan Pengangkatan</th>
+							  	<th>Tanggal Keputusan Pemberhentian </th>
+							  	<th>Keterangan</th>
+							  	<?php elseif ($kat == 11) : ?>
+							  	<th>No.Urut</th>
+							  	<th>Hari/tanggal</th>
+							  	<th>Nama Lembaga</th>
+							  	<th>Aspirasi yang disampaikan </th>
+							  	<th>Tindak Lanjut</th>
+							  	<?php elseif ($kat == 12) : ?>
+							  	<th>No.Urut</th>
+							  	<th>Tanggal</th>
+							  	<th>Jenis Kegiatan</th>
+							  	<th>Pelaksanaan</th>
+							  	<th>Hasil Kegiatan</th>
+							  	<th>Keterangan</th>
+							  	<?php elseif ($kat == 13) : ?>
+							  	<th>No.Urut</th>
+							  	<th>Hari/tanggal</th>
+							  	<th>Nama Lembaga</th>
+							  	<th>Aspirasi yang disampaikan</th>
+							  	<th>Tindak Lanjut</th>
+							  	<?php elseif ($kat == 14) : ?>
+							  	<th>No.Urut</th>
+							  	<th>No Peraturan BPD</th>
+							  	<th>Tanggal Peraturan BPD</th>
+							  	<th>Hasil Keputusan BPD</th>
+							  	<th>Tentang</th>
+							  	<th>Uraian Singkat</th>
+							  	<th>Keterangan</th>
+							  	<?php elseif ($kat == 15) : ?>
+							  	<th>No.Urut</th>
+							  	<th>Nama Perorangan/Badan Hukum</th>
+							  	<th>Jumlah M2</th>
+							  	<th>Status Hak Tanah</th>
+							  	<th>Sudah Bertifikat</th>
+							  	<th>Pengguna Tanah (M2)</th>
+							  	<th>Non Pertanian</th>
+							  	<th>Pertanian</th>
+							  	<th>Lain-lain</th>
+							  	<th>Keterangan</th>
+							  	<?php elseif ($kat == 16) : ?>
+							  	<th>No.Urut</th>
+							  	<th>Jenis/Nama hasil pembangunan</th>
+							  	<th>Volume</th>
+							  	<th>Biaya</th>
+							  	<th>Lokasi</th>
+							  	<th>Keterangan</th>
+							  	<?php elseif ($kat == 17) : ?>
+							  	<th>No.Urut</th>
+							  	<th>Nama</th>
+							  	<th>Umur</th>
+							  	<th>Jenis Kelamin</th>
+							  	<th>Pendidikan</th>
+							  	<th>Bidang</th>
+							  	<th>Alamat</th>
+							  	<th>Keterangan</th>
+							  	<?php elseif ($kat == 18) : ?>
+							  	<th>No.Urut</th>
+							  	<th>No. Keputusan Kepala Desa</th>
+							  	<th>Tanggal Keputusan Kepala Desa</th>
+							  	<th>Tentang</th>
+							  	<th>Uraian Singkat</th>
+							  	<th>No. Dilaporkan</th>
+							  	<th>Tanggal Dilaporkan</th>
+							  	<th>Keterangan</th>
+							  	<?php elseif ($kat == 19) : ?>
+							  	<th>No.Urut</th>
+							  	<th>Tentang</th>
+							  	<th>Pokok keputusan musyawarah</th>
+							  	<th>Keterangan</th>
+							  	<?php elseif ($kat == 20) : ?>
+							  	<th>No.Urut</th>
+							  	<th>Tanggal</th>
+							  	<th>Pokok Usulan Kegiatan</th>
+							  	<th>Keterangan</th>
+							  	<?php elseif ($kat == 21) : ?>
+							  	<th>No.Urut</th>
+							  	<th>Tanggal</th>
+							  	<th>Uraian</th>
+							  	<th>Penerimaan Rp</th>
+							  	<th>Pengeluaran Rp</th>
+							  	<?php elseif ($kat == 22) : ?>
+							  	<th>No.Urut</th>
+							  	<th>Jenis Peraturan Desa</th>
+							  	<th>No. Peraturan Desa</th>
+							  	<th>Tanggal Ditetapkan Peraturan Desa</th>
+							  	<th>Tentang</th>
+							  	<th>Tgl Dilaporkan</th>
+							  	<th>No. Diundangkan Dalam Lembaran Desa</th>
+							  	<th>No. Diundangkan Dalam Berita Desa</th>
+							  	<th>keterangan</th>								
 							  <?php endif; ?>
 
 								<?php  if($o==1): ?>
@@ -183,9 +331,55 @@
 								  <?php if ($kat == 2) : ?>
 								  	<td><?php echo $data['attr']['no_kep_kades']." / ".$data['attr']['tgl_kep_kades']?></td>
 								  	<td><?php echo $data['attr']['uraian']?></td>
-								  <?php elseif ($kat == 3) : ?>
-								  	<td><?php echo $data['attr']['no_ditetapkan']." / ".$data['attr']['tgl_ditetapkan']?></td>
-								  	<td><?php echo $data['attr']['uraian']?></td>
+								<?php if($kat == 2): ?> <!-- kondisi jika kategori nya dokumen inventaris !-->
+								  	<td align="center"><?php echo $data['nourut']; ?></td>
+								  	<td align="center"><?php echo $data['jenis_barang_at_bangunan']; ?></td>
+								  	<td align="center"><?php echo $data['asal_barang_bangunan']; ?></td>
+								  	<td align="center"><?php echo $data['keadaanbarang']; ?></td>
+								  	<td align="center"><?php echo $data['penghapusanbarang']; ?></td>
+								  	<td align="center"><?php echo $data['tanggal_penghapusan']; ?></td>
+								  	<td align="center"><?php echo $data['keterangan'];?></td>
+								  	<td align="center"><?php if($data['is_approve'] == 0) { echo 'Waiting Approval'; }else if($data['is_approve'] == 1) { echo 'approved'; }else{ echo 'Rejected'; } ?></td>
+								  <?php endif; ?>
+								  <?php elseif ($kat == 3) : ?><!-- kondisi jika kategori nya dokumen peraturan desa !-->	
+ 								  	<td align="center"><?php echo $data['uraian']; ?></td>
+								  	<td align="center"><?php echo $data['nomber_tanggalperaturandesa']; ?></td>
+								  	<td align="center"><?php echo $data['tentang']; ?></td>
+								  	<td align="center"><?php echo $data['uraiansingkat']; ?></td>
+								  	<td align="center"><?php echo $data['nomor_tanggalkesepakatan']; ?></td>
+								  	<td align="center"><?php echo $data['keterangan']; ?></td>
+								  	<td align="center"><?php if($data['is_approve'] == 0) { echo 'Waiting Approval'; }else if($data['is_approve'] == 1) { echo 'approved'; }else{ echo 'Rejected'; } ?></td>
+								  <?php endif; ?>
+								  <?php if($kat == 4): ?> <!-- kondisi jika kategori nya dokumen aparat !-->
+								  <td align="center"><?php echo $data['nourut']; ?></td>
+								  	<td align="center"><?php echo $data['nama_lengkap']; ?></td>
+								  	<td align="center"><?php echo $data['nomor_induk_apr_pem_desa']; ?></td>
+								  	<td align="center"><?php echo $data['nomor_induk_pegawai']; ?></td>
+								  	<td align="center"><?php echo $data['jenis_kelamin']; ?></td>
+								  	<td align="center"><?php echo $data['tempat_n_tanggal_lahir']; ?></td>
+								  	<td align="center"><?php echo $data['agama'];?></td>
+								  	<td align="center"><?php echo $data['Pangkat_golongan']; ?></td>
+								  	<td align="center"><?php echo $data['jabatan']; ?></td>								  	
+								  	<td align="center"><?php echo $data['Pendidikan_terakhir']; ?></td>
+								  	<td align="center"><?php echo $data['no_n_tanggal_keputusan_pengangkatan']; ?></td>
+								  	<td align="center"><?php echo $data['no_n_tanggal_keputusan_pemberhentian']; ?></td>
+								  	<td align="center"><?php echo $data['keterangan']; ?></td>
+								  	<td align="center"><?php if($data['is_approve'] == 0) { echo 'Waiting Approval'; }else if($data['is_approve'] == 1) { echo 'approved'; }else{ echo 'Rejected'; } ?></td>
+								  <?php endif; ?>
+								   <?php if($kat == 5): ?> <!-- kondisi jika kategori nya dokumen aparat !-->
+								  <td align="center"><?php echo $data['uraian']; ?></td>
+								  	<td align="center"><?php echo $data['tanggal_penerima_surat']; ?></td>
+								  	<td align="center"><?php echo $data['no_masuk']; ?></td>
+								  	<td align="center"><?php echo $data['tgl_masuk']; ?></td>
+								  	<td align="center"><?php echo $data['pengiriman']; ?></td>
+								  	<td align="center"><?php echo $data['isi_surat_masuk']; ?></td>
+								  	<td align="center"><?php echo $data['surat_keluar'];?></td>
+								  	<td align="center"><?php echo $data['no_surat_keluar']; ?></td>
+								  	<td align="center"><?php echo $data['tgl_surat_keluar']; ?></td>						
+								  	<td align="center"><?php echo $data['di_tujukan_kepada']; ?></td>
+								  	<td align="center"><?php echo $data['isi_surat_keluar']; ?></td>
+								  	<td align="center"><?php echo $data['keterangan']; ?></td>
+								  	<td align="center"><?php if($data['is_approve'] == 0) { echo 'Waiting Approval'; }else if($data['is_approve'] == 1) { echo 'approved'; }else{ echo 'Rejected'; } ?></td>
 								  <?php endif; ?>
 								  <?php if($kat == 6): ?> <!-- kondisi jika kategori nya dokumen ekspedisi !-->
 								  	<td align="center"><?php echo $data['no_urut']; ?></td>
@@ -194,6 +388,161 @@
 								  	<td align="center"><?php echo $data['isi_surat']; ?></td>
 								  	<td align="center"><?php echo $data['ditujukan_kepada']; ?></td>
 								  	<td align="center"><?php echo $data['keterangan']; ?></td>
+								  	<td align="center"><?php if($data['is_approve'] == 0) { echo 'Waiting Approval'; }else if($data['is_approve'] == 1) { echo 'approved'; }else{ echo 'Rejected'; } ?></td>
+								  <?php endif; ?>
+								  <?php if($kat == 7): ?> <!-- kondisi jika kategori nya dokumen lembaran berita desa !-->
+								  	<td align="center"><?php echo $data['uraian']; ?></td>
+								  	<td align="center"><?php echo $data['jenis_peraturan_desa'];?></td>
+								  	<td align="center"><?php echo $data['no_ditetapkan_n_tgl_ditetapkan'];?></td>
+								  	<td align="center"><?php echo $data['tentang']; ?></td>
+								  	<td align="center"><?php echo $data['tgl_berita_desa'];?></td>
+								  	<td align="center"><?php echo $data['no_berita_desa']; ?></td>
+								  	<td align="center"><?php echo $data['keterangan']; ?></td>
+								  	<td align="center"><?php if($data['is_approve'] == 0) { echo 'Waiting Approval'; }else if($data['is_approve'] == 1) { echo 'approved'; }else{ echo 'Rejected'; } ?></td>
+								  <?php endif; ?>
+								  <?php if($kat == 8): ?> <!-- kondisi jika kategori nya dokumen bukutamubpd !-->
+								  	<td align="center"><?php echo $data['uraian']; ?></td>
+								  	<td align="center"><?php echo $data['tanggal'];?></td>
+								  	<td align="center"><?php echo $data['namalengkap'];?></td>
+								  	<td align="center"><?php echo $data['jabatan']; ?></td>
+								  	<td align="center"><?php echo $data['alamat'];?></td>
+								  	<td align="center"><?php echo $data['keperluan']; ?></td>
+								  	<td align="center"><?php echo $data['ttd']; ?></td>
+								  	<td align="center"><?php if($data['is_approve'] == 0) { echo 'Waiting Approval'; }else if($data['is_approve'] == 1) { echo 'approved'; }else{ echo 'Rejected'; } ?></td>
+								  <?php endif; ?>
+								  <?php if($kat == 9): ?> <!-- kondisi jika kategori nya dokumen bukutamubpd !-->
+								  	<td align="center"><?php echo $data['uraian']; ?></td>
+								  	<td align="center"><?php echo $data['hari'];?></td>
+								  	<td align="center"><?php echo $data['namalembaga'];?></td>
+								  	<td align="center"><?php echo $data['aspirasiyangdisampaikan']; ?></td>
+								  	<td align="center"><?php echo $data['tindaklanjut'];?></td>
+								  	<td align="center"><?php if($data['is_approve'] == 0) { echo 'Waiting Approval'; }else if($data['is_approve'] == 1) { echo 'approved'; }else{ echo 'Rejected'; } ?></td>
+								  <?php endif; ?>
+								  <?php if($kat == 10): ?> <!-- kondisi jika kategori nya dokumen bukutamubpd !-->
+								  	<td align="center"><?php echo $data['uraian']; ?></td>
+								  	<td align="center"><?php echo $data['namalengkap'];?></td>
+								  	<td align="center"><?php echo $data['nip'];?></td>
+								  	<td align="center"><?php echo $data['jeniskelamin']; ?></td>
+								  	<td align="center"><?php echo $data['tempattanggallahir'];?></td>
+								  	<td align="center"><?php echo $data['agama']; ?></td>
+								  	<td align="center"><?php echo $data['jabatan'];?></td>
+								  	<td align="center"><?php echo $data['pendidikanterakhir'];?></td>
+								  	<td align="center"><?php echo $data['tanggalkeputusanpengangkatan']; ?></td>
+								  	<td align="center"><?php echo $data['tanggalkeputusanpemberhentian'];?></td>
+								  	<td align="center"><?php echo $data['keterangan']; ?></td>
+								  	<td align="center"><?php if($data['is_approve'] == 0) { echo 'Waiting Approval'; }else if($data['is_approve'] == 1) { echo 'approved'; }else{ echo 'Rejected'; } ?></td>
+								  <?php endif; ?>
+								   <?php if($kat == 11): ?> <!-- kondisi jika kategori nya dokumen bukutamubpd !-->
+								  	<td align="center"><?php echo $data['uraian']; ?></td>
+								  	<td align="center"><?php echo $data['hari'];?></td>
+								  	<td align="center"><?php echo $data['namalembaga'];?></td>
+								  	<td align="center"><?php echo $data['aspirasiyangdisampaikan']; ?></td>
+								  	<td align="center"><?php echo $data['tindaklanjut'];?></td>
+								  	<td align="center"><?php if($data['is_approve'] == 0) { echo 'Waiting Approval'; }else if($data['is_approve'] == 1) { echo 'approved'; }else{ echo 'Rejected'; } ?></td>
+								  <?php endif; ?>
+								  <?php if($kat == 12): ?> <!-- kondisi jika kategori nya dokumen bukutamubpd !-->
+								  	<td align="center"><?php echo $data['uraian']; ?></td>
+								  	<td align="center"><?php echo $data['tanggal'];?></td>
+								  	<td align="center"><?php echo $data['jeniskegiatan'];?></td>
+								  	<td align="center"><?php echo $data['pelaksanaan']; ?></td>
+								  	<td align="center"><?php echo $data['hasilkegiatan'];?></td>
+								  	<td align="center"><?php echo $data['keterangan'];?></td>							  	
+								  	<td align="center"><?php if($data['is_approve'] == 0) { echo 'Waiting Approval'; }else if($data['is_approve'] == 1) { echo 'approved'; }else{ echo 'Rejected'; } ?></td>
+								  <?php endif; ?>
+								  <?php if($kat == 13): ?> <!-- kondisi jika kategori nya dokumen data notulen rapat bpd !-->
+								  	<td align="center"><?php echo $data['uraian']; ?></td>
+								  	<td align="center"><?php echo $data['hari'];?></td>
+								  	<td align="center"><?php echo $data['namalembaga'];?></td>
+								  	<td align="center"><?php echo $data['aspirasiyangdisampaikan']; ?></td>
+								  	<td align="center"><?php echo $data['tindaklanjut'];?></td>						  	
+								  	<td align="center"><?php if($data['is_approve'] == 0) { echo 'Waiting Approval'; }else if($data['is_approve'] == 1) { echo 'approved'; }else{ echo 'Rejected'; } ?></td>
+								  <?php endif; ?>
+								  <?php if($kat == 14): ?> <!-- kondisi jika kategori nya dokumen data notulen rapat bpd !-->
+								  	<td align="center"><?php echo $data['No_Urut']; ?></td>
+								  	<td align="center"><?php echo $data['noperaturan_bpd'];?></td>
+								  	<td align="center"><?php echo $data['tanggalperatutan_bpd'];?></td>
+								  	<td align="center"><?php echo $data['hasilkeputusan_bpd']; ?></td>
+								  	<td align="center"><?php echo $data['tentang'];?></td>	
+								  	<td align="center"><?php echo $data['uraiansingkat'];?></td>
+								  	<td align="center"><?php echo $data['keterangan']; ?></td>						  	
+								  	<td align="center"><?php if($data['is_approve'] == 0) { echo 'Waiting Approval'; }else if($data['is_approve'] == 1) { echo 'approved'; }else{ echo 'Rejected'; } ?></td>
+								  <?php endif; ?>
+								  <?php if($kat == 15): ?> <!-- kondisi jika kategori nya dokumen data tanah didesa !-->
+								  	<td align="center"><?php echo $data['no_urut']; ?></td>
+								  	<td align="center"><?php echo $data['namaperorangan_badanhukum'];?></td>
+								  	<td align="center"><?php echo $data['jumlahm2'];?></td>
+								  	<td align="center"><?php echo $data['statushaktanah']; ?></td>
+								  	<td align="center"><?php echo $data['sudah_bertifikat_opt'];?></td>	
+								  	<td align="center"><?php echo $data['penggunatanahm2'];?></td>
+								  	<td align="center"><?php echo $data['non_pertanian_opt']; ?></td>	
+								  	<td align="center"><?php echo $data['pertanian_opt'];?></td>
+								  	<td align="center"><?php echo $data['lainlain']; ?></td>	
+								  	<td align="center"><?php echo $data['keterangan']; ?></td>						  	
+								  	<td align="center"><?php if($data['is_approve'] == 0) { echo 'Waiting Approval'; }else if($data['is_approve'] == 1) { echo 'approved'; }else{ echo 'Rejected'; } ?></td>
+								  <?php endif; ?>
+								  <?php if($kat == 16): ?> <!-- kondisi jika kategori nya dokumen inventaris hasil pembangunan !-->
+								  	<td align="center"><?php echo $data['no_urut']; ?></td>
+								  	<td align="center"><?php echo $data['nama_hasil_pembangunan'];?></td>
+								  	<td align="center"><?php echo $data['volume'];?></td>
+								  	<td align="center"><?php echo $data['biaya']; ?></td>
+								  	<td align="center"><?php echo $data['lokasi'];?></td>	
+								  	<td align="center"><?php echo $data['keterangan'];?></td>				  	
+								  	<td align="center"><?php if($data['is_approve'] == 0) { echo 'Waiting Approval'; }else if($data['is_approve'] == 1) { echo 'approved'; }else{ echo 'Rejected'; } ?></td>
+								  <?php endif; ?>
+								  <?php if($kat == 17): ?> <!-- kondisi jika kategori nya dokumen kader pemberdayaan masyarakat !-->
+								  	<td align="center"><?php echo $data['no_urut']; ?></td>
+								  	<td align="center"><?php echo $data['nama_lengkap'];?></td>
+								  	<td align="center"><?php echo $data['umur'];?></td>
+								  	<td align="center"><?php echo $data['jenis_kelamin']; ?></td>
+								  	<td align="center"><?php echo $data['pendidikan'];?></td>	
+								  	<td align="center"><?php echo $data['bidang'];?></td>	
+								  	<td align="center"><?php echo $data['alamat'];?></td>	
+								  	<td align="center"><?php echo $data['keterangan'];?></td>				  	
+								  	<td align="center"><?php if($data['is_approve'] == 0) { echo 'Waiting Approval'; }else if($data['is_approve'] == 1) { echo 'approved'; }else{ echo 'Rejected'; } ?></td>
+								  <?php endif; ?>
+								  <?php if($kat == 18): ?> <!-- kondisi jika kategori nya dokumen keputusan kepala desa !-->
+								  	<td align="center"><?php echo $data['no_urut']; ?></td>
+								  	<td align="center"><?php echo $data['nokeputusankepaladesa'];?></td>
+								  	<td align="center"><?php echo $data['tanggalkeputusankepaladesa'];?></td>
+								  	<td align="center"><?php echo $data['tentang']; ?></td>
+								  	<td align="center"><?php echo $data['uraiansingkat'];?></td>	
+								  	<td align="center"><?php echo $data['nodilaporkan'];?></td>	
+								  	<td align="center"><?php echo $data['tanggaldilaporkan'];?></td>	
+								  	<td align="center"><?php echo $data['keterangan'];?></td>				  	
+								  	<td align="center"><?php if($data['is_approve'] == 0) { echo 'Waiting Approval'; }else if($data['is_approve'] == 1) { echo 'approved'; }else{ echo 'Rejected'; } ?></td>
+								  <?php endif; ?>
+								  <?php if($kat == 19): ?> <!-- kondisi jika kategori nya dokumen keputusan kepala desa !-->
+								  	<td align="center"><?php echo $data['no_urut']; ?></td>
+								  	<td align="center"><?php echo $data['tentang'];?></td>
+								  	<td align="center"><?php echo $data['pokokkeputusanmusyawarah'];?></td>
+								  	<td align="center"><?php echo $data['keterangan']; ?></td>			  	
+								  	<td align="center"><?php if($data['is_approve'] == 0) { echo 'Waiting Approval'; }else if($data['is_approve'] == 1) { echo 'approved'; }else{ echo 'Rejected'; } ?></td>
+								  <?php endif; ?>
+								  <?php if($kat == 20): ?> <!-- kondisi jika kategori nya dokumen keputusan kepala desa !-->
+								  	<td align="center"><?php echo $data['No_Urut']; ?></td>
+								  	<td align="center"><?php echo $data['hari_tanggal'];?></td>
+								  	<td align="center"><?php echo $data['pokokusulankegiatan'];?></td>
+								  	<td align="center"><?php echo $data['keterangan']; ?></td>			  	
+								  	<td align="center"><?php if($data['is_approve'] == 0) { echo 'Waiting Approval'; }else if($data['is_approve'] == 1) { echo 'approved'; }else{ echo 'Rejected'; } ?></td>
+								  <?php endif; ?>
+								  <?php if($kat == 21): ?> <!-- kondisi jika kategori nya dokumen keputusan kepala desa !-->
+								  	<td align="center"><?php echo $data['no_urut']; ?></td>
+								  	<td align="center"><?php echo $data['tanggal']; ?></td>
+								  	<td align="center"><?php echo $data['uraian'];?></td>
+								  	<td align="center"><?php echo $data['penerimaan'];?></td>
+								  	<td align="center"><?php echo $data['pengeluaran']; ?></td>			  	
+								  	<td align="center"><?php if($data['is_approve'] == 0) { echo 'Waiting Approval'; }else if($data['is_approve'] == 1) { echo 'approved'; }else{ echo 'Rejected'; } ?></td>
+								  <?php endif; ?>
+								  <?php if($kat == 22): ?> <!-- kondisi jika kategori nya dokumen keputusan kepala desa !-->
+								  	<td align="center"><?php echo $data['no_urut']; ?></td>
+								  	<td align="center"><?php echo $data['jenisperaturandesa']; ?></td>
+								  	<td align="center"><?php echo $data['noperaturandesa'];?></td>
+								  	<td align="center"><?php echo $data['tanggalditetapkanperaturandesa'];?></td>
+								  	<td align="center"><?php echo $data['tentang']; ?></td>			
+								  	<td align="center"><?php echo $data['tgl_lapor'];?></td>
+								  	<td align="center"><?php echo $data['nodiundangkandalamlembarandesa'];?></td>
+								  	<td align="center"><?php echo $data['nodiundangkandalamberitadesa']; ?></td>	
+								  	<td align="center"><?php echo $data['keterangan']; ?></td>		  	
 								  	<td align="center"><?php if($data['is_approve'] == 0) { echo 'Waiting Approval'; }else if($data['is_approve'] == 1) { echo 'approved'; }else{ echo 'Rejected'; } ?></td>
 								  <?php endif; ?>
 								  <?php if ($kat == 1) : ?>

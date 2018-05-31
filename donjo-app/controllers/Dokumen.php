@@ -144,6 +144,26 @@ class Dokumen extends CI_Controller{
 	function approve(){
 		$id = $this->input->post("id");
 		$this->web_dokumen_model->approve_ekspedisi($id,1);
+		$this->web_dokumen_model->approve_aparat($id,1);
+		$this->web_dokumen_model->approve_inventaris($id,1);
+		$this->web_dokumen_model->approve_peraturan_desa($id,1);
+		$this->web_dokumen_model->approve_agenda($id,1);
+		$this->web_dokumen_model->approve_lembaranberitadesa($id,1);
+		$this->web_dokumen_model->approve_bukutamubpd($id,1);
+		$this->web_dokumen_model->approve_daftarhadirrapatbpd($id,1);
+		$this->web_dokumen_model->approve_daftaranggotabpd($id,1);
+		$this->web_dokumen_model->approve_dataaspirasimasyarakat($id,1);
+		$this->web_dokumen_model->approve_datakegiatanbpd($id,1);
+		$this->web_dokumen_model->approve_datanotulenrapatbpd($id,1);
+		$this->web_dokumen_model->approve_dataperatuankeputusanbpd($id,1);
+		$this->web_dokumen_model->approve_datatanahdidesa($id,1);
+		$this->web_dokumen_model->approve_inventarishasilpembangunan($id,1);
+		$this->web_dokumen_model->approve_kaderpemberdayaanmasyarakat($id,1);
+		$this->web_dokumen_model->approve_Keputusankepaladesa($id,1);
+		$this->web_dokumen_model->approve_Keputusanmusyawarahdesa($id,1);
+		$this->web_dokumen_model->approve_Keputusanmusyawarahperencanaanpembangunandesa($id,1);
+		$this->web_dokumen_model->approve_Laporankeuanganbpd($id,1);
+		$this->web_dokumen_model->approve_Peraturandidesa($id,1);
 		redirect("dokumen/index/$kat/$p/$o");
 	}
 
@@ -151,6 +171,26 @@ class Dokumen extends CI_Controller{
 	function reject(){
 		$id = $this->input->post("id");
 		$this->web_dokumen_model->reject_ekspedisi($id,1);
+		$this->web_dokumen_model->reject_aparat($id,1);
+		$this->web_dokumen_model->reject_inventaris($id,1);
+		$this->web_dokumen_model->reject_peraturan_desa($id,1);
+		$this->web_dokumen_model->reject_agenda($id,1);
+		$this->web_dokumen_model->reject_lembaranberitadesa($id,1);
+		$this->web_dokumen_model->reject_bukutamubpd($id,1);
+		$this->web_dokumen_model->reject_daftarhadirrapatbpd($id,1);
+		$this->web_dokumen_model->reject_daftaranggotabpd($id,1);
+		$this->web_dokumen_model->reject_dataaspirasimasyarakat($id,1);
+		$this->web_dokumen_model->reject_datakegiatanbpd($id,1);
+		$this->web_dokumen_model->reject_datanotulenrapatbpd($id,1);
+		$this->web_dokumen_model->reject_dataperatuankeputusanbpd($id,1);
+		$this->web_dokumen_model->reject_datatanahdidesa($id,1);
+		$this->web_dokumen_model->reject_inventarishasilpembangunan($id,1);
+		$this->web_dokumen_model->reject_kaderpemberdayaanmasyarakat($id,1);
+		$this->web_dokumen_model->reject_Keputusankepaladesa($id,1);
+		$this->web_dokumen_model->reject_Keputusanmusyawarahdesa($id,1);
+		$this->web_dokumen_model->reject_Keputusanmusyawarahperencanaanpembangunandesa($id,1);
+		$this->web_dokumen_model->reject_Laporankeuanganbpd($id,1);
+		$this->web_dokumen_model->reject_Peraturandidesa($id,1);
 		redirect("dokumen/index/$kat/$p/$o");
 	}
 

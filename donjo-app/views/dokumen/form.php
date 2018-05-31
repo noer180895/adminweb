@@ -42,13 +42,48 @@
               if($kat == 1)
                 include ("donjo-app/views/dokumen/_sk_kades.php");
               elseif($kat == 2)
-                include("donjo-app/views/dokumen/formInventaris.php");
+                include("donjo-app/views/dokumen/_formInventaris.php");
               elseif($kat == 3)
                 include ("donjo-app/views/dokumen/_perdes.php");
               elseif($kat == 4)
                 include ("donjo-app/views/dokumen/formAparatpemerintahanDesa.php");
+				elseif($kat == 5)
+                include ("donjo-app/views/dokumen/_formagenda.php");
               elseif($kat == 6)
                 include ("donjo-app/views/dokumen/_formEkspedisi.php");
+				elseif($kat == 7)
+                include ("donjo-app/views/dokumen/_formlembaranBeritaDesa.php");
+              elseif($kat == 8)
+                include ("donjo-app/views/dokumen/_formBukutamubpd.php");
+              elseif($kat == 9)
+                include ("donjo-app/views/dokumen/_formDaftarhadirrapat_bpd.php");
+              elseif($kat == 10)
+                include ("donjo-app/views/dokumen/_formDataanggotabpd.php");
+              elseif($kat == 11)
+                include ("donjo-app/views/dokumen/_formDataaspirasimasyarakat.php");
+              elseif($kat == 12)
+                include ("donjo-app/views/dokumen/_formDatakegiatanbpd.php");
+              elseif($kat == 13)
+                include ("donjo-app/views/dokumen/_formDatanotulenrapat_bpd.php");
+              elseif($kat == 14)
+                include ("donjo-app/views/dokumen/_formDataperaturankeputusan_BPD.php");
+              elseif($kat == 15)
+                include ("donjo-app/views/dokumen/_formDatatanahdidesa.php");
+              elseif($kat == 16)
+                include ("donjo-app/views/dokumen/_formInventarishasilpembangunan.php");
+              elseif($kat == 17)
+                include ("donjo-app/views/dokumen/_formKaderpemberdayaanmasyarakat.php");
+              elseif($kat == 18)
+                include ("donjo-app/views/dokumen/_formKeputusankepaladesa.php");
+              elseif($kat == 19)
+                include ("donjo-app/views/dokumen/_formKeputusanmusyawarahdesa.php");
+              elseif($kat == 20)
+                include ("donjo-app/views/dokumen/_formKeputusanmusyawarahperencanaanpembangunandesa.php");
+              elseif($kat == 21)
+                include ("donjo-app/views/dokumen/_formLaporankeuanganBPD.php");
+              elseif($kat == 22)
+                include ("donjo-app/views/dokumen/_formperaturandidesa.php");
+				
               
             ?>
         </table>

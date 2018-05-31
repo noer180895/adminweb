@@ -192,6 +192,86 @@ class Web_dokumen_model extends CI_Model{
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_ekspedisi',$data);
 			} else return false;
+		}elseif($kat == "4"){
+			$sql = " FROM dokumen_aparatpemerintahandesa where kategori = 4";
+			// $sql .= $this->search_sql($kat);
+			$sql .= $this->filter_sql($kat);
+		}elseif($kat == "2"){
+			$sql = " FROM dokumen_inventaris where kategori = 2";
+			// $sql .= $this->search_sql($kat);
+			$sql .= $this->filter_sql($kat);
+		}elseif($kat == "3"){
+			$sql = " FROM dokumen_peraturandesa where kategori = 3";
+			// $sql .= $this->search_sql($kat);
+			$sql .= $this->filter_sql($kat);
+		}elseif($kat == "5"){
+			$sql = " FROM dokumen_agenda where kategori = 5";
+			// $sql .= $this->search_sql($kat);
+			$sql .= $this->filter_sql($kat);
+		}elseif($kat == "7"){
+			$sql = " FROM dokumen_lembaranberitadesa where kategori = 7";
+			// $sql .= $this->search_sql($kat);
+			$sql .= $this->filter_sql($kat);
+		}elseif($kat == "8"){
+			$sql = " FROM dokumen_bukutamubpd where kategori = 8";
+			// $sql .= $this->search_sql($kat);
+			$sql .= $this->filter_sql($kat);
+		}elseif($kat == "9"){
+			$sql = " FROM dokumen_daftarhadirrapatbpd where kategori = 9";
+			// $sql .= $this->search_sql($kat);
+			$sql .= $this->filter_sql($kat);
+		}elseif($kat == "10"){
+			$sql = " FROM dokumen_daftaranggotabpd where kategori = 10";
+			// $sql .= $this->search_sql($kat);
+			$sql .= $this->filter_sql($kat);
+		}elseif($kat == "11"){
+			$sql = " FROM dokumen_dataaspirasimasyarakat where kategori = 11";
+			// $sql .= $this->search_sql($kat);
+			$sql .= $this->filter_sql($kat);
+		}elseif($kat == "12"){
+			$sql = " FROM dokumen_datakegiatanbpd where kategori = 12";
+			// $sql .= $this->search_sql($kat);
+			$sql .= $this->filter_sql($kat);
+		}elseif($kat == "13"){
+			$sql = " FROM dokumen_datanotulenrapatbpd where kategori = 13"; 
+			// $sql .= $this->search_sql($kat);
+			$sql .= $this->filter_sql($kat);
+		}elseif($kat == "14"){
+			$sql = " FROM dokumen_dataperaturankeputusanbpd where kategori = 14"; 
+			// $sql .= $this->search_sql($kat);
+			$sql .= $this->filter_sql($kat);
+		}elseif($kat == "15"){
+			$sql = " FROM dokumen_datatanahdidesa where kategori = 15";
+			// $sql .= $this->search_sql($kat);
+			$sql .= $this->filter_sql($kat);
+		}elseif($kat == "16"){
+			$sql = " FROM dokumen_inventarishasilpembangunan where kategori = 16";  
+			// $sql .= $this->search_sql($kat);
+			$sql .= $this->filter_sql($kat);
+		}elseif($kat == "17"){
+			$sql = " FROM dokumen_kaderpemberdayaanmasyarakat where kategori = 17"; 
+			// $sql .= $this->search_sql($kat);
+			$sql .= $this->filter_sql($kat);
+		}elseif($kat == "18"){
+			$sql = " FROM dokumen_keputusankepaladesa where kategori = 18";
+			// $sql .= $this->search_sql($kat);
+			$sql .= $this->filter_sql($kat);
+		}elseif($kat == "19"){
+			$sql = " FROM dokumen_keputusanmusyawarahdesa where kategori = 19";
+			// $sql .= $this->search_sql($kat);
+			$sql .= $this->filter_sql($kat);
+		}elseif($kat == "20"){
+			$sql = " FROM dokumen_keputusanmusyawarahperencanaanpembangunandesa where kategori = 20";
+			// $sql .= $this->search_sql($kat);
+			$sql .= $this->filter_sql($kat);
+		}elseif($kat == "21"){
+			$sql = " FROM dokumen_laporankeuanganbpd where kategori = 21";
+			// $sql .= $this->search_sql($kat);
+			$sql .= $this->filter_sql($kat);
+		}elseif($kat == "22"){
+			$sql = " FROM dokumen_peraturandidesa where kategori = 22";
+			// $sql .= $this->search_sql($kat);
+			$sql .= $this->filter_sql($kat);
 		}else{
 			if ($this->upload_dokumen($data)) {
 				$data['attr'] = json_encode($data['attr']);
@@ -208,6 +288,161 @@ class Web_dokumen_model extends CI_Model{
 				unset($data['satuan']);
 			$data['attr'] = json_encode($data['attr']);
 			return $this->db->where('id',$id)->update('dokumen_ekspedisi',$data);
+		}elseif($kat == 4){
+			if ($this->upload_dokumen($data)) {
+				// $data['attr'] = json_encode($data['attr']);
+				$data['created_date'] =  date("Y-m-d h:i:s");
+				$data['updated_date']= date("Y-m-d h:i:s");
+				return $this->db->insert('dokumen_aparatpemerintahandesa',$data);
+			} else return false;
+		}elseif($kat == 2){
+			if ($this->upload_dokumen($data)) {
+				// $data['attr'] = json_encode($data['attr']);
+				$data['created_date'] =  date("Y-m-d h:i:s");
+				$data['updated_date']= date("Y-m-d h:i:s");
+				return $this->db->insert('dokumen_inventaris',$data);
+			} else return false;
+		}elseif($kat == 3){
+			if ($this->upload_dokumen($data)) {
+				// $data['attr'] = json_encode($data['attr']);
+				$data['created_date'] =  date("Y-m-d h:i:s");
+				$data['updated_date']= date("Y-m-d h:i:s");
+				return $this->db->insert('dokumen_peraturandesa',$data);
+			} else return false;
+		}elseif($kat == 5){
+			if ($this->upload_dokumen($data)) {
+				// $data['attr'] = json_encode($data['attr']);
+				$data['created_date'] =  date("Y-m-d h:i:s");
+				$data['updated_date']= date("Y-m-d h:i:s");
+				return $this->db->insert('dokumen_agenda',$data);
+			} else return false;
+		}elseif($kat == 7){
+			if ($this->upload_dokumen($data)) {
+				// $data['attr'] = json_encode($data['attr']);
+				$data['created_date'] =  date("Y-m-d h:i:s");
+				$data['updated_date']= date("Y-m-d h:i:s");
+				return $this->db->insert('dokumen_lembaranberitadesa',$data);
+			} else return false;			
+		}elseif($kat == 8){
+			if ($this->upload_dokumen($data)) {
+				// $data['attr'] = json_encode($data['attr']);
+				$data['created_date'] =  date("Y-m-d h:i:s");
+				$data['updated_date']= date("Y-m-d h:i:s");
+				return $this->db->insert('dokumen_bukutamubpd',$data);
+			} else return false;
+			
+		}elseif($kat == 9){
+			if ($this->upload_dokumen($data)) {
+				// $data['attr'] = json_encode($data['attr']);
+				$data['created_date'] =  date("Y-m-d h:i:s");
+				$data['updated_date']= date("Y-m-d h:i:s");
+				return $this->db->insert('dokumen_daftarhadirrapatbpd',$data);
+			} else return false;
+			
+		}elseif($kat == 10){
+			if ($this->upload_dokumen($data)) {
+				// $data['attr'] = json_encode($data['attr']);
+				$data['created_date'] =  date("Y-m-d h:i:s");
+				$data['updated_date']= date("Y-m-d h:i:s");
+				return $this->db->insert('dokumen_daftaranggotabpd',$data);
+			} else return false;
+			
+		}elseif($kat == 11){
+			if ($this->upload_dokumen($data)) {
+				// $data['attr'] = json_encode($data['attr']);
+				$data['created_date'] =  date("Y-m-d h:i:s");
+				$data['updated_date']= date("Y-m-d h:i:s");
+				return $this->db->insert('dokumen_dataaspirasimasyarakat',$data);
+			} else return false;
+			
+		}elseif($kat == 12){
+			if ($this->upload_dokumen($data)) {
+				// $data['attr'] = json_encode($data['attr']);
+				$data['created_date'] =  date("Y-m-d h:i:s");
+				$data['updated_date']= date("Y-m-d h:i:s");
+				return $this->db->insert('dokumen_datakegiatanbpd',$data);
+			} else return false;
+			
+		}elseif($kat == 13){
+			if ($this->upload_dokumen($data)) {
+				// $data['attr'] = json_encode($data['attr']);
+				$data['created_date'] =  date("Y-m-d h:i:s");
+				$data['updated_date']= date("Y-m-d h:i:s");
+				return $this->db->insert('dokumen_datanotulenrapatbpd',$data);
+			} else return false;
+			
+		}elseif($kat == 14){
+			if ($this->upload_dokumen($data)) {
+				// $data['attr'] = json_encode($data['attr']);
+				$data['created_date'] =  date("Y-m-d h:i:s");
+				$data['updated_date']= date("Y-m-d h:i:s");
+				return $this->db->insert('dokumen_dataperaturankeputusanbpd',$data);
+			} else return false;
+			
+		}elseif($kat == 15){
+			if ($this->upload_dokumen($data)) {
+				// $data['attr'] = json_encode($data['attr']);
+				$data['created_date'] =  date("Y-m-d h:i:s");
+				$data['updated_date']= date("Y-m-d h:i:s");
+				return $this->db->insert('dokumen_datatanahdidesa',$data);
+			} else return false;
+			
+		}elseif($kat == 16){
+			if ($this->upload_dokumen($data)) {
+				// $data['attr'] = json_encode($data['attr']);
+				$data['created_date'] =  date("Y-m-d h:i:s");
+				$data['updated_date']= date("Y-m-d h:i:s");
+				return $this->db->insert('dokumen_inventarishasilpembangunan',$data);
+			} else return false;
+			
+		}elseif($kat == 17){
+			if ($this->upload_dokumen($data)) {
+				// $data['attr'] = json_encode($data['attr']);
+				$data['created_date'] =  date("Y-m-d h:i:s");
+				$data['updated_date']= date("Y-m-d h:i:s");
+				return $this->db->insert('dokumen_kaderpemberdayaanmasyarakat',$data);
+			} else return false;
+			
+		}elseif($kat == 18){
+			if ($this->upload_dokumen($data)) {
+				// $data['attr'] = json_encode($data['attr']);
+				$data['created_date'] =  date("Y-m-d h:i:s");
+				$data['updated_date']= date("Y-m-d h:i:s");
+				return $this->db->insert('dokumen_keputusankepaladesa',$data);
+			} else return false;
+			
+		}elseif($kat == 19){
+			if ($this->upload_dokumen($data)) {
+				// $data['attr'] = json_encode($data['attr']);
+				$data['created_date'] =  date("Y-m-d h:i:s");
+				$data['updated_date']= date("Y-m-d h:i:s");
+				return $this->db->insert('dokumen_keputusanmusyawarahdesa',$data);
+			} else return false;
+			
+		}elseif($kat == 20){
+			if ($this->upload_dokumen($data)) {
+				// $data['attr'] = json_encode($data['attr']);
+				$data['created_date'] =  date("Y-m-d h:i:s");
+				$data['updated_date']= date("Y-m-d h:i:s");
+				return $this->db->insert('dokumen_keputusanmusyawarahperencanaanpembangunandesa',$data);
+			} else return false;
+			
+		}elseif($kat == 21){
+			if ($this->upload_dokumen($data)) {
+				// $data['attr'] = json_encode($data['attr']);
+				$data['created_date'] =  date("Y-m-d h:i:s");
+				$data['updated_date']= date("Y-m-d h:i:s");
+				return $this->db->insert('dokumen_laporankeuanganbpd',$data);
+			} else return false;
+			
+		}elseif($kat == 22){
+			if ($this->upload_dokumen($data)) {
+				// $data['attr'] = json_encode($data['attr']);
+				$data['created_date'] =  date("Y-m-d h:i:s");
+				$data['updated_date']= date("Y-m-d h:i:s");
+				return $this->db->insert('dokumen_peraturandidesa',$data);
+			} else return false;
+			
 		}else{
 			if (!$this->upload_dokumen($data, $data['old_file']))
 				unset($data['satuan']);
@@ -268,6 +503,375 @@ class Web_dokumen_model extends CI_Model{
 	// reject
 	function reject_ekspedisi($id=''){
 		$sql  = "UPDATE dokumen_ekspedisi SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(2,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+	
+	// approve aparat
+	function approve_aparat($id=''){
+		$sql  = "UPDATE dokumen_aparatpemerintahandesa SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(1,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+
+	// reject aparat
+	function reject_aparat($id=''){
+		$sql  = "UPDATE dokumen_aparatpemerintahandesa SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(2,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// approve inventaris
+	function approve_inventaris($id=''){
+		$sql  = "UPDATE dokumen_inventaris SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(1,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+
+	// reject inventaris
+	function reject_inventaris($id=''){
+		$sql  = "UPDATE dokumen_inventaris SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(2,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// approve peraturan desa
+	function approve_peraturan_desa($id=''){
+		$sql  = "UPDATE dokumen_peraturandesa SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(1,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+
+	// reject peraturan desa
+	function reject_peraturan_desa($id=''){
+		$sql  = "UPDATE dokumen_peraturandesa SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(2,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// approve agenda
+	function approve_agenda($id=''){
+		$sql  = "UPDATE dokumen_agenda SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(1,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+
+	// reject agenda
+	function reject_agenda($id=''){
+		$sql  = "UPDATE dokumen_agenda SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(2,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// approve lembaran berita desa
+	function approve_lembaranberitadesa($id=''){
+		$sql  = "UPDATE dokumen_lembaranberitadesa SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(1,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+
+	// reject lembaran berita desa
+	function reject_lembaranberitadesa($id=''){
+		$sql  = "UPDATE dokumen_lembaranberitadesa SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(2,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// approve bukutamubpd
+	function approve_bukutamubpd($id=''){
+		$sql  = "UPDATE dokumen_bukutamubpd SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(1,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+
+	// reject bukutamubpd
+	function reject_bukutamubpd($id=''){
+		$sql  = "UPDATE dokumen_bukutamubpd SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(2,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// approve daftar hadir rapat bpd
+	function approve_daftarhadirrapatbpd($id=''){
+		$sql  = "UPDATE dokumen_daftarhadirrapatbpd SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(1,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+
+	// reject  daftar hadir rapat bpd
+	function reject_daftarhadirrapatbpd($id=''){
+		$sql  = "UPDATE dokumen_daftarhadirrapatbpd SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(2,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// approve daftar anggota bpd
+	function approve_daftaranggotabpd($id=''){
+		$sql  = "UPDATE dokumen_daftaranggotabpd SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(1,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// reject daftar anggota bpd
+	function reject_daftaranggotabpd($id=''){
+		$sql  = "UPDATE dokumen_daftaranggotabpd SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(2,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+	// approve data aspirasi masyarakat
+	function approve_dataaspirasimasyarakat($id=''){
+		$sql  = "UPDATE dokumen_dataaspirasimasyarakat SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(1,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+
+	// reject data aspirasi masyarakat
+	function reject_dataaspirasimasyarakat($id=''){
+		$sql  = "UPDATE dokumen_dataaspirasimasyarakat SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(2,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// approve data kegiatan bpd
+	function approve_datakegiatanbpd($id=''){
+		$sql  = "UPDATE dokumen_datakegiatanbpd SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(1,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+
+	// reject data kegiatan bpd
+	function reject_datakegiatanbpd($id=''){
+		$sql  = "UPDATE dokumen_datakegiatanbpd SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(2,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+		// approve data notulen rapat bpd
+	function approve_datanotulenrapatbpd($id=''){
+		$sql  = "UPDATE dokumen_datanotulenrapatbpd SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(1,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+
+	// reject data kegiatan bpd
+	function reject_datanotulenrapatbpd($id=''){
+		$sql  = "UPDATE dokumen_datanotulenrapatbpd SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(2,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// approve data peraturan keputusan bpd
+	function approve_dataperatuankeputusanbpd($id=''){
+		$sql  = "UPDATE dokumen_dataperaturankeputusanbpd SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(1,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+
+	// reject data peraturan keputusan bpd
+	function reject_dataperatuankeputusanbpd($id=''){
+		$sql  = "UPDATE dokumen_dataperaturankeputusanbpd SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(2,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// approve data tanahdidesa
+	function approve_datatanahdidesa($id=''){
+		$sql  = "UPDATE dokumen_datatanahdidesa SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(1,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// reject data tanah didesa
+	function reject_datatanahdidesa($id=''){
+		$sql  = "UPDATE dokumen_datatanahdidesa SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(2,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// approve inventaris hasil pembangunan
+	function approve_inventarishasilpembangunan($id=''){
+		$sql  = "UPDATE dokumen_inventarishasilpembangunan SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(1,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// reject inventaris hasil pembangunan
+	function reject_inventarishasilpembangunan($id=''){
+		$sql  = "UPDATE dokumen_inventarishasilpembangunan SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(2,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// approve kader pemberdayaan masyarakat
+	function approve_kaderpemberdayaanmasyarakat($id=''){
+		$sql  = "UPDATE dokumen_kaderpemberdayaanmasyarakat SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(1,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// reject kader pemberdayaan masyarakat
+	function reject_kaderpemberdayaanmasyarakat($id=''){
+		$sql  = "UPDATE dokumen_kaderpemberdayaanmasyarakat SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(2,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+		// approve keputusan kepala desa
+	function approve_Keputusankepaladesa($id=''){
+		$sql  = "UPDATE dokumen_keputusankepaladesa SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(1,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// reject keputusan kepala desa
+	function reject_Keputusankepaladesa($id=''){
+		$sql  = "UPDATE dokumen_keputusankepaladesa SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(2,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// approve keputusan musyawarah desa
+	function approve_Keputusanmusyawarahdesa($id=''){
+		$sql  = "UPDATE dokumen_keputusanmusyawarahdesa SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(1,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// reject keputusan musyawarah desa
+	function reject_Keputusanmusyawarahdesa($id=''){
+		$sql  = "UPDATE dokumen_keputusanmusyawarahdesa SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(2,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// approve keputusan musyawarah  perencanaan pembangunan desa
+	function approve_Keputusanmusyawarahperencanaanpembangunandesa($id=''){
+		$sql  = "UPDATE dokumen_keputusanmusyawarahperencanaanpembangunandesa SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(1,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// reject keputusan musyawarah  perencanaan pembangunan desa
+	function reject_Keputusanmusyawarahperencanaanpembangunandesa($id=''){
+		$sql  = "UPDATE dokumen_keputusanmusyawarahperencanaanpembangunandesa SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(2,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// approve Laporan Keuangan BPD
+	function approve_Laporankeuanganbpd($id=''){
+		$sql  = "UPDATE dokumen_laporankeuanganbpd SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(1,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// reject Laporan Keuangan BPD
+	function reject_Laporankeuanganbpd($id=''){
+		$sql  = "UPDATE dokumen_laporankeuanganbpd SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(2,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// approve Peraturan di desa
+	function approve_Peraturandidesa($id=''){
+		$sql  = "UPDATE dokumen_peraturandidesa SET is_approve=? WHERE id=?";
+		$outp = $this->db->query($sql, array(1,$id));
+
+		if($outp) $_SESSION['success']=1;
+			else $_SESSION['success']=-1;
+	}
+
+	// reject Peraturan di desa
+	function reject_Peraturandidesa($id=''){
+		$sql  = "UPDATE dokumen_peraturandidesa SET is_approve=? WHERE id=?";
 		$outp = $this->db->query($sql, array(2,$id));
 
 		if($outp) $_SESSION['success']=1;
