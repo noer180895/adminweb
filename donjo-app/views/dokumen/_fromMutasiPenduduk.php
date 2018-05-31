@@ -49,95 +49,27 @@
 </tr>
 
 
-<div id="penambahanShow" style="display: none;">
-
-
-  <tr class="formEkspedisi">  
-    <th>Datang Dari</th>
-    <td><input name="datang_dari" id="datang_dari" type="text" class="formEkspedisi inputbox" size="30" value="<?php echo $dokumen['datang_dari']?>"/></td>
-  </tr>
-
-
-  <tr class="formEkspedisi">
-    <th>Tanggal</th>
-    <td><input name="tanggal" id="tanggal_datang" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['tanggal_datang']?>"/></td>
-  </tr>
-
-</div>
-
-
-
-<div id="penguranganShow" style="display: none;">
-
-
-  <tr class="formEkspedisi">  
-    <th>Pindah Ke</th>
-    <td><input name="pindah_ke" id="pindah_ke" type="text" class="formEkspedisi inputbox" size="30" value="<?php echo $dokumen['pindah_ke']?>"/></td>
-  </tr>
-
-
-  <tr class="formEkspedisi">
-    <th>Tanggal</th>
-    <td><input name="tanggal" id="tanggal_pindah" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['tanggal_pindah']?>"/></td>
-  </tr>
-
-
-   <tr class="formEkspedisi">  
-    <th>Pindah Ke</th>
-    <td><input name="pindah_ke" id="pindah_ke" type="text" class="formEkspedisi inputbox" size="30" value="<?php echo $dokumen['pindah_ke']?>"/></td>
-  </tr>
-
-</div>
-
-
-<tr class="formEkspedisi">  
-  <th>Pendidikan Terakhir</th>
-  <td><input name="pendidikan_terakhir" id="pendidikan_terakhir" type="text" class="formEkspedisi inputbox" size="30" value="<?php echo $dokumen['pendidikan_terakhir']?>"/></td>
-</tr>
-
-
-<tr class="formEkspedisi">  
-  <th>Pekerjaan</th>
-  <td><input name="pekerjaan" id="pekerjaan" type="text" class="formEkspedisi inputbox" size="30" value="<?php echo $dokumen['pekerjaan']?>"/></td>
-</tr>
-
-<tr class="formEkspedisi">  
-  <th>Dapat Membaca Huruf</th>
+<tr class="formEkspedisi">
+  <th>Alasan</th>
   <td>
-    <input type="checkbox" name="flag_baca" value="ya"> Bisa
-    <input type="checkbox" name="flag_baca" value="ya"> Tidak Bisa
+    <select name="alasan" id="alasan" class="formEkspedisi inputbox">
+      <option value="">-- Pilih Alasan --</option>  
+      <option value="datang dari">Datang Dari</option>
+      <option value="pindah ke">Pindah Ke</option>
+       <option value="meninggal">Meninggal</option>
+    </select>
   </td>
 </tr>
 
 
 
-
-<tr class="formEkspedisi">
-  <th>Alamat Lengkap</th>
-  <td>
-    <textarea name="alamat_lengkap" id="alamat_lengkap" rows="4" cols="50"><?php echo $dokumen['alamat_lengkap']?></textarea>
-</tr>
+  <tr class="formEkspedisi">
+    <th>Tanggal</th>
+    <td><input name="tanggal" id="tanggal" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['tanggal']?>"/></td>
+  </tr>
 
 
-<tr class="formEkspedisi">
-  <th>Kedudukan Dalam Keluarga</th>
-  <td>
-    ><input name="kedudukan" id="kedudukan" type="text" class="formEkspedisi inputbox" size="30" value="<?php echo $dokumen['kedudukan']?>"/>
-</tr>
 
-
-<tr class="formEkspedisi">
-  <th>Nomor Induk Kependudukan</th>
-  <td>
-    ><input name="nik" id="nik" type="text" class="formEkspedisi inputbox" size="30" value="<?php echo $dokumen['nik']?>"/>
-</tr>
-
-
-<tr class="formEkspedisi">
-  <th>Nomor Kartu Keluarga</th>
-  <td>
-    ><input name="nkk" id="nkk" type="text" class="formEkspedisi inputbox" size="30" value="<?php echo $dokumen['nkk']?>"/>
-</tr>
 
 <tr class="formEkspedisi">
   <th>Keterangan</th>
