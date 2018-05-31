@@ -833,18 +833,25 @@
 	function list_dusun($userData){
 		$ff= $this->db->select('id_grup,id_desa');
 		$ff = $this->db->from('user');
-		$ff =$this->db->where('id', $userData);
+		$ff =$this->db->where('id',$userData);
 		$ff = $this->db->get(); 
 		$data = $ff->row_array();
+		$lastquery = $this->db->last_query();
+
 		$intGroup = (int)$data['id_grup']; 
 		$intDesa = (int)$data['id_desa']; 
 
 		if($intGroup == 1){
+			// var_dump('is data');
+			// die();
 			$sql   = "SELECT * FROM tweb_wil_clusterdesa WHERE rt = '0' AND rw = '0' ";
 			$query = $this->db->query($sql);
 			$data=$query->result_array();
 			return $data;
 		}else{
+			// var_dump('is data 2');
+			// var_dump($intDesa);
+			// die();
 			$sql   = "SELECT * FROM tweb_wil_clusterdesa WHERE id_desa = '$intDesa' AND rt = '0' AND rw = '0' ";
 			$query = $this->db->query($sql);
 			$data=$query->result_array();

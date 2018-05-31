@@ -18,8 +18,6 @@
 </tr>
 
 <tr class="formEkspedisi">  
-  <th style="font-size: 14px;    text-align: right;">Asal Barang / Bangunan</th>
-  <tr class="spacer"></tr>
   <th>Nomor</th>
   <td><input name="nomor" id="nomor" type="text" class="formEkspedisi inputbox" size="30" value="<?php echo $dokumen['nomor']?>"/></td>
 </tr>

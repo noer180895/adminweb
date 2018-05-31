@@ -223,8 +223,8 @@ class Penduduk extends CI_Controller{
 		}
 
 		$header = $this->header_model->get_data();
-
-		$data['dusun'] = $this->penduduk_model->list_dusun();
+		$userData = (int)$_SESSION['user'];
+		$data['dusun'] = $this->penduduk_model->list_dusun($userData); // get by current login user desa
 		$data['rw']    = $this->penduduk_model->list_rw($data['dus_sel']);
 		$data['rt']    = $this->penduduk_model->list_rt($data['dus_sel'],$data['rw_sel']);
 		$data['agama'] = $this->penduduk_model->list_agama();

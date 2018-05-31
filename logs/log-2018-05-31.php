@@ -31,3 +31,9 @@ ERROR - 2018-05-31 03:41:12 --> Severity: Parsing Error --> syntax error, unexpe
 ERROR - 2018-05-31 03:43:38 --> Severity: Parsing Error --> syntax error, unexpected 'if' (T_IF) C:\xampp\htdocs\admindesa\donjo-app\views\export_document\ekspedisi.php 53
 ERROR - 2018-05-31 03:44:14 --> Severity: Parsing Error --> syntax error, unexpected 'if' (T_IF) C:\xampp\htdocs\admindesa\donjo-app\views\export_document\ekspedisi.php 53
 ERROR - 2018-05-31 03:44:15 --> Severity: Parsing Error --> syntax error, unexpected 'if' (T_IF) C:\xampp\htdocs\admindesa\donjo-app\views\export_document\ekspedisi.php 53
+ERROR - 2018-05-31 12:02:02 --> Severity: Error --> Call to a member function list_dusun() on null C:\xampp\htdocs\admindesa\donjo-app\controllers\Penduduk.php 227
+ERROR - 2018-05-31 12:02:04 --> Severity: Error --> Call to a member function list_dusun() on null C:\xampp\htdocs\admindesa\donjo-app\controllers\Penduduk.php 227
+ERROR - 2018-05-31 07:17:00 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-31 07:17:03 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-31 07:17:05 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-05-31 07:17:21 --> 404 Page Not Found: Desa/upload

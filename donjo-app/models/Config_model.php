@@ -31,6 +31,8 @@
 	
 	function get_data_by_desa($userData){
 
+		if($userData == null){ $userData = (int)$_SESSION['user']; }
+
 		$ff= $this->db->select('id_grup,id_desa');
 		$ff = $this->db->from('user');
 		$ff =$this->db->where('id', $userData);

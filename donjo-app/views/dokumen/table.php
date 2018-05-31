@@ -23,6 +23,7 @@
 					<a href="<?php echo site_url("dokumen/index/5")?>"><li <?php if($kat==5)echo "class='selected'";?>>Agenda</li></a>
 					<a href="<?php echo site_url("dokumen/index/6")?>"><li <?php if($kat==6)echo "class='selected'";?>>Ekspedisi</li></a>
 					<a href="<?php echo site_url("dokumen/index/7")?>"><li <?php if($kat==7)echo "class='selected'";?>>Lembaran Desa dan Berita Desa</li></a>
+					<a href="<?php echo site_url("dokumen/index/8")?>"><li <?php if($kat==8)echo "class='selected'";?>>Data Induk Kependudukan</li></a>
 					
 				</ul>
 			</div>
