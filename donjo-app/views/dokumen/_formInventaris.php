@@ -39,5 +39,5 @@
 </tr>
 <tr class="formInventaris">
   <th>Keterangan</th>
-  <td><input name="[keterangan]" type="text" class="formInventaris inputbox" size="100" value="<?php echo $dokumen['keterangan']?>"/></td>
+  <td><input name="keterangan" type="text" class="formInventaris inputbox" size="100" value="<?php echo $dokumen['keterangan']?>"/></td>
 </tr>

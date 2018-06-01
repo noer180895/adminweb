@@ -70,7 +70,7 @@ class Dokumen extends CI_Controller{
 		$data['kat'] = $kat;
 
 		if($id){
-			$data['dokumen']     = $this->web_dokumen_model->get_dokumen($id,$kat);
+			$data['dokumen']     = $this->web_dokumen_model->get_dokumen($id);
 			$data['form_action'] = site_url("dokumen/update/$kat/$id/$p/$o");
 		}
 		else{
@@ -118,20 +118,20 @@ class Dokumen extends CI_Controller{
 		$kategori = $this->input->post('kategori');
 		if (!empty($kategori))
 			$kat = $this->input->post('kategori');
-		$outp = $this->web_dokumen_model->update($id,$kat);
+		$outp = $this->web_dokumen_model->update($id);
 		if (!$outp) $_SESSION['success']=-1;
 		redirect("dokumen/index/$kat/$p/$o");
 	}
 
 	function delete($kat=1,$p=1,$o=0,$id=''){
 		$_SESSION['success']=1;
-		$this->web_dokumen_model->delete($id,$kat);
+		$this->web_dokumen_model->delete($id);
 		redirect("dokumen/index/$kat/$p/$o");
 	}
 
 	function delete_all($kat=1,$p=1,$o=0){
 		$_SESSION['success']=1;
-		$this->web_dokumen_model->delete_all($kat);
+		$this->web_dokumen_model->delete_all();
 		redirect("dokumen/index/$kat/$p/$o");
 	}	
 
@@ -164,6 +164,25 @@ class Dokumen extends CI_Controller{
 		$this->web_dokumen_model->approve_Keputusanmusyawarahperencanaanpembangunandesa($id,1);
 		$this->web_dokumen_model->approve_Laporankeuanganbpd($id,1);
 		$this->web_dokumen_model->approve_Peraturandidesa($id,1);
+		//tambahan
+		$this->web_dokumen_model->approve_Agendasuratkeluar($id,1);
+		$this->web_dokumen_model->approve_Agendasuratmasuk($id,1);
+		$this->web_dokumen_model->approve_Anggaranpendapatanbelanja($id,1);
+		$this->web_dokumen_model->approve_Bankdesa($id,1);
+		$this->web_dokumen_model->approve_Bukukasumum($id,1);
+		$this->web_dokumen_model->approve_DataInventarisbpd($id,1);
+		$this->web_dokumen_model->approve_IndukPenduduk($id,1);
+		$this->web_dokumen_model->approve_Kartutandapendudukdankeluarga($id,1);
+		$this->web_dokumen_model->approve_Kaspembantukegiatan($id,1);
+		$this->web_dokumen_model->approve_Kegiatanpembangunan($id,1);
+		$this->web_dokumen_model->approve_Mutasipenduduk($id,1);
+		$this->web_dokumen_model->approve_Penduduksementara($id,1);
+		$this->web_dokumen_model->approve_Rekapitulasipenduduk($id,1);
+		$this->web_dokumen_model->approve_RencanaAnggaranBiaya($id,1);
+		$this->web_dokumen_model->approve_RencanaKerjaPembangunan($id,1);
+
+
+
 		redirect("dokumen/index/$kat/$p/$o");
 	}
 
@@ -191,8 +210,25 @@ class Dokumen extends CI_Controller{
 		$this->web_dokumen_model->reject_Keputusanmusyawarahperencanaanpembangunandesa($id,1);
 		$this->web_dokumen_model->reject_Laporankeuanganbpd($id,1);
 		$this->web_dokumen_model->reject_Peraturandidesa($id,1);
+				//tambahan
+		$this->web_dokumen_model->reject_Agendasuratkeluar($id,1);
+		$this->web_dokumen_model->reject_Agendasuratmasuk($id,1);
+		$this->web_dokumen_model->reject_Anggaranpendapatanbelanja($id,1);
+		$this->web_dokumen_model->reject_Bankdesa($id,1);
+		$this->web_dokumen_model->reject_Bukukasumum($id,1);
+		$this->web_dokumen_model->reject_DataInventarisbpd($id,1);
+		$this->web_dokumen_model->reject_IndukPenduduk($id,1);
+		$this->web_dokumen_model->reject_Kartutandapendudukdankeluarga($id,1);
+		$this->web_dokumen_model->reject_Kaspembantukegiatan($id,1);
+		$this->web_dokumen_model->reject_Kegiatanpembangunan($id,1);
+		$this->web_dokumen_model->reject_Mutasipenduduk($id,1);
+		$this->web_dokumen_model->reject_Penduduksementara($id,1);
+		$this->web_dokumen_model->reject_Rekapitulasipenduduk($id,1);
+		$this->web_dokumen_model->reject_RencanaAnggaranBiaya($id,1);
+		$this->web_dokumen_model->reject_RencanaKerjaPembangunan($id,1);
 		redirect("dokumen/index/$kat/$p/$o");
 	}
+
 
 	public function export_excel($indentity='',$id=''){
         //load librarynya terlebih dahulu
