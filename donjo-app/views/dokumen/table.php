@@ -168,7 +168,7 @@
 				            	<th>Keterangan</th>
 				            	<?php echo $dokumen['keterangan'];?>
 				            	<?php elseif ($kat == 7) : ?>
-							  	<th>No.Urut</th>
+							  	<th>Uraian</th>
 							  	<th>Jenis Peraturan Desa</th>
 							  	<th>Nomor dan Tanggal ditetapkan </th>
 							  	<th>Tentang</th>
@@ -176,7 +176,7 @@
 							  	<th>Nomor Diundangkan</th>
 							  	<th>Keterangan</th>
 							  	<?php elseif ($kat == 8) : ?>
-							  	<th>No.Urut</th>
+							  	<th>Uraian</th>
 							  	<th>Tanggal</th>
 							  	<th>Nama Lengkap </th>
 							  	<th>Jabatan</th>
@@ -333,7 +333,7 @@
 									<?php } ?>
 									<!-- id role user is kepala desa dna status belum di approve -->
 									<?php if($user_role == 4 && $data['is_approve'] == 0) { ?> 
-									<td align="center" width="4"><button type="text" style="background: green;" onclick="approveEkspedisi(<?php echo $data['id'];?>)"><span class="fa fa-check">&nbsp;</span></button>&nbsp;<button type="text" style="background: red; onclick="rejectEkspedisi(<?php echo $data['id'];?>)"><span class="fa fa-remove">&nbsp;</span></button></td>
+									<td align="center" width="4"><button type="text" style="background: green;" onclick="approveEkspedisi(<?php echo $data['id'];?>)"><span class="fa fa-check">&nbsp;</span></button>&nbsp;<button type="text" style="background: red;" onclick="rejectEkspedisi(<?php echo $data['id'];?>)"><span class="fa fa-remove">&nbsp;</span></button></td>
 									<?php } ?>
 
 									<!-- id role user is kepala desa dan status sudah approve -->

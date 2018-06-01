@@ -118,3 +118,99 @@ ERROR - 2018-06-01 15:40:02 --> Query error: Unknown column 'satuan' in 'field l
 WHERE `id` = '1'
 ERROR - 2018-06-01 15:42:16 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
 ERROR - 2018-06-01 15:42:16 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
+ERROR - 2018-06-01 11:59:45 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 11:59:45 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 11:59:48 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 11:59:50 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 11:59:51 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 11:59:53 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 11:59:55 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 11:59:56 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 11:59:57 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 11:59:58 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 11:59:59 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:00:02 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:00:03 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:00:03 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:00:04 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:00:04 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:00:05 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:00:06 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:00:07 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:14:40 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:14:40 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:14:44 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:14:46 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:14:48 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:14:54 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:14:56 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:14:57 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:14:58 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:15:02 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:15:04 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:15:05 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:15:06 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:15:07 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:15:08 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:15:09 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:15:10 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:15:10 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:15:11 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:15:12 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:15:12 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:15:14 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:15:18 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:15:19 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:15:20 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:15:46 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:15:49 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:15:50 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:15:51 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 12:15:52 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 17:21:02 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
+ERROR - 2018-06-01 17:21:02 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
+ERROR - 2018-06-01 17:30:19 --> Query error: Unknown column 'uraian' in 'field list' - Invalid query: UPDATE `dokumen` SET `nama` = 'judul tentang 2', `kategori` = '7', `uraian` = 'norut', `jenis_peraturan_desa` = 'qwqwq', `no_ditetapkan_n_tgl_ditetapkan` = '1212121212', `tentang` = 'tentang test', `tgl_berita_desa` = '31-05-2018', `no_berita_desa` = 'no diundangkan dalam berita desa', `keterangan` = 'keterangan', `satuan` = 'judul+tentang+2_89GkqI_aaaaaqwqwq.pdf', `attr` = 'null'
+WHERE `id` = '1'
+ERROR - 2018-06-01 17:35:42 --> Severity: Error --> Call to undefined method Web_dokumen_model::getDetailLembarDesa() C:\xampp\htdocs\admindesa\donjo-app\controllers\Dokumen.php 446
+ERROR - 2018-06-01 18:46:44 --> Query error: Table 'admh8515_sid.dokumen_bukutamubp' doesn't exist - Invalid query: SELECT * FROM dokumen_bukutamubp WHERE id='1'
+ERROR - 2018-06-01 13:59:49 --> Severity: Parsing Error --> syntax error, unexpected '$objPHPExcel' (T_VARIABLE) C:\xampp\htdocs\admindesa\donjo-app\controllers\Dokumen.php 501
+ERROR - 2018-06-01 13:59:55 --> Severity: Parsing Error --> syntax error, unexpected '$objPHPExcel' (T_VARIABLE) C:\xampp\htdocs\admindesa\donjo-app\controllers\Dokumen.php 501
+ERROR - 2018-06-01 20:01:07 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:01:08 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:01:18 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:01:20 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:01:21 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:02:51 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:02:54 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:02:55 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:03:01 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:03:40 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:03:42 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:03:44 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:03:45 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:03:46 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:03:47 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:03:48 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:03:49 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:06:04 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:06:07 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:06:14 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:06:15 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:06:16 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:06:17 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:06:19 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:06:22 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:06:23 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:06:24 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:06:25 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:06:26 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:06:27 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:06:29 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:06:30 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:06:30 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:06:31 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:06:32 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:06:34 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:06:35 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:06:38 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 20:06:39 --> 404 Page Not Found: Desa/upload

@@ -16,7 +16,8 @@
 </tr>
 <tr class="bukutamubpd">
 	<th>Alamat</th>
-  <td><input name="alamat" type="text" class="bukutamubpd inputbox" size="20" value="<?php echo $dokumen['alamat']?>"/></td>
+  <td>
+  	<textarea name="alamat" id="alamat" rows="4" cols="50"><?php echo $dokumen['alamat']?></textarea></td>
 </tr>
 <tr class="bukutamubpd">
 	<th>Keperluan</th>

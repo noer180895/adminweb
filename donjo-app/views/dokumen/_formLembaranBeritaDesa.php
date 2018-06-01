@@ -4,11 +4,11 @@
 </tr>
 <tr class="beritadesa">
 	<th>Jenis Peraturan Desa</th>
-  <td><input name="jenis_peraturan_desa" type="text" class="forminventaris" size="30" value="<?php echo $dokumen['jenis_Peraturan_Desa']?>"/></td>
+  <td><input name="jenis_peraturan_desa" type="text" class="forminventaris" size="30" value="<?php echo $dokumen['jenis_peraturan_desa']?>"/></td>
 </tr>
 <tr class="beritadesa">
 	<th>Nomor Ditetapkan dan Tanggal Ditetapkan</th>
-  <td><input name="no_ditetapkan_n_tgl_ditetapkan" type="text" class="beritadesa inputbox" size="30" value="<?php echo $dokumen['no_ditetapkan']?>"/></td>
+  <td><input name="no_ditetapkan_n_tgl_ditetapkan" type="text" class="beritadesa inputbox" size="30" value="<?php echo $dokumen['no_ditetapkan_n_tgl_ditetapkan']?>"/></td>
 </tr>
 <tr class="beritadesa">
 	<th>Tentang</th>
