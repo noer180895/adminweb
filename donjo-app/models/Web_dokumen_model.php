@@ -319,9 +319,7 @@ class Web_dokumen_model extends CI_Model{
 			$nama_file = $data['nama']."_".generator(6)."_".$nama_file;
 		$nama_file = urlencode($nama_file);
 		UploadDocument($nama_file, $file_lama);
-		if($data['kategori'] == 1){
-			$data['satuan'] = $nama_file;
-		}
+		$data['satuan'] = $nama_file;
 		return true;
 	}
 
@@ -617,27 +615,44 @@ class Web_dokumen_model extends CI_Model{
 		}
 	}
 
-	function update($id=0){
-	  $data = $_POST;
-		if (!$this->upload_dokumen($data, $data['old_file']))
+	function update($id=0,$kat){
+		$data = $_POST;
+		if($kat == "6"){
+			if (!$this->upload_dokumen($data, $data['old_file']))
+ 				unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+ 			return $this->db->where('id',$id)->update('dokumen_ekspedisi',$data);
+		}else{
+			if (!$this->upload_dokumen($data, $data['old_file']))
 			unset($data['satuan']);
-		$data['attr'] = json_encode($data['attr']);
-		return $this->db->where('id',$id)->update('dokumen',$data);;
+			$data['attr'] = json_encode($data['attr']);
+			return $this->db->where('id',$id)->update('dokumen',$data);
+		}
 	}
 
-	function delete($id=''){
-		$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen')->row()->satuan;
-		$outp = $this->db->where('id',$id)->delete('dokumen');
-		if($outp)
-			unlink(LOKASI_DOKUMEN . $old_dokumen);
-		else $_SESSION['success']=-1;
-	}
 
-	function delete_all(){
+	function delete($id='',$kat){
+ 		if($kat == "6"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_ekspedisi')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_ekspedisi');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+ 		}else{
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen')->row()->satuan;
+ 		$outp = $this->db->where('id',$id)->delete('dokumen');
+ 			if($outp)
+ 				unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+ 		}
+ 	}
+
+
+	function delete_all($kat){
 		$id_cb = $_POST['id_cb'];
 		if(count($id_cb)){
 			foreach($id_cb as $id){
-				$this->delete($id);
+				$this->delete($id,$kat);
 			}
 		}
 		else $_SESSION['success']=-1;
@@ -1313,12 +1328,20 @@ class Web_dokumen_model extends CI_Model{
 			else $_SESSION['success']=-1;
 	}
 
-	function get_dokumen($id=0){
-		$sql   = "SELECT * FROM dokumen WHERE id=?";
-		$query = $this->db->query($sql,$id);
-		$data  = $query->row_array();
+	function get_dokumen($id=0,$kat){
+		if($kat == "6"){
+ 			$sql   = "SELECT * FROM dokumen_ekspedisi WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;
+ 		}else{
+ 			$sql   = "SELECT * FROM dokumen WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
 		$data['attr'] = json_decode($data['attr'], true);
-		return $data;
+ 			return $data;
+ 		}
 	}
 
 	function dokumen_show(){
