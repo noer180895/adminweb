@@ -180,13 +180,9 @@ class Dokumen extends CI_Controller{
 		$this->web_dokumen_model->approve_Rekapitulasipenduduk($id,1);
 		$this->web_dokumen_model->approve_RencanaAnggaranBiaya($id,1);
 		$this->web_dokumen_model->approve_RencanaKerjaPembangunan($id,1);
-<<<<<<< HEAD
-		
-=======
 
 
 
->>>>>>> e9aa9013678473ea6b6570cba96a05e906396fc4
 		redirect("dokumen/index/$kat/$p/$o");
 	}
 
@@ -214,11 +210,7 @@ class Dokumen extends CI_Controller{
 		$this->web_dokumen_model->reject_Keputusanmusyawarahperencanaanpembangunandesa($id,1);
 		$this->web_dokumen_model->reject_Laporankeuanganbpd($id,1);
 		$this->web_dokumen_model->reject_Peraturandidesa($id,1);
-<<<<<<< HEAD
-		//tambahan
-=======
 				//tambahan
->>>>>>> e9aa9013678473ea6b6570cba96a05e906396fc4
 		$this->web_dokumen_model->reject_Agendasuratkeluar($id,1);
 		$this->web_dokumen_model->reject_Agendasuratmasuk($id,1);
 		$this->web_dokumen_model->reject_Anggaranpendapatanbelanja($id,1);

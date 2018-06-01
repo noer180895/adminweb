@@ -7,14 +7,14 @@
 <tr class="formEkspedisi">  
   <th>Bangunan</th>
   <td>
-      <td><input name="bangunan" id="bangunan" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['bangunan']?>"/></td>
+      <td><input name="bangunan" id="bangunan" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['bangunan']?>"/></td>
   </td>
 </tr>
 
 <tr class="formEkspedisi">  
   <th>APBDES</th>
   <td>
-      <td><input name="apbdes" id="apbdes" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['apbdes']?>"/></td>
+      <td><input name="apbdes" id="apbdes" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['apbdes']?>"/></td>
   </td>
 </tr>
 
@@ -22,7 +22,7 @@
 <tr class="formEkspedisi">  
   <th>Bantuan  Pemerintah</th>
   <td>
-      <td><input name="bantuan_pemerintah" id="bantuan_pemerintah" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['bantuan_pemerintah']?>"/></td>
+      <td><input name="bantuan_pemerintah" id="bantuan_pemerintah" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['bantuan_pemerintah']?>"/></td>
   </td>
 </tr>
 
@@ -30,21 +30,21 @@
 <tr class="formEkspedisi">  
   <th>Bantuan  Provinsi</th>
   <td>
-      <td><input name="bantuan_provinsi" id="bantuan_provinsi" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['bantuan_provinsi']?>"/></td>
+      <td><input name="bantuan_provinsi" id="bantuan_provinsi" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['bantuan_provinsi']?>"/></td>
   </td>
 </tr>
 
 <tr class="formEkspedisi">  
   <th>Bantuan  Kab/Kota</th>
   <td>
-      <td><input name="bantuan_kota" id="bantuan_kota" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['bantuan_kota']?>"/></td>
+      <td><input name="bantuan_kota" id="bantuan_kota" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['bantuan_kota']?>"/></td>
   </td>
 </tr>
 
 <tr class="formEkspedisi">  
   <th>Bantuan Sumbangan</th>
   <td>
-      <td><input name="bantuan_sumbangen" id="bantuan_sumbangen" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['bantuan_sumbangen']?>"/></td>
+      <td><input name="bantuan_sumbangen" id="bantuan_sumbangen" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['bantuan_sumbangen']?>"/></td>
   </td>
 </tr>
 
@@ -76,7 +76,7 @@
 
 <tr class="formEkspedisi">
   <th>Tanggal Penghapusan</th>
-  <td><input name="tanggal_penghapusan" id="tanggal_penghapusan" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['tanggal_penghapusan']?>"/></td>
+  <td><input name="tanggal_penghapusan" id="tanggal_penghapusan" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['tanggal_penghapusan']?>"/></td>
 </tr>
 
   

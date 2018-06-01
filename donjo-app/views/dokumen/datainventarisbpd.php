@@ -4,7 +4,7 @@
 </tr>
 <tr class="datainventarisbpd">
   <th>Jenis Barang Bangunan</th>
-  <td><input name="jenisbarangbanguanan" id="jenisbarangbanguanan" type="text" class="datainventarisbpd inputbox datepicker22" value="<?php echo $dokumen['jenisbarangbanguanan']?>"/></td>
+  <td><input name="jenisbarangbanguanan" id="jenisbarangbanguanan" type="text" class="datainventarisbpd inputbox datepicker2" value="<?php echo $dokumen['jenisbarangbanguanan']?>"/></td>
 </tr>
 <tr class="datainventarisbpd">
   <th>Asal Barang Bangunan</th>

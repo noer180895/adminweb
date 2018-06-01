@@ -7,14 +7,14 @@
 <tr class="formEkspedisi">  
   <th>Kegiatan</th>
   <td>
-      <td><input name="kegiatan" id="kegiatan" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['kegiatan']?>"/></td>
+      <td><input name="kegiatan" id="kegiatan" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['kegiatan']?>"/></td>
   </td>
 </tr>
 
 <tr class="formEkspedisi">  
   <th>Lokasi</th>
   <td>
-      <td><input name="lokasi" id="lokasi" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['lokasi']?>"/></td>
+      <td><input name="lokasi" id="lokasi" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['lokasi']?>"/></td>
   </td>
 </tr>
 
@@ -22,7 +22,7 @@
 <tr class="formEkspedisi">  
   <th>Sumber Daya Pemerintah</th>
   <td>
-      <td><input name="sumber_daya_pemerintah" id="sumber_daya_pemerintah" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['sumber_daya_pemerintah']?>"/></td>
+      <td><input name="sumber_daya_pemerintah" id="sumber_daya_pemerintah" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['sumber_daya_pemerintah']?>"/></td>
   </td>
 </tr>
 
@@ -30,28 +30,28 @@
 <tr class="formEkspedisi">  
   <th>Sumber Daya Provinsi</th>
   <td>
-      <td><input name="sumber_daya_provinsi" id="sumber_daya_provinsi" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['sumber_daya_provinsi']?>"/></td>
+      <td><input name="sumber_daya_provinsi" id="sumber_daya_provinsi" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['sumber_daya_provinsi']?>"/></td>
   </td>
 </tr>
 
 <tr class="formEkspedisi">  
   <th>Sumber Daya Kab/Kota</th>
   <td>
-      <td><input name="sumber_daya_kota" id="sumber_daya_kota" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['sumber_daya_kota']?>"/></td>
+      <td><input name="sumber_daya_kota" id="sumber_daya_kota" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['sumber_daya_kota']?>"/></td>
   </td>
 </tr>
 
 <tr class="formEkspedisi">  
   <th>Sumber Daya Swadaya</th>
   <td>
-      <td><input name="sumber_daya_swadaya" id="sumber_daya_swadaya" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['sumber_daya_swadaya']?>"/></td>
+      <td><input name="sumber_daya_swadaya" id="sumber_daya_swadaya" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['sumber_daya_swadaya']?>"/></td>
   </td>
 </tr>
 
 <tr class="formEkspedisi">  
   <th>Jumlah</th>
   <td>
-      <td><input name="jumlah" id="jumlah" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['jumlah']?>"/></td>
+      <td><input name="jumlah" id="jumlah" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['jumlah']?>"/></td>
   </td>
 </tr>
 
@@ -59,7 +59,7 @@
 <tr class="formEkspedisi">  
   <th>Pelaksanaan</th>
   <td>
-      <td><input name="pelaksanaan" id="pelaksanaan" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['pelaksanaan']?>"/></td>
+      <td><input name="pelaksanaan" id="pelaksanaan" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['pelaksanaan']?>"/></td>
   </td>
 </tr>
 
@@ -68,7 +68,7 @@
 <tr class="formEkspedisi">  
   <th>Manfaat</th>
   <td>
-      <td><input name="manfaat" id="manfaat" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['manfaat']?>"/></td>
+      <td><input name="manfaat" id="manfaat" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['manfaat']?>"/></td>
   </td>
 </tr>
 
