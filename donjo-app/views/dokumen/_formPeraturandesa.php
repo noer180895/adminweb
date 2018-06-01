@@ -1,6 +1,7 @@
+
 <tr class="peraturandesa">
 	<th>No. Urut</th>
-  <td><input name="uraian" type="text" class="peraturandesa inputbox" size="100" value="<?php echo $dokumen['attr']['No Urut']?>"/></td>
+  <td><input name="uraian" type="text" class="peraturandesa inputbox" size="100" value="<?php echo $dokumen['no_urut']?>"/></td>
 </tr>
 <tr class="peraturandesa">
 	<th>Nomor dan Tanggal Peraturan Desa</th>
@@ -12,7 +13,7 @@
 </tr>
 <tr class="peraturandesa">
 	<th>Uraian Singkat</th>
-  <td><input name="uraiansingkat" type="text" class="peraturandesa inputbox" size="20" value="<?php echo $dokumen['attr']['uraiansingkat']?>"/></td>
+  <td><input name="uraian" type="text" class="peraturandesa inputbox" size="20" value="<?php echo $dokumen['uraian']?>"/></td>
  </tr> 
  <tr class="peraturandesa">
 	<th>Nomor dan Tanggal Kesepakatan</th>

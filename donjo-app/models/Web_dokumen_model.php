@@ -326,6 +326,7 @@ class Web_dokumen_model extends CI_Model{
 
 	function insert($kat){
 		$data = $_POST;
+
 		if($kat == 6){ // jika tipe kategorinya adalah ekspedisi
 			if ($this->upload_dokumen($data)) {
 				// $data['attr'] = json_encode($data['attr']);
@@ -630,6 +631,18 @@ class Web_dokumen_model extends CI_Model{
  			$data['attr'] = json_encode($data['attr']);
 			$data['updated_date']= date("Y-m-d h:i:s");
  			return $this->db->where('id',$id)->update('dokumen_inventaris',$data);
+ 		}else if($kat == "3"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_peraturandesa',$data);
+ 		}else if($kat == "4"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_aparatpemerintahandesa',$data);
 		}else{
 			if (!$this->upload_dokumen($data, $data['old_file']))
 			unset($data['satuan']);
@@ -650,6 +663,18 @@ class Web_dokumen_model extends CI_Model{
  		}else if($kat == "2"){
  			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_inventaris')->row()->satuan;
  			$outp = $this->db->where('id',$id)->delete('dokumen_inventaris');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+ 		}else if($kat == "3"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_peraturandesa')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_peraturandesa');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+ 		}else if($kat == "4"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_aparatpemerintahandesa')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_aparatpemerintahandesa');
  			if($outp)
  			unlink(LOKASI_DOKUMEN . $old_dokumen);
  			else $_SESSION['success']=-1;
@@ -1357,6 +1382,23 @@ class Web_dokumen_model extends CI_Model{
  			$data['attr'] = json_decode($data['attr'], true);
  			return $data;
 
+ 		}else if($kat == "3"){
+ 			$sql   = "SELECT * FROM dokumen_peraturandesa WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;
+
+ 		 }else if($kat == "4"){
+ 			$sql   = "SELECT * FROM dokumen_aparatpemerintahandesa WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;
+
+
+ 			
+
  		}else{
  			$sql   = "SELECT * FROM dokumen WHERE id=?";
  			$query = $this->db->query($sql,$id);
@@ -1392,6 +1434,16 @@ class Web_dokumen_model extends CI_Model{
 
     function getDetailInventaris($id=0){
 		$sql   = "SELECT * FROM dokumen_inventaris WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+
+    }
+
+
+     function getDetailPeraturanDesa($id=0){
+		$sql   = "SELECT * FROM dokumen_peraturandesa WHERE id=?";
 		$query = $this->db->query($sql,$id);
 		$data  = $query->row_array();
 		$data['attr'] = json_decode($data['attr'], true);

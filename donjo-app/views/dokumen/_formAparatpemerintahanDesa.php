@@ -28,7 +28,7 @@
 </tr>
 <tr class="formAparat">
   <th>Pangkat Golongan</th>
-  <td><input name="Pangkat_golongan" type="text" class="formAparat inputbox" size="20" value="<?php echo $dokumen['Pangkat_golongan']?>"/></td>
+  <td><input name="pangkat_golongan" type="text" class="formAparat inputbox" size="20" value="<?php echo $dokumen['pangkat_golongan']?>"/></td>
 </tr>
 <tr class="formAparat">
   <th>Jabatan</th>
@@ -36,7 +36,7 @@
 </tr>
 <tr class="formAparat">
   <th>Pendidikan Terakhir</th>
-  <td><input name="Pendidikan_terakhir" type="text" class="formAparat inputbox" size="100" value="<?php echo $dokumen['Pendidikan_terakhir']?>"/></td>
+  <td><input name="pendidikan_terakhir" type="text" class="formAparat inputbox" size="100" value="<?php echo $dokumen['pendidikan_terakhir']?>"/></td>
 </tr>
 <tr class="formAparat">
   <th>Nomor dan Tanggal Keputusan Pengangkatan </th>

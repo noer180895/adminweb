@@ -7,6 +7,14 @@
 	});
 </script>
 
+<style type="text/css">
+	div.lmenu{
+	height: 400px!important;
+    width: 200px!important;
+    overflow-y: scroll !important;
+	}
+</style>
+
 <div id="pageC">
 <table class="inner">
 <tr style="vertical-align:top">
@@ -111,8 +119,6 @@
 								<?php  endif; ?>&nbsp;</span></a></th>
 
 							  <?php if ($kat == 2) : ?>
-							  	<th></th>
-							  	<th></th>
 							  	<th>No.Urut</th>
 							  	<th>Jenis Barang / Bangunan</th>
 							  	<th>Asal Barang / Bangunan</th>
@@ -121,8 +127,7 @@
 							  	<th>Tanggal Penghapusan</th>
 							  	<th>Keterangann</th>
 							  <?php elseif ($kat == 3) : ?>
-							  	<th>No.Urut</th>
-							  	<th>Jenis Peraturan Desa</th>
+							  	<th>Uraian</th>
 							  	<th>Nomor Dan Tanggal Ditetapkan</th>
 							  	<th>Tentang</th>
 							  	<th>Diundangkan</th>
@@ -344,9 +349,6 @@
 									<?php } ?>
 
 								  <td><?php echo $data['nama']?></td>
-								  <?php if ($kat == 2) : ?>
-								  	<td><?php echo $data['attr']['no_kep_kades']." / ".$data['attr']['tgl_kep_kades']?></td>
-								  	<td><?php echo $data['attr']['uraian']?></td>
 								<?php if($kat == 2): ?> <!-- kondisi jika kategori nya dokumen inventaris !-->
 								  	<td align="center"><?php echo $data['nourut']; ?></td>
 								  	<td align="center"><?php echo $data['jenis_barang_at_bangunan']; ?></td>
@@ -356,12 +358,11 @@
 								  	<td align="center"><?php echo $data['tanggal_penghapusan']; ?></td>
 								  	<td align="center"><?php echo $data['keterangan'];?></td>
 								  	<td align="center"><?php if($data['is_approve'] == 0) { echo 'Waiting Approval'; }else if($data['is_approve'] == 1) { echo 'approved'; }else{ echo 'Rejected'; } ?></td>
-								  <?php endif; ?>
+
 								  <?php elseif ($kat == 3) : ?><!-- kondisi jika kategori nya dokumen peraturan desa !-->	
- 								  	<td align="center"><?php echo $data['uraian']; ?></td>
+ 								  	<td align="center"><?php echo $data['uraiansingkat']; ?></td>
 								  	<td align="center"><?php echo $data['nomber_tanggalperaturandesa']; ?></td>
 								  	<td align="center"><?php echo $data['tentang']; ?></td>
-								  	<td align="center"><?php echo $data['uraiansingkat']; ?></td>
 								  	<td align="center"><?php echo $data['nomor_tanggalkesepakatan']; ?></td>
 								  	<td align="center"><?php echo $data['keterangan']; ?></td>
 								  	<td align="center"><?php if($data['is_approve'] == 0) { echo 'Waiting Approval'; }else if($data['is_approve'] == 1) { echo 'approved'; }else{ echo 'Rejected'; } ?></td>
@@ -374,9 +375,9 @@
 								  	<td align="center"><?php echo $data['jenis_kelamin']; ?></td>
 								  	<td align="center"><?php echo $data['tempat_n_tanggal_lahir']; ?></td>
 								  	<td align="center"><?php echo $data['agama'];?></td>
-								  	<td align="center"><?php echo $data['Pangkat_golongan']; ?></td>
+								  	<td align="center"><?php echo $data['pangkat_golongan']; ?></td>
 								  	<td align="center"><?php echo $data['jabatan']; ?></td>								  	
-								  	<td align="center"><?php echo $data['Pendidikan_terakhir']; ?></td>
+								  	<td align="center"><?php echo $data['pendidikan_terakhir']; ?></td>
 								  	<td align="center"><?php echo $data['no_n_tanggal_keputusan_pengangkatan']; ?></td>
 								  	<td align="center"><?php echo $data['no_n_tanggal_keputusan_pemberhentian']; ?></td>
 								  	<td align="center"><?php echo $data['keterangan']; ?></td>

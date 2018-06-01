@@ -91,3 +91,20 @@ ERROR - 2018-06-01 11:50:00 --> Severity: Parsing Error --> syntax error, unexpe
 ERROR - 2018-06-01 11:50:01 --> Severity: Parsing Error --> syntax error, unexpected '<<' (T_SL) C:\xampp\htdocs\admindesa\donjo-app\models\Web_dokumen_model.php 336
 ERROR - 2018-06-01 11:50:01 --> Severity: Parsing Error --> syntax error, unexpected '<<' (T_SL) C:\xampp\htdocs\admindesa\donjo-app\models\Web_dokumen_model.php 336
 ERROR - 2018-06-01 11:52:03 --> Severity: Parsing Error --> syntax error, unexpected '<<' (T_SL) C:\xampp\htdocs\admindesa\donjo-app\models\Web_dokumen_model.php 336
+ERROR - 2018-06-01 14:23:07 --> Severity: Parsing Error --> syntax error, unexpected 'elseif' (T_ELSEIF) C:\xampp\htdocs\admindesa\donjo-app\views\dokumen\table.php 364
+ERROR - 2018-06-01 14:23:35 --> Severity: Parsing Error --> syntax error, unexpected 'elseif' (T_ELSEIF) C:\xampp\htdocs\admindesa\donjo-app\views\dokumen\table.php 365
+ERROR - 2018-06-01 14:23:36 --> Severity: Parsing Error --> syntax error, unexpected 'elseif' (T_ELSEIF) C:\xampp\htdocs\admindesa\donjo-app\views\dokumen\table.php 365
+ERROR - 2018-06-01 14:23:39 --> Severity: Parsing Error --> syntax error, unexpected 'elseif' (T_ELSEIF) C:\xampp\htdocs\admindesa\donjo-app\views\dokumen\table.php 365
+ERROR - 2018-06-01 14:40:43 --> Query error: Unknown column 'jenis_peraturan' in 'field list' - Invalid query: UPDATE `dokumen_peraturandesa` SET `nama` = 'test dataasasas', `kategori` = '3', `uraian` = 'asasasa', `jenis_peraturan` = 'asasa', `no_ditetapkan` = '21212', `tgl_ditetapkan` = '2018-06-01', `tgl_kesepakatan` = '2018-06-01', `no_lapor` = '121212', `tgl_lapor` = '2018-06-01', `no_lembaran_desa` = '121212', `tgl_lembaran_desa` = '2018-06-01', `no_berita_desa` = '12121', `tgl_berita_desa` = '2018-06-01', `keterangan` = 'asasasasasa', `attr` = 'null', `updated_date` = '2018-06-01 02:40:43'
+WHERE `id` = '1'
+ERROR - 2018-06-01 14:41:22 --> Query error: Unknown column 'no_ditetapkan' in 'field list' - Invalid query: UPDATE `dokumen_peraturandesa` SET `nama` = 'test dataasasas', `kategori` = '3', `uraian` = 'asasasa', `no_ditetapkan` = '21212', `tgl_ditetapkan` = '2018-06-01', `tgl_kesepakatan` = '2018-06-01', `no_lapor` = '121212', `tgl_lapor` = '2018-06-01', `no_lembaran_desa` = '121212', `tgl_lembaran_desa` = '2018-06-01', `no_berita_desa` = '12121', `tgl_berita_desa` = '2018-06-01', `keterangan` = 'asasasasasa', `attr` = 'null', `updated_date` = '2018-06-01 02:41:22'
+WHERE `id` = '1'
+ERROR - 2018-06-01 14:50:13 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
+ERROR - 2018-06-01 14:50:13 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
+ERROR - 2018-06-01 09:59:19 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 09:59:29 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 09:59:33 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 09:59:44 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 10:00:20 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 10:01:59 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-01 15:06:21 --> Query error: Unknown column 'Array' in 'field list' - Invalid query: INSERT INTO `dokumen_aparatpemerintahandesa` (`nama`, `kategori`, `attr`, `satuan`, `created_date`, `updated_date`) VALUES ('test data ', '4', Array, 'test+data+_AeWynp_PayrollYearly.pdf', '2018-06-01 03:06:21', '2018-06-01 03:06:21')
