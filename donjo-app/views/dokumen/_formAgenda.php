@@ -1,42 +1,55 @@
-<tr class="formEkspedisi">
-  <th>No. Urut</th>
-  <td><input name="no_urut" id="no_urut" type="text" class="formEkspedisi inputbox" size="100" value="<?php echo $dokumen['no_urut']?>"/></td>
-</tr>
+
 <tr class="formEkspedisi">
   <th>Tanggal Penerimaan Surat</th>
-  <td><input name="tanggal_penerimaan" id="tanggal_penerimaan" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['tanggal_penerimaan']?>"/></td>
+  <td><input name="tanggal_penerima_surat" id="tanggal_penerima_surat" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['tanggal_penerima_surat']?>"/></td>
 </tr>
+  
+<tr class="formEkspedisi">  
+  <th>Nomor Masuk</th>
+  <td><input name="no_masuk" id="no_masuk" type="text" class="formEkspedisi inputbox" size="30" value="<?php echo $dokumen['no_masuk']?>"/></td>
+</tr>
+
 <tr class="formEkspedisi">
-  <th>Type Surat</th>
-  <td>
-    <select name="type" id="type" class="formEkspedisi inputbox">
-      <option value="">-- Select Type --</option>  
-      <option value="surat masuk">Surat Masuk</option>
-      <option value="surat keluar">Surat Keluar</option>
-    </select>
-  </td>
+  <th>Tanggal Masuk</th>
+  <td><input name="tgl_masuk" id="tanggal_surat" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['tgl_masuk']?>"/></td>
 </tr>
+
+<tr class="formEkspedisi">
+  <th>Pengiriman</th>
+  <td><input name="pengiriman" id="pengiriman" type="text" class="formEkspedisi inputbox" size="20" value="<?php echo $dokumen['pengiriman']?>"/></td>
+</tr>
+
+
+<tr class="formEkspedisi">
+  <th>Isi Surat Masuk</th>
+  <td>
+    <textarea name="isi_surat_masuk" id="isi_surat_masuk" rows="4" cols="50"><?php echo $dokumen['isi_surat_masuk']?></textarea>
+</tr>
+
 
 <tr class="formEkspedisi">  
-  <th>Nomor</th>
-  <td><input name="nomor" id="nomor" type="text" class="formEkspedisi inputbox" size="30" value="<?php echo $dokumen['nomor']?>"/></td>
+  <th>Nomor keluar</th>
+  <td><input name="no_surat_keluar" id="no_surat_keluar" type="text" class="formEkspedisi inputbox" size="30" value="<?php echo $dokumen['no_surat_keluar']?>"/></td>
 </tr>
 
 <tr class="formEkspedisi">
-  <th>Tanggal</th>
-  <td><input name="tanggal_surat" id="tanggal_surat" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['tanggal_surat']?>"/></td>
+  <th>Tanggal keluar</th>
+  <td><input name="tgl_surat_keluar" id="tgl_surat_keluar" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['tgl_surat_keluar']?>"/></td>
 </tr>
 
 <tr class="formEkspedisi">
-  <th>Pengirim</th>
-  <td><input name="pengirim" id="pengirim" type="text" class="formEkspedisi inputbox" size="20" value="<?php echo $dokumen['pengirim']?>"/></td>
+  <th>Ditujukan Kepada</th>
+  <td><input name="di_tujukan_kepada" id="di_tujukan_kepada" type="text" class="formEkspedisi inputbox" size="20" value="<?php echo $dokumen['di_tujukan_kepada']?>"/></td>
 </tr>
 
+
 <tr class="formEkspedisi">
-  <th>Isi Surat</th>
+  <th>Isi Surat keluar</th>
   <td>
-    <textarea name="isi_surat" id="isi_surat" rows="4" cols="50"><?php echo $dokumen['isi_surat']?></textarea>
+    <textarea name="isi_surat_keluar" id="isi_surat_keluar" rows="4" cols="50"><?php echo $dokumen['isi_surat_keluar']?></textarea>
 </tr>
+
+
 
 <tr class="formEkspedisi">
   <th>Keterangan</th>

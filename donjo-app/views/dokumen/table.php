@@ -147,7 +147,7 @@
 							  	<th>Nomor dan Tanggal Keputusan Pemberhentian</th>
 							  	<th>Keterangan</th>
 							  	<?php elseif ($kat == 5) : ?>
-							  	<th>No.Urut</th>
+							  	<th>Uraian</th>
 							  	<th>Tanggal Penerimaan Surat</th>
 							  	<th>Nomor Surat Masuk</th>
 							  	<th>Tanggal Surat Masuk</th>

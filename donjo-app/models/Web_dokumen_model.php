@@ -643,6 +643,12 @@ class Web_dokumen_model extends CI_Model{
  			$data['attr'] = json_encode($data['attr']);
 			$data['updated_date']= date("Y-m-d h:i:s");
  			return $this->db->where('id',$id)->update('dokumen_aparatpemerintahandesa',$data);
+ 		}else if($kat == "5"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_agenda',$data);
 		}else{
 			if (!$this->upload_dokumen($data, $data['old_file']))
 			unset($data['satuan']);
@@ -1396,6 +1402,13 @@ class Web_dokumen_model extends CI_Model{
  			$data['attr'] = json_decode($data['attr'], true);
  			return $data;
 
+ 		 }else if($kat == "5"){
+ 			$sql   = "SELECT * FROM dokumen_agenda WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;
+
 
  			
 
@@ -1444,6 +1457,16 @@ class Web_dokumen_model extends CI_Model{
 
      function getDetailPeraturanDesa($id=0){
 		$sql   = "SELECT * FROM dokumen_peraturandesa WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+
+    }
+
+
+    function getDetailAparatPemerintahan($id=0){
+		$sql   = "SELECT * FROM dokumen_aparatpemerintahandesa WHERE id=?";
 		$query = $this->db->query($sql,$id);
 		$data  = $query->row_array();
 		$data['attr'] = json_decode($data['attr'], true);
