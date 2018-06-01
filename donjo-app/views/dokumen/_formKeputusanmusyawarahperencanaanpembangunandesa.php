@@ -4,7 +4,7 @@
 </tr>
 <tr class="keputusanmusyawarahperencanaanpembangunandesa">
 	<th>Tanggal</th>
-  <td><input name="hari_tanggal" type="text" class="keputusanmusyawarahperencanaanpembangunandesa inputbox datepicker" size="30" value="<?php echo $dokumen['hari_tanggal']?>"/></td>
+  <td><input name="hari_tanggal" type="text" class="keputusanmusyawarahperencanaanpembangunandesa inputbox datepicker2" size="30" value="<?php echo $dokumen['hari_tanggal']?>"/></td>
 </tr>
 <tr class="keputusanmusyawarahperencanaanpembangunandesa">
 	<th>Pokok Usulan Kegiatan</th>

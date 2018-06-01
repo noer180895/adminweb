@@ -86,19 +86,19 @@
 
 <tr class="formEkspedisi">
   <th>Ayah</th>
-  <td><input name="ayah" id="ayah" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['ayah']?>"/></td>
+  <td><input name="ayah" id="ayah" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['ayah']?>"/></td>
 </tr>
 
 
 <tr class="formEkspedisi">
   <th>Ibu</th>
-  <td><input name="ibu" id="ibu" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['ibu']?>"/></td>
+  <td><input name="ibu" id="ibu" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['ibu']?>"/></td>
 </tr>
 
 
 <tr class="formEkspedisi">
   <th>Tanggal Mulai Tinggal</th>
-  <td><input name="tanggal_mulai_tinggal" id="tanggal_mulai_tinggal" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['tanggal_mulai_tinggal']?>"/></td>
+  <td><input name="tanggal_mulai_tinggal" id="tanggal_mulai_tinggal" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['tanggal_mulai_tinggal']?>"/></td>
 </tr>
 
 

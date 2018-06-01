@@ -24,7 +24,7 @@
 </tr>
 <tr class="keputusankepaladesa">
 	<th>Tanggal Dilaporkan</th>
-  <td><input name="tanggaldilaporkan" type="text" class="keputusankepaladesa inputbox datepicker" size="30" value="<?php echo $dokumen['tanggaldilaporkan']?>"/></td>
+  <td><input name="tanggaldilaporkan" type="text" class="keputusankepaladesa inputbox datepicker2" size="30" value="<?php echo $dokumen['tanggaldilaporkan']?>"/></td>
 </tr>
 <tr class="peraturandidesa">
 	<th>Keterangan</th>

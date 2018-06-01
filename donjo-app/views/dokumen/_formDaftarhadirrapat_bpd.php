@@ -4,7 +4,7 @@
 </tr>
 <tr class="daftarhadirrapat_bpd">
 	<th>Hari/tanggal</th>
-  <td><input name="hari" type="text" class="daftarhadirrapat_bpd inputbox datepicker" size="30" value="<?php echo $dokumen['hari']?>"/></td>
+  <td><input name="hari" type="text" class="daftarhadirrapat_bpd inputbox datepicker2" size="30" value="<?php echo $dokumen['hari']?>"/></td>
 </tr>
 <tr class="daftarhadirrapat_bpd">
 	<th>Nama Lembaga</th>

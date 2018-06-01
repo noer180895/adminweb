@@ -62,13 +62,13 @@
 
 <tr class="formEkspedisi">
   <th>Tanggal Datang</th>
-  <td><input name="tanggal_datang" id="tanggal_datang" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['tanggal_datang']?>"/></td>
+  <td><input name="tanggal_datang" id="tanggal_datang" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['tanggal_datang']?>"/></td>
 </tr>
 
 
 <tr class="formEkspedisi">
   <th>Tanggal Pergi</th>
-  <td><input name="tanggal_pergi" id="tanggal_pergi" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['tanggal_pergi']?>"/></td>
+  <td><input name="tanggal_pergi" id="tanggal_pergi" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['tanggal_pergi']?>"/></td>
 </tr>
 
 

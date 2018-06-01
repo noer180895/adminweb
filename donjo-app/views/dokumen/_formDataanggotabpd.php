@@ -32,11 +32,11 @@
 </tr>
 <tr class="dataanggotabpd">
 	<th>Tanggal Keputusan Pengangkatan</th>
-  <td><input name="tanggalkeputusanpengangkatan" type="text" class="dataanggotabpd inputbox datepicker" size="20" value="<?php echo $dokumen['tanggalkeputusanpengangkatan']?>"/></td>
+  <td><input name="tanggalkeputusanpengangkatan" type="text" class="dataanggotabpd inputbox datepicker2" size="20" value="<?php echo $dokumen['tanggalkeputusanpengangkatan']?>"/></td>
 </tr>
 <tr class="dataanggotabpd">
 	<th>Tanggal Keputusan Pemberhentian</th>
-  <td><input name="tanggalkeputusanpemberhentian" type="text" class="dataanggotabpd inputbox datepicker" size="20" value="<?php echo $dokumen['tanggalkeputusanpemberhentian']?>"/></td>
+  <td><input name="tanggalkeputusanpemberhentian" type="text" class="dataanggotabpd inputbox datepicker2" size="20" value="<?php echo $dokumen['tanggalkeputusanpemberhentian']?>"/></td>
 </tr>
 <tr class="dataanggotabpd">
 	<th>Keterangan</th>

@@ -8,7 +8,7 @@
 </tr>
 <tr class="sk_kades">
 	<th>Tgl Keputusan Kades</th>
-  <td><input name="attr[tgl_kep_kades]" type="text" class="sk_kades inputbox datepicker" size="20" value="<?php echo $dokumen['attr']['tgl_kep_kades']?>"/></td>
+  <td><input name="attr[tgl_kep_kades]" type="text" class="sk_kades inputbox datepicker2" size="20" value="<?php echo $dokumen['attr']['tgl_kep_kades']?>"/></td>
 </tr>
 <tr class="sk_kades">
 	<th>Nomor Dilaporkan</th>
@@ -16,7 +16,7 @@
 </tr>
 <tr class="sk_kades">
 	<th>Tgl Dilaporkan</th>
-  <td><input name="attr[tgl_lapor]" type="text" class="sk_kades inputbox datepicker" size="20" value="<?php echo $dokumen['attr']['tgl_lapor']?>"/></td>
+  <td><input name="attr[tgl_lapor]" type="text" class="sk_kades inputbox datepicker2" size="20" value="<?php echo $dokumen['attr']['tgl_lapor']?>"/></td>
 </tr>
 <tr class="sk_kades">
 	<th>Keterangan</th>

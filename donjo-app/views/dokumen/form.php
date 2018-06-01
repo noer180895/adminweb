@@ -83,7 +83,10 @@
                 include ("donjo-app/views/dokumen/_formLaporankeuanganBPD.php");
               elseif($kat == 22)
                 include ("donjo-app/views/dokumen/_formperaturandidesa.php");
+<<<<<<< HEAD
 				//penambahan
+=======
+>>>>>>> e9aa9013678473ea6b6570cba96a05e906396fc4
               elseif($kat == 23)
                 include ("donjo-app/views/dokumen/_formDataInventarisBpd.php");
               elseif($kat == 24)
@@ -94,10 +97,17 @@
                 include ("donjo-app/views/dokumen/_formRekapitulasiPenduduk.php");
               elseif($kat == 27)
                 include ("donjo-app/views/dokumen/_formPendudukSementara.php");
+<<<<<<< HEAD
               elseif($kat == 28)
                 include ("donjo-app/views/dokumen/_formKartuTandaPendudukdanKeluarga.php");
               elseif($kat == 29)
                 include ("donjo-app/views/dokumen/_formAnggaranPendapatanBelanja.php");
+=======
+				      elseif($kat == 28)
+                include ("donjo-app/views/dokumen/_formKartuTandaPendudukdanKeluarga.php");
+              elseif($kat == 29)
+                include ("donjo-app/views/dokumen/_formAnggaranPendapatamBelanja.php");
+>>>>>>> e9aa9013678473ea6b6570cba96a05e906396fc4
                elseif($kat == 30)
                 include ("donjo-app/views/dokumen/_formRencanaAnggaranBiaya.php");
                elseif($kat == 31)
@@ -110,11 +120,20 @@
                 include ("donjo-app/views/dokumen/_formRencanaKerjaPembangunan.php");
               elseif($kat == 35)
                 include ("donjo-app/views/dokumen/_formKegiatanPembangunan.php");
+<<<<<<< HEAD
               elseif($kat == 36)
                 include ("donjo-app/views/dokumen/_formAgendaSuratKeluar.php");
               elseif($kat == 37)
                 include ("donjo-app/views/dokumen/_formAgendaSuratMasuk.php");
 				
+=======
+                elseif($kat == 36)
+                include ("donjo-app/views/dokumen/_formAgendaSuratKeluar.php");
+                elseif($kat == 37)
+                include ("donjo-app/views/dokumen/_formAgendaSuratMasuk.php");
+        
+
+>>>>>>> e9aa9013678473ea6b6570cba96a05e906396fc4
               
             ?>
         </table>

@@ -16,7 +16,7 @@
 </tr>
 <tr class="beritadesa">
 	<th>Tgl Diundangkan Dlm Berita Desa</th>
-  <td><input name="tgl_berita_desa" type="text" class="beritadesa inputbox datepicker" size="20" value="<?php echo $dokumen['tgl_berita_desa']?>"/></td>
+  <td><input name="tgl_berita_desa" type="text" class="beritadesa inputbox datepicker2" size="20" value="<?php echo $dokumen['tgl_berita_desa']?>"/></td>
 </tr>
 <th>No. Diundangkan Dlm Berita Desa</th>
   <td><input name="no_berita_desa" type="text" class="beritadesa inputbox" size="30" value="<?php echo $dokumen['no_berita_desa']?>"/></td>
