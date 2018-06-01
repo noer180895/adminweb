@@ -4,7 +4,7 @@
 </tr>
 <tr class="dataaspirasimasyarakat">
 	<th>Hari/tanggal</th>
-  <td><input name="hari" type="text" class="dataaspirasimasyarakat inputbox datepicker" size="30" value="<?php echo $dokumen['hari']?>"/></td>
+  <td><input name="hari" type="text" class="dataaspirasimasyarakat inputbox datepicker2" size="30" value="<?php echo $dokumen['hari']?>"/></td>
 </tr>
 <tr class="dataaspirasimasyarakat">
 	<th>Nama Lembaga</th>

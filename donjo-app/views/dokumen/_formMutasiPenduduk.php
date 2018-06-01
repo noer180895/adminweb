@@ -16,7 +16,7 @@
 
 <tr class="formEkspedisi">
   <th>Tanggal Lahir</th>
-  <td><input name="tanggal_lahir" id="tanggal_lahir" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['tanggal_lahir']?>"/></td>
+  <td><input name="tanggal_lahir" id="tanggal_lahir" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['tanggal_lahir']?>"/></td>
 </tr>
 
 <tr class="formEkspedisi">
@@ -65,7 +65,7 @@
 
   <tr class="formEkspedisi">
     <th>Tanggal</th>
-    <td><input name="tanggal" id="tanggal" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['tanggal']?>"/></td>
+    <td><input name="tanggal" id="tanggal" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['tanggal']?>"/></td>
   </tr>
 
 

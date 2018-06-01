@@ -35,7 +35,7 @@
   </select></td>
   <tr class="spacer"></tr>
   <th>Tanggal Penghapusan</th>
-  <td><input name="tanggal_penghapusan" type="datepicker" class="formInventaris inputbox datepicker" size="30" value="<?php echo $dokumen['tanggal_penghapusan']?>"/></td>
+  <td><input name="tanggal_penghapusan" id="tanggal_penghapusan" type="datepicker" class="formInventaris inputbox datepicker2" size="30" value="<?php echo $dokumen['tanggal_penghapusan']?>"/></td>
 </tr>
 <tr class="formInventaris">
   <th>Keterangan</th>

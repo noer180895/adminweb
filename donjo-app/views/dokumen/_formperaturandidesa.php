@@ -12,7 +12,7 @@
 </tr>
 <tr class="peraturandidesa">
 	<th>Tanggal Ditetapkan Peraturan Desa</th>
-  <td><input name="tanggalditetapkanperaturandesa" type="text" class="peraturandidesa inputbox datepicker" size="20" value="<?php echo $dokumen['tanggalditetapkanperaturandesa']?>"/></td>
+  <td><input name="tanggalditetapkanperaturandesa" type="text" class="peraturandidesa inputbox datepicker2" size="20" value="<?php echo $dokumen['tanggalditetapkanperaturandesa']?>"/></td>
 </tr>
 <tr class="peraturandidesa">
 	<th>Tentang</th>
@@ -20,7 +20,7 @@
 </tr>
 <tr class="peraturandidesa">
 	<th>Tgl Dilaporkan</th>
-  <td><input name="tgl_lapor" type="text" class="peraturandidesa inputbox datepicker" size="20" value="<?php echo $dokumen['tgl_lapor']?>"/></td>
+  <td><input name="tgl_lapor" type="text" class="peraturandidesa inputbox datepicker2" size="20" value="<?php echo $dokumen['tgl_lapor']?>"/></td>
 </tr>
 <tr class="peraturandidesa">
 	<th>No. Diundangkan Dalam Lembaran Desa</th>

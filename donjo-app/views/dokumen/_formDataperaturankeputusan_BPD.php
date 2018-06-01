@@ -8,7 +8,7 @@
 </tr>
 <tr class="dataperaturankeputusan_bpd">
 	<th>Tanggal Peraturan BPD</th>
-  <td><input name="tanggalperatutan_bpd" type="text" class="dataperaturankeputusan_bpd inputbox datepicker" size="30" value="<?php echo $dokumen['tanggalperatutan_bpd']?>"/></td>
+  <td><input name="tanggalperatutan_bpd" type="text" class="dataperaturankeputusan_bpd inputbox datepicker2" size="30" value="<?php echo $dokumen['tanggalperatutan_bpd']?>"/></td>
 </tr>
 <tr class="dataperaturankeputusan_bpd">
 	<th>Hasil Keputusan BPD</th>

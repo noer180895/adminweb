@@ -8,7 +8,7 @@
 </tr>
 <tr class="keputusanmusyawarahdesa">
 	<th>Pokok keputusan musyawarah</th>
-  <td><input name="pokokkeputusanmusyawarah" type="text" class="keputusanmusyawarahdesa inputbox datepicker" size="30" value="<?php echo $dokumen['pokokkeputusanmusyawarah']?>"/></td>
+  <td><input name="pokokkeputusanmusyawarah" type="text" class="keputusanmusyawarahdesa inputbox datepicker2" size="30" value="<?php echo $dokumen['pokokkeputusanmusyawarah']?>"/></td>
 </tr>
 <tr class="keputusanmusyawarahdesa">
 	<th>keterangan</th>

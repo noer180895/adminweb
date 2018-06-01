@@ -272,6 +272,44 @@ class Dokumen extends CI_Controller{
             	$objPHPExcel->getActiveSheet()->setCellValue('B9', 'Waiting Approval');
             }
       
+        }else if($indentity == '2'){ // jika form inventaris
+        	$title = 'inventaris-data-' . date('ymd') . '.xlsx';
+            $dataAll = $this->web_dokumen_model->getDetailInventaris($id);
+            $objPHPExcel = new PHPExcel();
+            $objPHPExcel->setActiveSheetIndex(0)
+                        //mengisikan value pada tiap-tiap cell, A1 itu alamat cellnya 
+                        ->setCellValue('A1', 'Data Input Form Ekspedisi')
+                        ->setCellValue('A2', 'Judul')
+                        ->setCellValue('A3', 'No Urut')
+                        ->setCellValue('A4', 'Jenis Barang / Bangunan')
+                        ->setCellValue('A5', 'Asal Barang / Bangunan')
+                        ->setCellValue('A6', 'Keadaan Barang / Bangunan Awal Tahun')
+                        ->setCellValue('A7', 'Penghapusan Barang')
+                        ->setCellValue('A8', 'Tanggal Penghapusan')
+                        ->setCellValue('A9', 'Status')
+                        ->setCellValue('A10', 'Keterangan');
+
+           	$objPHPExcel->setActiveSheetIndex(0)->mergeCells('A1:B1');
+           	$objPHPExcel->getActiveSheet()->getStyle('A1:B1')->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+            $objPHPExcel->getActiveSheet()->setCellValue('B2', $dataAll['nama']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B3', $dataAll['no_urut']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B4', $dataAll['jenis_barang_at_bangunan']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B5', $dataAll['asal_barang_bangunan']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B6', $dataAll['keadaanbarang']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B7', $dataAll['penghapusanbarang']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B8', $dataAll['tanggal_penghapusan']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B10', $dataAll['keterangan']);
+
+            $objPHPExcel->getActiveSheet()->getColumnDimension('A')->setWidth(20);
+            $objPHPExcel->getActiveSheet()->getColumnDimension('B')->setWidth(40);
+
+            if($dataAll['is_approve'] == 1){
+            	$objPHPExcel->getActiveSheet()->setCellValue('B9', 'Approved');
+            }else if($dataAll['is_approve'] == 2){
+            	$objPHPExcel->getActiveSheet()->setCellValue('B9', 'Rejected');
+            }else{
+            	$objPHPExcel->getActiveSheet()->setCellValue('B9', 'Waiting Approval');
+            }
         }
 
 
@@ -305,6 +343,18 @@ class Dokumen extends CI_Controller{
             }
             
 			$this->load->view('export_document/ekspedisi', $data);
+		}else if($indentity == '2'){
+			$dataDetail = $this->web_dokumen_model->getDetailInventaris($id);
+            $data['inventaris'] = $dataDetail;
+            if($dataDetail['is_approve'] == 1 ){ 
+            	$data['status'] = 'Approved'; 
+        	}else if($dataDetail['is_approve'] == 2){
+        		$data['status'] = 'Rejected';
+        	}else{
+        		$data['status'] = 'Waiting Approval';
+            }
+            
+			$this->load->view('export_document/inventaris', $data);
 		}
     }
 

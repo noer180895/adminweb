@@ -37,6 +37,7 @@ class Web_dokumen_model extends CI_Model{
 			$kw = $this->db->escape_like_str($cari);
 			$kw = '%' .$kw. '%';
 			$search_sql= " AND (nama LIKE '$kw')";
+		
 			return $search_sql;
 			
 		}
@@ -57,148 +58,148 @@ class Web_dokumen_model extends CI_Model{
 		if($kat == "6") // jika dia request ekspedisi
 		{
 			$sql = " FROM dokumen_ekspedisi where kategori = 6";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "4"){
 			$sql = " FROM dokumen_aparatpemerintahandesa where kategori = 4";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "2"){
 			$sql = " FROM dokumen_inventaris where kategori = 2";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "3"){
 			$sql = " FROM dokumen_peraturandesa where kategori = 3";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "5"){
 			$sql = " FROM dokumen_agenda where kategori = 5";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "7"){
 			$sql = " FROM dokumen_lembaranberitadesa where kategori = 7";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "8"){
 			$sql = " FROM dokumen_bukutamubpd where kategori = 8";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "9"){
 			$sql = " FROM dokumen_daftarhadirrapatbpd where kategori = 9";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "10"){
 			$sql = " FROM dokumen_daftaranggotabpd where kategori = 10";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "11"){
 			$sql = " FROM dokumen_dataaspirasimasyarakat where kategori = 11";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "12"){
 			$sql = " FROM dokumen_datakegiatanbpd where kategori = 12";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "13"){
 			$sql = " FROM dokumen_datanotulenrapatbpd where kategori = 13"; //done db
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "14"){
 			$sql = " FROM dokumen_dataperaturankeputusanbpd where kategori = 14"; // done db
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "15"){
 			$sql = " FROM dokumen_datatanahdidesa where kategori = 15"; //done db
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "16"){
 			$sql = " FROM dokumen_inventarishasilpembangunan where kategori = 16";  //dene db
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "17"){
 			$sql = " FROM dokumen_kaderpemberdayaanmasyarakat where kategori = 17"; //done db
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "18"){
 			$sql = " FROM dokumen_keputusankepaladesa where kategori = 18";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "19"){
 			$sql = " FROM dokumen_keputusanmusyawarahdesa where kategori = 19";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "20"){
 			$sql = " FROM dokumen_keputusanmusyawarahperencanaanpembangunandesa where kategori = 20";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "21"){
 			$sql = " FROM dokumen_laporankeuanganbpd where kategori = 21";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "22"){
 			$sql = " FROM dokumen_peraturandidesa where kategori = 22";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 			//tambahan
 		}elseif($kat == "23"){
 			$sql = " FROM dokumen_DataInventarisbpd where kategori = 23";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "24"){
 			$sql = " FROM dokumen_IndukPenduduk where kategori = 24";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "25"){
 			$sql = " FROM dokumen_Mutasipenduduk where kategori = 25";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "26"){
 			$sql = " FROM dokumen_Rekapitulasipenduduk where kategori = 26";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "27"){
 			$sql = " FROM dokumen_Penduduksementara where kategori = 27";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "28"){
 			$sql = " FROM dokumen_Kartutandapendudukdankeluarga where kategori = 28"; 
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "29"){
 			$sql = " FROM dokumen_Anggaranpendapatanbelanja where kategori = 29"; 
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "30"){
 			$sql = " FROM dokumen_RencanaAnggaranBiaya where kategori = 30";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "31"){
 			$sql = " FROM dokumen_Kaspembantukegiatan where kategori = 31";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "32"){
 			$sql = " FROM dokumen_Bukukasumum where kategori = 32";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "33"){
 			$sql = " FROM dokumen_Bankdesa where kategori = 33";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "34"){
 			$sql = " FROM dokumen_RencanaKerjaPembangunan where kategori = 34";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "35"){
 			$sql = " FROM dokumen_Kegiatanpembangunan where kategori = 35";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "36"){
 			$sql = " FROM dokumen_Agendasuratkeluar where kategori = 36";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}elseif($kat == "37"){
 			$sql = " FROM dokumen_Agendasuratmasuk where kategori = 37";
-			// $sql .= $this->search_sql($kat);
+			$sql .= $this->search_sql($kat);
 			$sql .= $this->filter_sql($kat);
 		}else{
 
@@ -621,7 +622,14 @@ class Web_dokumen_model extends CI_Model{
 			if (!$this->upload_dokumen($data, $data['old_file']))
  				unset($data['satuan']);
  			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
  			return $this->db->where('id',$id)->update('dokumen_ekspedisi',$data);
+ 		}else if($kat == "2"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_inventaris',$data);
 		}else{
 			if (!$this->upload_dokumen($data, $data['old_file']))
 			unset($data['satuan']);
@@ -635,6 +643,13 @@ class Web_dokumen_model extends CI_Model{
  		if($kat == "6"){
  			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_ekspedisi')->row()->satuan;
  			$outp = $this->db->where('id',$id)->delete('dokumen_ekspedisi');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+
+ 		}else if($kat == "2"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_inventaris')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_inventaris');
  			if($outp)
  			unlink(LOKASI_DOKUMEN . $old_dokumen);
  			else $_SESSION['success']=-1;
@@ -1335,6 +1350,13 @@ class Web_dokumen_model extends CI_Model{
  			$data  = $query->row_array();
  			$data['attr'] = json_decode($data['attr'], true);
  			return $data;
+ 		}else if($kat == "2"){
+ 			$sql   = "SELECT * FROM dokumen_inventaris WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;
+
  		}else{
  			$sql   = "SELECT * FROM dokumen WHERE id=?";
  			$query = $this->db->query($sql,$id);
@@ -1367,6 +1389,18 @@ class Web_dokumen_model extends CI_Model{
 		return $data;
 
     }
+
+    function getDetailInventaris($id=0){
+		$sql   = "SELECT * FROM dokumen_inventaris WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+
+    }
+
+
+    
 
 
 	function list_kategori(){

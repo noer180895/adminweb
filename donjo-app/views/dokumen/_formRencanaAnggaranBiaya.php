@@ -16,7 +16,7 @@
 <tr class="formEkspedisi">  
   <th>Waktu Pelaksanaan</th>
   <td>
-      <td><input name="waktu_pelaksanaan" id="waktu_pelaksanaan" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['waktu_pelaksanaan']?>"/></td>
+      <td><input name="waktu_pelaksanaan" id="waktu_pelaksanaan" type="text" class="sk_kades inputbox datepicker22" value="<?php echo $dokumen['waktu_pelaksanaan']?>"/></td>
   </td>
 </tr>
 

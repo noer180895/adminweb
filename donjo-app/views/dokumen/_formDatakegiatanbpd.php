@@ -4,7 +4,7 @@
 </tr>
 <tr class="datakegiatanbpd">
 	<th>Tanggal</th>
-  <td><input name="tanggal" type="text" class="datakegiatanbpd inputbox datepicker" size="30" value="<?php echo $dokumen['tanggal']?>"/></td>
+  <td><input name="tanggal" type="text" class="datakegiatanbpd inputbox datepicker2" size="30" value="<?php echo $dokumen['tanggal']?>"/></td>
 </tr>
 	<tr class="datakegiatanbpd">
 	<th>Jenis Kegiatan</th>
