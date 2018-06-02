@@ -707,6 +707,12 @@ class Web_dokumen_model extends CI_Model{
  			$data['attr'] = json_encode($data['attr']);
 			$data['updated_date']= date("Y-m-d h:i:s");
  			return $this->db->where('id',$id)->update('dokumen_Bukukasumum',$data);
+ 		}else if($kat == "33"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_Bankdesa',$data);
 		}else{
 			if (!$this->upload_dokumen($data, $data['old_file']))
 			unset($data['satuan']);
@@ -803,7 +809,12 @@ class Web_dokumen_model extends CI_Model{
  			if($outp)
  			unlink(LOKASI_DOKUMEN . $old_dokumen);
  			else $_SESSION['success']=-1;
-
+ 		}else if($kat == "33"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_Bankdesa')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_Bankdesa');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
 		 			
  			
  		}else{
@@ -1588,6 +1599,12 @@ class Web_dokumen_model extends CI_Model{
  			$data  = $query->row_array();
  			$data['attr'] = json_decode($data['attr'], true);
  			return $data;
+ 		}else if($kat == "33"){
+ 			$sql   = "SELECT * FROM dokumen_Bankdesa WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;
  		}else{
  			$sql   = "SELECT * FROM dokumen WHERE id=?";
  			$query = $this->db->query($sql,$id);
@@ -1737,6 +1754,15 @@ class Web_dokumen_model extends CI_Model{
 
     function getDetailKasUmum($id=0){
     	$sql   = "SELECT * FROM  dokumen_Bukukasumum WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+    }
+
+
+    function getDetailBankDesa($id=0){
+    	$sql   = "SELECT * FROM  dokumen_Bankdesa WHERE id=?";
 		$query = $this->db->query($sql,$id);
 		$data  = $query->row_array();
 		$data['attr'] = json_decode($data['attr'], true);

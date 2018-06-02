@@ -7,21 +7,21 @@
 <tr class="formEkspedisi">  
   <th>Bulan</th>
   <td>
-      <td><input name="bulan" id="bulan" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['bulan']?>"/></td>
+    <input name="bulan" id="bulan" type="text" class="formEkspedisi inputbox" value="<?php echo $dokumen['bulan']?>"/>
   </td>
 </tr>
 
 <tr class="formEkspedisi">  
   <th>Bank Cabang</th>
   <td>
-      <td><input name="bank_cabang" id="bank_cabang" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['bank_cabang']?>"/></td>
+    <input name="bank_cabang" id="bank_cabang" type="text" class="formEkspedisi inputbox" value="<?php echo $dokumen['bank_cabang']?>"/>
   </td>
 </tr>
 
 <tr class="formEkspedisi">  
   <th>Rekening No</th>
   <td>
-      <td><input name="rekening_no" id="rekening_no" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['rekening_no']?>"/></td>
+      <input name="rekening_no" id="rekening_no" type="text" class="formEkspedisi inputbox" value="<?php echo $dokumen['rekening_no']?>"/>
   </td>
 </tr>
 
@@ -29,7 +29,7 @@
 <tr class="formEkspedisi">  
   <th>Tanggal Transaksi</th>
   <td>
-      <td><input name="tanggal" id="tanggal" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['tanggal']?>"/></td>
+    <input name="tanggal" id="tanggal" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['tanggal']?>"/>
   </td>
 </tr>
 
@@ -38,7 +38,7 @@
 <tr class="formEkspedisi">  
   <th>Uraian Transaksi</th>
   <td>
-      <td><input name="uraian" id="uraian" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['uraian']?>"/></td>
+      <textarea name="uraian" id="uraian" rows="4" cols="50"><?php echo $dokumen['uraian']?></textarea>
   </td>
 </tr>
 
@@ -46,7 +46,7 @@
 <tr class="formEkspedisi">  
   <th>Pemasukan Setoran</th>
   <td>
-      <td><input name="pemasukan_setoran" id="pemasukan_setoran" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['pemasukan_setoran']?>"/></td>
+    <input name="pemasukan_setoran" id="pemasukan_setoran" type="text" class="formEkspedisi inputbox" value="<?php echo $dokumen['pemasukan_setoran']?>"/>
   </td>
 </tr>
 
@@ -55,7 +55,7 @@
 <tr class="formEkspedisi">  
   <th>Pemasukan Bunga Bank</th>
   <td>
-      <td><input name="pemasukan_bunga_bank" id="pemasukan_bunga_bank" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['pemasukan_bunga_bank']?>"/></td>
+    <input name="pemasukan_bunga_bank" id="pemasukan_bunga_bank" type="text" class="formEkspedisi inputbox" value="<?php echo $dokumen['pemasukan_bunga_bank']?>"/>
   </td>
 </tr>
 
@@ -64,7 +64,7 @@
 <tr class="formEkspedisi">  
   <th>Pengeluaran Penarikan</th>
   <td>
-      <td><input name="pengeluaran_penarikan" id="pengeluaran_penarikan" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['pengeluaran_penarikan']?>"/></td>
+    <input name="pengeluaran_penarikan" id="pengeluaran_penarikan" type="text" class="formEkspedisi inputbox" value="<?php echo $dokumen['pengeluaran_penarikan']?>"/>
   </td>
 </tr>
 
@@ -73,7 +73,7 @@
 <tr class="formEkspedisi">  
   <th>Pengeluaran Pajak</th>
   <td>
-      <td><input name="pengeluaran_pajak" id="pengeluaran_pajak" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['pengeluaran_pajak']?>"/></td>
+    <input name="pengeluaran_pajak" id="pengeluaran_pajak" type="text" class="formEkspedisi inputbox" value="<?php echo $dokumen['pengeluaran_pajak']?>"/>
   </td>
 </tr>
 
@@ -82,7 +82,7 @@
 <tr class="formEkspedisi">  
   <th>Pengeluaran Biaya Administrasi</th>
   <td>
-      <td><input name="pengeluaran_biaya_administrasi" id="pengeluaran_biaya_administrasi" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['pengeluaran_biaya_administrasi']?>"/></td>
+    <input name="pengeluaran_biaya_administrasi" id="pengeluaran_biaya_administrasi" type="text" class="formEkspedisi inputbox" value="<?php echo $dokumen['pengeluaran_biaya_administrasi']?>"/>
   </td>
 </tr>
 

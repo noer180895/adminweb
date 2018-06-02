@@ -67,3 +67,23 @@ ERROR - 2018-06-02 15:39:59 --> Severity: error --> Exception: PHPExcel object u
 ERROR - 2018-06-02 15:51:37 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
 ERROR - 2018-06-02 15:51:37 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
 ERROR - 2018-06-02 15:51:42 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
+ERROR - 2018-06-02 16:39:16 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
+ERROR - 2018-06-02 16:39:16 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
+ERROR - 2018-06-02 16:43:36 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
+ERROR - 2018-06-02 16:43:36 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
+ERROR - 2018-06-02 16:43:42 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
+ERROR - 2018-06-02 16:56:44 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
+ERROR - 2018-06-02 16:56:44 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
+ERROR - 2018-06-02 16:56:49 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
+ERROR - 2018-06-02 11:57:13 --> Severity: Parsing Error --> syntax error, unexpected '->' (T_OBJECT_OPERATOR) C:\xampp\htdocs\admindesa\donjo-app\controllers\Dokumen.php 861
+ERROR - 2018-06-02 11:57:38 --> Severity: Parsing Error --> syntax error, unexpected '->' (T_OBJECT_OPERATOR) C:\xampp\htdocs\admindesa\donjo-app\controllers\Dokumen.php 861
+ERROR - 2018-06-02 11:57:39 --> Severity: Parsing Error --> syntax error, unexpected '->' (T_OBJECT_OPERATOR) C:\xampp\htdocs\admindesa\donjo-app\controllers\Dokumen.php 861
+ERROR - 2018-06-02 11:58:02 --> Severity: Parsing Error --> syntax error, unexpected '->' (T_OBJECT_OPERATOR) C:\xampp\htdocs\admindesa\donjo-app\controllers\Dokumen.php 861
+ERROR - 2018-06-02 11:59:52 --> Severity: Parsing Error --> syntax error, unexpected '->' (T_OBJECT_OPERATOR) C:\xampp\htdocs\admindesa\donjo-app\controllers\Dokumen.php 861
+ERROR - 2018-06-02 11:59:53 --> Severity: Parsing Error --> syntax error, unexpected '->' (T_OBJECT_OPERATOR) C:\xampp\htdocs\admindesa\donjo-app\controllers\Dokumen.php 861
+ERROR - 2018-06-02 12:00:25 --> Severity: Parsing Error --> syntax error, unexpected '->' (T_OBJECT_OPERATOR) C:\xampp\htdocs\admindesa\donjo-app\controllers\Dokumen.php 861
+ERROR - 2018-06-02 12:01:30 --> Severity: Parsing Error --> syntax error, unexpected '->' (T_OBJECT_OPERATOR) C:\xampp\htdocs\admindesa\donjo-app\controllers\Dokumen.php 861
+ERROR - 2018-06-02 12:03:30 --> Severity: Parsing Error --> syntax error, unexpected '->' (T_OBJECT_OPERATOR) C:\xampp\htdocs\admindesa\donjo-app\controllers\Dokumen.php 860
+ERROR - 2018-06-02 12:03:31 --> Severity: Parsing Error --> syntax error, unexpected '->' (T_OBJECT_OPERATOR) C:\xampp\htdocs\admindesa\donjo-app\controllers\Dokumen.php 860
+ERROR - 2018-06-02 12:15:06 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-02 12:15:06 --> 404 Page Not Found: Desa/upload
