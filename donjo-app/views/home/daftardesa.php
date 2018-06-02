@@ -29,10 +29,7 @@
         <div class="left">
           
         </div>
-        <div class="right">
-          <input name="caridesa" id="caridesa" type="text" class="inputbox help tipped" size="20" value="<?php echo $caridesa?>" title="Cari.." onkeypress="if (event.keyCode == 13) {$('#'+'mainform').attr('action','<?php echo site_url('daftardesa/search')?>');$('#'+'mainform').submit();}" />
-          <button type="button" onclick="$('#'+'mainform').attr('action','<?php echo site_url('daftardesa/search')?>');$('#'+'mainform').submit();" class="uibutton tipsy south"  title="Cari Data"><span class="fa fa-search">&nbsp;</span>Cari</button>
-        </div>
+       
       </div>
         <table class="list">
       		<thead>
@@ -49,9 +46,10 @@
       			</tr>
       		</thead>
       		<tbody>
-            <?php  foreach($main as $data){ ?>
+
+            <?php $no=0;  foreach($main as $data){ $no++; ?>
           		<tr>
-                <td align="center" width="2"><?php echo $data['no']?></td>
+                <td align="center" width="2"><?php echo $no; ?></td>
           			<td align="center" width="5">
           				<input type="checkbox" name="id_cb[]" value="<?php echo $data['id']?>" />
           			</td>
@@ -59,11 +57,6 @@
                   <div class="uibutton-group">
                     <?php if($data['pamong_id']!="707"){?>
                       <a href="<?php echo site_url("daftardesa/form/$data[id]")?>" class="uibutton tipsy south fa-tipis" title="Ubah Data"><span class="fa fa-edit"></span> Ubah</a>
-                      <?php if($data['pamong_ttd'] == '1'):?>
-                          <a href="<?php echo site_url('daftardesa/ttd_off/'.$data['id'])?>" class="uibutton tipsy south" title="Bukan TTD default"><span  class="fa fa-pencil"></span></a>
-                      <?php else : ?>
-                          <a href="<?php echo site_url('daftardesa/ttd_on/'.$data['id'])?>" class="uibutton tipsy south" title="Jadikan TTD default"><span  class="fa fa-user"></span></a>
-                      <?php endif?>
                       <a href="<?php echo site_url("daftardesa/delete/$data[id]")?>" class="uibutton tipsy south" title="Hapus Data" target="confirm" message="Apakah Anda Yakin?" header="Hapus Data"><span class="fa fa-trash"></span></a>
                     <?php }?>
                   </div>

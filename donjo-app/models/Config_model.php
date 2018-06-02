@@ -517,6 +517,20 @@
 
 	}
 
+	function delete($id=''){
+		return $this->db->where('id',$id)->delete('config');
+	}
+
+
+	function delete_all(){
+		$id_cb = $_POST['id_cb'];
+		if(count($id_cb)){
+			foreach($id_cb as $id){
+				$this->delete($id);
+			}
+		}
+		else $_SESSION['success']=-1;
+	}
 
 	function autocomplete(){
 		$sql   = "SELECT nama_desa FROM config";

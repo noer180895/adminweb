@@ -320,7 +320,7 @@ class Web_dokumen_model extends CI_Model{
 			$nama_file = $data['nama']."_".generator(6)."_".$nama_file;
 		$nama_file = urlencode($nama_file);
 		UploadDocument($nama_file, $file_lama);
-		$data['satuan'] = $nama_file;
+		$data['satuan'] = $nama_file != null ? $nama_file : null;
 		return true;
 	}
 
@@ -328,292 +328,269 @@ class Web_dokumen_model extends CI_Model{
 		$data = $_POST;
 
 		if($kat == 6){ // jika tipe kategorinya adalah ekspedisi
-			if ($this->upload_dokumen($data)) {
-				// $data['attr'] = json_encode($data['attr']);
-				$data['created_date'] =  date("Y-m-d h:i:s");
-				$data['updated_date']= date("Y-m-d h:i:s");
-				return $this->db->insert('dokumen_ekspedisi',$data);
-			} else return false;
+			$this->upload_dokumen($data);
+			// $data['attr'] = json_encode($data['attr']);
+			$data['created_date'] =  date("Y-m-d h:i:s");
+			$data['updated_date']= date("Y-m-d h:i:s");
+			return $this->db->insert('dokumen_ekspedisi',$data);
+			
 		}elseif($kat == 4){
-			if ($this->upload_dokumen($data)) {
-				// $data['attr'] = json_encode($data['attr']);
-				$data['created_date'] =  date("Y-m-d h:i:s");
-				$data['updated_date']= date("Y-m-d h:i:s");
-				return $this->db->insert('dokumen_aparatpemerintahandesa',$data);
-			} else return false;
+			$this->upload_dokumen($data);
+			// $data['attr'] = json_encode($data['attr']);
+			$data['created_date'] =  date("Y-m-d h:i:s");
+			$data['updated_date']= date("Y-m-d h:i:s");
+			return $this->db->insert('dokumen_aparatpemerintahandesa',$data);
 		}elseif($kat == 2){
-			if ($this->upload_dokumen($data)) {
-				// $data['attr'] = json_encode($data['attr']);
-				$data['created_date'] =  date("Y-m-d h:i:s");
-				$data['updated_date']= date("Y-m-d h:i:s");
-				return $this->db->insert('dokumen_inventaris',$data);
-			} else return false;
+			$this->upload_dokumen($data);
+			// $data['attr'] = json_encode($data['attr']);
+			$data['created_date'] =  date("Y-m-d h:i:s");
+			$data['updated_date']= date("Y-m-d h:i:s");
+			return $this->db->insert('dokumen_inventaris',$data);
 		}elseif($kat == 3){
-			if ($this->upload_dokumen($data)) {
+				$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_peraturandesa',$data);
-			} else return false;
+			
 		}elseif($kat == 5){
-			if ($this->upload_dokumen($data)) {
+				$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_agenda',$data);
-			} else return false;
+			
 		}elseif($kat == 7){
-			if ($this->upload_dokumen($data)) {
+				$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
-				return $this->db->insert('dokumen_lembaranberitadesa',$data);
-			} else return false;			
+				return $this->db->insert('dokumen_lembaranberitadesa',$data);		
 		}elseif($kat == 8){
-			if ($this->upload_dokumen($data)) {
+				$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_bukutamubpd',$data);
-			} else return false;
+			
 			
 		}elseif($kat == 9){
-			if ($this->upload_dokumen($data)) {
+				$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_daftarhadirrapatbpd',$data);
-			} else return false;
 			
 		}elseif($kat == 10){
-			if ($this->upload_dokumen($data)) {
+				$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_daftaranggotabpd',$data);
-			} else return false;
 			
 		}elseif($kat == 11){
-			if ($this->upload_dokumen($data)) {
+				$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_dataaspirasimasyarakat',$data);
-			} else return false;
 			
 		}elseif($kat == 12){
-			if ($this->upload_dokumen($data)) {
+				$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_datakegiatanbpd',$data);
-			} else return false;
 			
 		}elseif($kat == 13){
-			if ($this->upload_dokumen($data)) {
+				$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_datanotulenrapatbpd',$data);
-			} else return false;
 			
 		}elseif($kat == 14){
-			if ($this->upload_dokumen($data)) {
+			$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_dataperaturankeputusanbpd',$data);
-			} else return false;
+			
 			
 		}elseif($kat == 15){
-			if ($this->upload_dokumen($data)) {
+			$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_datatanahdidesa',$data);
-			} else return false;
+		
 			
 		}elseif($kat == 16){
-			if ($this->upload_dokumen($data)) {
-				// $data['attr'] = json_encode($data['attr']);
-				$data['created_date'] =  date("Y-m-d h:i:s");
-				$data['updated_date']= date("Y-m-d h:i:s");
-				return $this->db->insert('dokumen_inventarishasilpembangunan',$data);
-			} else return false;
+			$this->upload_dokumen($data);
+			// $data['attr'] = json_encode($data['attr']);
+			$data['created_date'] =  date("Y-m-d h:i:s");
+			$data['updated_date']= date("Y-m-d h:i:s");
+			return $this->db->insert('dokumen_inventarishasilpembangunan',$data);
+			
 			
 		}elseif($kat == 17){
-			if ($this->upload_dokumen($data)) {
+				$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_kaderpemberdayaanmasyarakat',$data);
-			} else return false;
+			
 			
 		}elseif($kat == 18){
-			if ($this->upload_dokumen($data)) {
+			$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_keputusankepaladesa',$data);
-			} else return false;
+	
 			
 		}elseif($kat == 19){
-			if ($this->upload_dokumen($data)) {
+				$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_keputusanmusyawarahdesa',$data);
-			} else return false;
 			
 		}elseif($kat == 20){
-			if ($this->upload_dokumen($data)) {
+				$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_keputusanmusyawarahperencanaanpembangunandesa',$data);
-			} else return false;
 			
 		}elseif($kat == 21){
-			if ($this->upload_dokumen($data)) {
+				$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_laporankeuanganbpd',$data);
-			} else return false;
 			
 		}elseif($kat == 22){
-			if ($this->upload_dokumen($data)) {
+				$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_peraturandidesa',$data);
-			} else return false;
 			//tambahan
 			
 		}elseif($kat == 23){
-			if ($this->upload_dokumen($data)) {
+				$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_DataInventarisbpd',$data);
-			} else return false;		
+		
 		}elseif($kat == 24){
-			if ($this->upload_dokumen($data)) {
+			$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_IndukPenduduk',$data);
-			} else return false;
+			
 			
 		}elseif($kat == 25){
-			if ($this->upload_dokumen($data)) {
-				// $data['attr'] = json_encode($data['attr']);
-				$data['created_date'] =  date("Y-m-d h:i:s");
-				$data['updated_date']= date("Y-m-d h:i:s");
-				return $this->db->insert('dokumen_Mutasipenduduk',$data);
-			} else return false;
+			$this->upload_dokumen($data);
+			// $data['attr'] = json_encode($data['attr']);
+			$data['created_date'] =  date("Y-m-d h:i:s");
+			$data['updated_date']= date("Y-m-d h:i:s");
+			return $this->db->insert('dokumen_Mutasipenduduk',$data);
 			
 		}elseif($kat == 26){
-			if ($this->upload_dokumen($data)) {
+			$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_Rekapitulasipenduduk',$data);
-			} else return false;
 			
 		}elseif($kat == 27){
-			if ($this->upload_dokumen($data)) {
-				// $data['attr'] = json_encode($data['attr']);
-				$data['created_date'] =  date("Y-m-d h:i:s");
-				$data['updated_date']= date("Y-m-d h:i:s");
-				return $this->db->insert('dokumen_Penduduksementara',$data);
-			} else return false;
+			$this->upload_dokumen($data);
+			// $data['attr'] = json_encode($data['attr']);
+			$data['created_date'] =  date("Y-m-d h:i:s");
+			$data['updated_date']= date("Y-m-d h:i:s");
+			return $this->db->insert('dokumen_Penduduksementara',$data);
+			
 			
 		}elseif($kat == 28){
-			if ($this->upload_dokumen($data)) {
-				// $data['attr'] = json_encode($data['attr']);
-				$data['created_date'] =  date("Y-m-d h:i:s");
-				$data['updated_date']= date("Y-m-d h:i:s");
-				return $this->db->insert('dokumen_Kartutandapendudukdankeluarga',$data);
-			} else return false;
+			$this->upload_dokumen($data);
+			// $data['attr'] = json_encode($data['attr']);
+			$data['created_date'] =  date("Y-m-d h:i:s");
+			$data['updated_date']= date("Y-m-d h:i:s");
+			return $this->db->insert('dokumen_Kartutandapendudukdankeluarga',$data);
 			
 		}elseif($kat == 29){
-			if ($this->upload_dokumen($data)) {
-				// $data['attr'] = json_encode($data['attr']);
-				$data['created_date'] =  date("Y-m-d h:i:s");
-				$data['updated_date']= date("Y-m-d h:i:s");
-				return $this->db->insert('dokumen_Anggaranpendapatanbelanja',$data);
-			} else return false;
+			$this->upload_dokumen($data);
+			// $data['attr'] = json_encode($data['attr']);
+			$data['created_date'] =  date("Y-m-d h:i:s");
+			$data['updated_date']= date("Y-m-d h:i:s");
+			return $this->db->insert('dokumen_Anggaranpendapatanbelanja',$data);
+			
 			
 		}elseif($kat == 30){
-			if ($this->upload_dokumen($data)) {
-				// $data['attr'] = json_encode($data['attr']);
-				$data['created_date'] =  date("Y-m-d h:i:s");
-				$data['updated_date']= date("Y-m-d h:i:s");
-				return $this->db->insert('dokumen_RencanaAnggaranBiaya',$data);
-			} else return false;
+			$this->upload_dokumen($data);
+			// $data['attr'] = json_encode($data['attr']);
+			$data['created_date'] =  date("Y-m-d h:i:s");
+			$data['updated_date']= date("Y-m-d h:i:s");
+			return $this->db->insert('dokumen_RencanaAnggaranBiaya',$data);
 			
 		}elseif($kat == 31){
-			if ($this->upload_dokumen($data)) {
-				// $data['attr'] = json_encode($data['attr']);
-				$data['created_date'] =  date("Y-m-d h:i:s");
-				$data['updated_date']= date("Y-m-d h:i:s");
-				return $this->db->insert('dokumen_Kaspembantukegiatan',$data);
-			} else return false;
+			$this->upload_dokumen($data);
+			// $data['attr'] = json_encode($data['attr']);
+			$data['created_date'] =  date("Y-m-d h:i:s");
+			$data['updated_date']= date("Y-m-d h:i:s");
+			return $this->db->insert('dokumen_Kaspembantukegiatan',$data);
 			
 		}elseif($kat == 32){
-			if ($this->upload_dokumen($data)) {
-				// $data['attr'] = json_encode($data['attr']);
-				$data['created_date'] =  date("Y-m-d h:i:s");
-				$data['updated_date']= date("Y-m-d h:i:s");
-				return $this->db->insert('dokumen_Bukukasumum',$data);
-			} else return false;
+			$this->upload_dokumen($data);
+			// $data['attr'] = json_encode($data['attr']);
+			$data['created_date'] =  date("Y-m-d h:i:s");
+			$data['updated_date']= date("Y-m-d h:i:s");
+			return $this->db->insert('dokumen_Bukukasumum',$data);
 			
 		}elseif($kat == 33){
-			if ($this->upload_dokumen($data)) {
+				$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_Bankdesa',$data);
-			} else return false;
 			
 		}elseif($kat == 34){
-			if ($this->upload_dokumen($data)) {
+			$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_RencanaKerjaPembangunan',$data);
-			} else return false;
 			
 		}elseif($kat == 35){
-			if ($this->upload_dokumen($data)) {
+			$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_Kegiatanpembangunan',$data);
-			} else return false;
 			
 		}elseif($kat == 36){
-			if ($this->upload_dokumen($data)) {
+			$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_Agendasuratkeluar',$data);
-			} else return false;
 			
 		}elseif($kat == 37){
-			if ($this->upload_dokumen($data)) {
+			$this->upload_dokumen($data);
 				// $data['attr'] = json_encode($data['attr']);
 				$data['created_date'] =  date("Y-m-d h:i:s");
 				$data['updated_date']= date("Y-m-d h:i:s");
 				return $this->db->insert('dokumen_Agendasuratmasuk',$data);
-			} else return false;
 			
 		}else{
-			if ($this->upload_dokumen($data)) {
+			$this->upload_dokumen($data);
 				$data['attr'] = json_encode($data['attr']);
 				return $this->db->insert('dokumen',$data);
-			} else return false;
+			
 		}
 	}
 
@@ -661,7 +638,108 @@ class Web_dokumen_model extends CI_Model{
  			$data['attr'] = json_encode($data['attr']);
 			$data['updated_date']= date("Y-m-d h:i:s");
  			return $this->db->where('id',$id)->update('dokumen_bukutamubpd',$data);
-
+ 			}else if($kat == "9"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_daftarhadirrapatbpd',$data);	
+		}else if($kat == "10"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_daftaranggotabpd',$data);	
+		}else if($kat == "11"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_dataaspirasimasyarakat',$data);	
+		}else if($kat == "12"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_datakegiatanbpd',$data);	
+		}else if($kat == "13"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_datanotulenrapatbpd',$data);	
+		}else if($kat == "14"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_dataperaturankeputusanbpd',$data);	
+		}else if($kat == "15"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_datatanahdidesa',$data);	
+		}else if($kat == "16"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_inventarishasilpembangunan',$data);	
+		}else if($kat == "17"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_kaderpemberdayaanmasyarakat',$data);	
+		}else if($kat == "18"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_keputusankepaladesa',$data);	
+		}else if($kat == "19"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_keputusanmusyawarahdesa',$data);	
+		}else if($kat == "20"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_keputusanmusyawarahperencanaanpembangunandesa',$data);	
+		}else if($kat == "21"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_laporankeuanganbpd',$data);	
+		}else if($kat == "22"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_peraturandidesa',$data);	
+		}else if($kat == "23"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_DataInventarisbpd',$data);	
+		}else if($kat == "24"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_IndukPenduduk',$data);	
+		}else if($kat == "25"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_Mutasipenduduk',$data);	
 
  		}else if($kat == "26"){
  			if (!$this->upload_dokumen($data, $data['old_file']))
@@ -787,6 +865,110 @@ class Web_dokumen_model extends CI_Model{
  		}else if($kat == "8"){
  			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_bukutamubpd')->row()->satuan;
  			$outp = $this->db->where('id',$id)->delete('dokumen_bukutamubpd');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+
+
+ 				}else if($kat == "9"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_daftarhadirrapatbpd')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_daftarhadirrapatbpd');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+ 		}else if($kat == "10"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_daftaranggotabpd')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_daftaranggotabpd');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+ 		}else if($kat == "11"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_dataaspirasimasyarakat')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_dataaspirasimasyarakat');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+ 		}else if($kat == "12"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_datakegiatanbpd')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_datakegiatanbpd');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+ 		}else if($kat == "13"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_datanotulenrapatbpd ')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_datanotulenrapatbpd ');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+ 		}else if($kat == "14"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_dataperaturankeputusanbpd')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_dataperaturankeputusanbpd');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+ 		}else if($kat == "15"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_datatanahdidesa')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_datatanahdidesa');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+ 		}else if($kat == "16"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_inventarishasilpembangunan')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_inventarishasilpembangunan');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+ 		}else if($kat == "17"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_kaderpemberdayaanmasyarakat')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_kaderpemberdayaanmasyarakat');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+ 		}else if($kat == "18"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_keputusankepaladesa')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_keputusankepaladesa');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+ 		}else if($kat == "19"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_keputusanmusyawarahdesa')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_keputusanmusyawarahdesa');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+ 		}else if($kat == "20"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_keputusanmusyawarahperencanaanpembangunandesa')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_keputusanmusyawarahperencanaanpembangunandesa');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+ 		}else if($kat == "21"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_laporankeuanganbpd')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_laporankeuanganbpd');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+ 		}else if($kat == "22"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_peraturandidesa')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_peraturandidesa');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+ 		}else if($kat == "23"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_DataInventarisbpd')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_DataInventarisbpd');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+ 		}else if($kat == "24"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_IndukPenduduk')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_IndukPenduduk');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+ 		}else if($kat == "25"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_Mutasipenduduk')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_Mutasipenduduk');
  			if($outp)
  			unlink(LOKASI_DOKUMEN . $old_dokumen);
  			else $_SESSION['success']=-1;
@@ -1604,6 +1786,109 @@ class Web_dokumen_model extends CI_Model{
  			$data  = $query->row_array();
  			$data['attr'] = json_decode($data['attr'], true);
  			return $data;
+
+ 			}else if($kat == "9"){
+ 			$sql   = "SELECT * FROM dokumen_daftarhadirrapatbpd WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;	
+ 		}else if($kat == "10"){
+ 			$sql   = "SELECT * FROM dokumen_daftaranggotabpd WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;	
+ 		}else if($kat == "11"){
+ 			$sql   = "SELECT * FROM dokumen_dataaspirasimasyarakat WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;	
+ 		}else if($kat == "12"){
+ 			$sql   = "SELECT * FROM dokumen_datakegiatanbpd WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;	
+ 		}else if($kat == "13"){
+ 			$sql   = "SELECT * FROM dokumen_datanotulenrapatbpd WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;	
+ 		}else if($kat == "14"){
+ 			$sql   = "SELECT * FROM dokumen_dataperaturankeputusanbpd WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;	
+ 		}else if($kat == "15"){
+ 			$sql   = "SELECT * FROM dokumen_datatanahdidesa WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;	
+ 		}else if($kat == "16"){
+ 			$sql   = "SELECT * FROM dokumen_inventarishasilpembangunan WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;	
+ 		}else if($kat == "17"){
+ 			$sql   = "SELECT * FROM dokumen_kaderpemberdayaanmasyarakat WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;	
+ 		}else if($kat == "18"){
+ 			$sql   = "SELECT * FROM dokumen_keputusankepaladesa WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;	
+ 		}else if($kat == "19"){
+ 			$sql   = "SELECT * FROM dokumen_keputusanmusyawarahdesa WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;	
+ 		}else if($kat == "20"){
+ 			$sql   = "SELECT * FROM dokumen_keputusanmusyawarahperencanaanpembangunandesa WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;	
+ 		}else if($kat == "21"){
+ 			$sql   = "SELECT * FROM dokumen_laporankeuanganbpd WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;	
+ 		}else if($kat == "22"){
+ 			$sql   = "SELECT * FROM dokumen_peraturandidesa WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;	
+ 		}else if($kat == "23"){
+ 			$sql   = "SELECT * FROM dokumen_DataInventarisbpd WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;	
+ 		}else if($kat == "24"){
+ 			$sql   = "SELECT * FROM dokumen_IndukPenduduk WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;	
+ 		}else if($kat == "25"){
+ 			$sql   = "SELECT * FROM dokumen_Mutasipenduduk WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;	
  		}else if($kat == "26"){
  			$sql   = "SELECT * FROM dokumen_rekapitulasipenduduk WHERE id=?";
  			$query = $this->db->query($sql,$id);
@@ -1762,6 +2047,133 @@ class Web_dokumen_model extends CI_Model{
 
     function getDetailBukuTamuBpd($id=0){
     	$sql   = "SELECT * FROM dokumen_bukutamubpd WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+    }
+
+
+    function getDaftarHadirRapatBpd($id=0){
+    	$sql   = "SELECT * FROM dokumen_daftarhadirrapatbpd WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+    }
+    function getDaftarAnggotaBpd($id=0){
+    	$sql   = "SELECT * FROM dokumen_daftaranggotabpd WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+    }
+
+    function getDataAspirasiMasyarakat($id=0){
+    	$sql   = "SELECT * FROM dokumen_dataaspirasimasyarakat WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+    }
+
+    function getDataKegiatanBpd($id=0){
+    	$sql   = "SELECT * FROM dokumen_datakegiatanbpd WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+    }
+
+    function getDataNotulenRapatBpd($id=0){
+    	$sql   = "SELECT * FROM dokumen_datanotulenrapatbpd WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+    }
+
+
+    function getDataPeraturanKeputusanBpd($id=0){
+    	$sql   = "SELECT * FROM dokumen_dataperaturankeputusanbpd WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+    }
+    //belum
+    function getDatatanahdidesa($id=0){
+    	$sql   = "SELECT * FROM dokumen_datatanahdidesa WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+    }
+    function getInventarisHasilPembangunan($id=0){
+    	$sql   = "SELECT * FROM dokumen_inventarishasilpembangunan WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+    }
+    function getKaderPemberdayaanMasyarakat($id=0){
+    	$sql   = "SELECT * FROM dokumen_kaderpemberdayaanmasyarakat WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+    }
+    function getKeputusanKepalaDesa($id=0){
+    	$sql   = "SELECT * FROM dokumen_keputusankepaladesa WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+    }
+    function getKeputusanMusyawarahDesa($id=0){
+    	$sql   = "SELECT * FROM dokumen_keputusanmusyawarahdesa WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+    }
+    function getKeputusanMusyawarahPerencanaanPembangunanDesa($id=0){
+    	$sql   = "SELECT * FROM dokumen_keputusanmusyawarahperencanaanpembangunandesa WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+    }
+    function getLaporanKeuanganBPD($id=0){
+    	$sql   = "SELECT * FROM dokumen_laporankeuanganbpd WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+    }
+    function getPeraturandidesa($id=0){
+    	$sql   = "SELECT * FROM dokumen_peraturandidesa WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+    }
+    function getDataInventarisBPD($id=0){
+    	$sql   = "SELECT * FROM dokumen_DataInventarisbpd WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+    }
+    function getIndukPenduduk($id=0){
+    	$sql   = "SELECT * FROM dokumen_IndukPenduduk WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+    }
+    function getDataMutasiPenduduk($id=0){
+    	$sql   = "SELECT * FROM dokumen_Mutasipenduduk WHERE id=?";
 		$query = $this->db->query($sql,$id);
 		$data  = $query->row_array();
 		$data['attr'] = json_decode($data['attr'], true);
