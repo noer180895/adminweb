@@ -617,6 +617,65 @@ class Dokumen extends CI_Controller{
             }else{
             	$objPHPExcel->getActiveSheet()->setCellValue('B15', 'Waiting Approval');
             }
+        }else if($indentity == '28'){
+        	$title = 'Ktp-data keluarga-desa-' . date('ymd') . '.xlsx';
+            $dataAll = $this->web_dokumen_model->getDetailKtpKeluarga($id);
+            $objPHPExcel = new PHPExcel();
+            $objPHPExcel->setActiveSheetIndex(0)
+                        //mengisikan value pada tiap-tiap cell, A1 itu alamat cellnya 
+                        ->setCellValue('A1', 'Data Input Form Ktp Keluarga')
+                        ->setCellValue('A2', 'Judul')
+                        ->setCellValue('A3', 'No Urut')
+                        ->setCellValue('A4', 'Nomor Keluarga')
+                        ->setCellValue('A5', 'Nama lengkap')
+                        ->setCellValue('A6', 'Nik')
+                        ->setCellValue('A7', 'Jenis Kelamin')
+                        ->setCellValue('A8', 'Tempat Tanggal Lahir')
+                        ->setCellValue('A9', 'Golongan Darah')
+                        ->setCellValue('A10', 'Agama')
+                        ->setCellValue('A11', 'Pendidikan')
+                        ->setCellValue('A12', 'Pekerjaan')
+                        ->setCellValue('A13', 'Status Keluarga')
+                        ->setCellValue('A14', 'Status Hubungan Keluarga')
+                        ->setCellValue('A15', 'Warganegara')
+                        ->setCellValue('A16', 'Ayah')
+                        ->setCellValue('A17', 'Ibu')
+                        ->setCellValue('A18', 'Tanggal Mulai Tinggal')
+                        ->setCellValue('A19', 'keterangan')
+                        ->setCellValue('A20', 'Status');
+
+           	$objPHPExcel->setActiveSheetIndex(0)->mergeCells('A1:B1');
+           	$objPHPExcel->getActiveSheet()->getStyle('A1:B1')->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+            $objPHPExcel->getActiveSheet()->setCellValue('B2', $dataAll['nama']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B3', $dataAll['no_urut']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B4', $dataAll['nomor_keluarga']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B5', $dataAll['nama_lengkap']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B6', $dataAll['nik']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B7', $dataAll['jenis_kelamin']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B8', $dataAll['tempat_tanggal_lahir']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B9', $dataAll['gol_darah']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B10', $dataAll['agama']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B11', $dataAll['pendidikan']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B12', $dataAll['pekerjaan']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B13', $dataAll['status']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B14', $dataAll['status_hub_kel']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B15', $dataAll['warganegara']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B16', $dataAll['ayah']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B17', $dataAll['ibu']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B18', $dataAll['tanggal_mulai_tinggal']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B19', $dataAll['keterangan']);
+
+
+            $objPHPExcel->getActiveSheet()->getColumnDimension('A')->setWidth(40);
+            $objPHPExcel->getActiveSheet()->getColumnDimension('B')->setWidth(40);
+
+            if($dataAll['is_approve'] == 1){
+            	$objPHPExcel->getActiveSheet()->setCellValue('B20', 'Approved');
+            }else if($dataAll['is_approve'] == 2){
+            	$objPHPExcel->getActiveSheet()->setCellValue('B20', 'Rejected');
+            }else{
+            	$objPHPExcel->getActiveSheet()->setCellValue('B20', 'Waiting Approval');
+            }
          }
 
       
@@ -745,6 +804,18 @@ class Dokumen extends CI_Controller{
             }
             
 			$this->load->view('export_document/penduduksementara', $data);
+		}else if($indentity == '28'){
+			$dataDetail = $this->web_dokumen_model->getDetailKtpKeluarga($id);
+            $data['ktpkeluarga'] = $dataDetail;
+            if($dataDetail['is_approve'] == 1 ){ 
+            	$data['status'] = 'Approved'; 
+        	}else if($dataDetail['is_approve'] == 2){
+        		$data['status'] = 'Rejected';
+        	}else{
+        		$data['status'] = 'Waiting Approval';
+            }
+            
+			$this->load->view('export_document/kartupendudukdankeluarga', $data);
 		}
     }
 
