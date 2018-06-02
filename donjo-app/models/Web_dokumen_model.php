@@ -695,12 +695,12 @@ class Web_dokumen_model extends CI_Model{
  			$data['attr'] = json_encode($data['attr']);
 			$data['updated_date']= date("Y-m-d h:i:s");
  			return $this->db->where('id',$id)->update('dokumen_RencanaAnggaranBiaya',$data);
-
-
- 			
-
-
-
+ 		}else if($kat == "31"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_Kaspembantukegiatan',$data);
 		}else{
 			if (!$this->upload_dokumen($data, $data['old_file']))
 			unset($data['satuan']);
@@ -785,7 +785,14 @@ class Web_dokumen_model extends CI_Model{
  			if($outp)
  			unlink(LOKASI_DOKUMEN . $old_dokumen);
  			else $_SESSION['success']=-1;
+ 		}else if($kat == "31"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_Kaspembantukegiatan')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_Kaspembantukegiatan');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
 
+ 			
  			
  		}else{
  			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen')->row()->satuan;
@@ -1557,10 +1564,12 @@ class Web_dokumen_model extends CI_Model{
  			$data  = $query->row_array();
  			$data['attr'] = json_decode($data['attr'], true);
  			return $data;
- 			
-
- 			
-
+ 		}else if($kat == "31"){
+ 			$sql   = "SELECT * FROM dokumen_Kaspembantukegiatan WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;
  		}else{
  			$sql   = "SELECT * FROM dokumen WHERE id=?";
  			$query = $this->db->query($sql,$id);
@@ -1690,6 +1699,15 @@ class Web_dokumen_model extends CI_Model{
 
      function getDetailRencanaAnggaran($id=0){
     	$sql   = "SELECT * FROM dokumen_RencanaAnggaranBiaya WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+    }
+
+
+      function getDetailKasPembantu($id=0){
+    	$sql   = "SELECT * FROM  dokumen_Kaspembantukegiatan WHERE id=?";
 		$query = $this->db->query($sql,$id);
 		$data  = $query->row_array();
 		$data['attr'] = json_decode($data['attr'], true);

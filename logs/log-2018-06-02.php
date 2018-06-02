@@ -62,3 +62,8 @@ ERROR - 2018-06-02 13:12:53 --> Severity: error --> Exception: PHPExcel object u
 ERROR - 2018-06-02 13:12:53 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
 ERROR - 2018-06-02 13:13:23 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
 ERROR - 2018-06-02 13:13:23 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
+ERROR - 2018-06-02 15:39:59 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
+ERROR - 2018-06-02 15:39:59 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
+ERROR - 2018-06-02 15:51:37 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
+ERROR - 2018-06-02 15:51:37 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
+ERROR - 2018-06-02 15:51:42 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
