@@ -673,6 +673,18 @@ class Dokumen extends CI_Controller{
             }
             
 			$this->load->view('export_document/bukutamubpd', $data);
+		}else if($indentity == '26'){
+			$dataDetail = $this->web_dokumen_model->getDetailRekapitulasi($id);
+            $data['rekapitulasi'] = $dataDetail;
+            if($dataDetail['is_approve'] == 1 ){ 
+            	$data['status'] = 'Approved'; 
+        	}else if($dataDetail['is_approve'] == 2){
+        		$data['status'] = 'Rejected';
+        	}else{
+        		$data['status'] = 'Waiting Approval';
+            }
+            
+			$this->load->view('export_document/rekapitulasi', $data);
 		}
     }
 
