@@ -91,3 +91,4 @@ ERROR - 2018-06-02 18:05:04 --> Severity: Error --> Class 'CI_Pdf' not found C:\
 ERROR - 2018-06-02 18:05:08 --> Severity: Error --> Class 'CI_Pdf' not found C:\xampp\htdocs\admindesa\system\core\Common.php 196
 ERROR - 2018-06-02 18:05:31 --> Severity: Error --> Class 'CI_Pdf' not found C:\xampp\htdocs\admindesa\system\core\Common.php 196
 ERROR - 2018-06-02 18:06:18 --> Severity: Error --> Class 'CI_Pdf' not found C:\xampp\htdocs\admindesa\system\core\Common.php 196
+ERROR - 2018-06-02 19:24:56 --> Severity: Error --> Call to undefined method Web_dokumen_model::getDetailPembangunan() C:\xampp\htdocs\admindesa\donjo-app\controllers\Dokumen.php 1000

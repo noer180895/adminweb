@@ -942,6 +942,145 @@ class Dokumen extends CI_Controller{
 		      }else{
 		      	$objPHPExcel->getActiveSheet()->setCellValue('B14', 'Waiting Approval');
 		      }
+		}else if($indentity == '35'){
+	  		  $title = 'kegiatan-pembangunan-' . date('ymd') . '.xlsx';
+		      $dataAll = $this->web_dokumen_model->getDetailPembangunan($id);
+		      $objPHPExcel = new PHPExcel();
+		      $objPHPExcel->setActiveSheetIndex(0)
+	          //mengisikan value pada tiap-tiap cell, A1 itu alamat cellnya 
+	          ->setCellValue('A1', 'Data Input Form Data Kegiatan Pembangunan')
+	          ->setCellValue('A2', 'Judul')
+	          ->setCellValue('A3', 'No urut')
+	          ->setCellValue('A4', 'Kegiatan')
+	          ->setCellValue('A5', 'Volume')
+	          ->setCellValue('A6', 'Sumber Daya Pemerintah')
+	          ->setCellValue('A7', 'Sumber Daya Provinsi')
+	          ->setCellValue('A8', 'Sumber Daya Kab/Kota')
+	          ->setCellValue('A9', 'Sumber Daya Swadaya')
+	          ->setCellValue('A10', 'Jumlah')  
+	          ->setCellValue('A11', 'Waktu')
+	          ->setCellValue('A12', 'Sifat Proyek')
+	          ->setCellValue('A13', 'Pelaksanaan')
+	          ->setCellValue('A14', 'Keterangan')
+	          ->setCellValue('A15', 'status');
+
+
+	     	  $objPHPExcel->setActiveSheetIndex(0)->mergeCells('A1:B1');
+	     	  $objPHPExcel->getActiveSheet()->getStyle('A1:B1')->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B2', $dataAll['nama']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B3', $dataAll['no_urut']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B4', $dataAll['kegiatan']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B5', $dataAll['volume']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B6', $dataAll['sumber_daya_pemerintah']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B7', $dataAll['sumber_daya_provinsi']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B8', $dataAll['sumber_daya_kota']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B9', $dataAll['sumber_daya_swadaya']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B10', $dataAll['jumlah']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B11', $dataAll['waktu']);
+	          $objPHPExcel->getActiveSheet()->setCellValue('B12', $dataAll['type']);
+	          $objPHPExcel->getActiveSheet()->setCellValue('B13', $dataAll['pelaksanaan']);
+	          $objPHPExcel->getActiveSheet()->setCellValue('B14', $dataAll['keterangan']);
+
+
+
+
+
+		      $objPHPExcel->getActiveSheet()->getColumnDimension('A')->setWidth(40);
+		      $objPHPExcel->getActiveSheet()->getColumnDimension('B')->setWidth(40);
+
+		      if($dataAll['is_approve'] == 1){
+		      	$objPHPExcel->getActiveSheet()->setCellValue('B15', 'Approved');
+		      }else if($dataAll['is_approve'] == 2){
+		      	$objPHPExcel->getActiveSheet()->setCellValue('B15', 'Rejected');
+		      }else{
+		      	$objPHPExcel->getActiveSheet()->setCellValue('B15', 'Waiting Approval');
+		      }
+		}else if($indentity == '36'){
+	  		  $title = 'agenda-keluar-' . date('ymd') . '.xlsx';
+		      $dataAll = $this->web_dokumen_model->getDetailAgendaKeluar($id);
+		      $objPHPExcel = new PHPExcel();
+		      $objPHPExcel->setActiveSheetIndex(0)
+	          //mengisikan value pada tiap-tiap cell, A1 itu alamat cellnya 
+	          ->setCellValue('A1', 'Data Input Form Data Agenda Keluar')
+	          ->setCellValue('A2', 'Judul')
+	          ->setCellValue('A3', 'No urut')
+	          ->setCellValue('A4', 'Tanggal Penerimaan Surat')
+	          ->setCellValue('A5', 'Nomor')
+	          ->setCellValue('A6', 'Tanggal')
+	          ->setCellValue('A7', 'Tujuan')
+	          ->setCellValue('A8', 'Isi Surat')
+	          ->setCellValue('A9', 'Keterangan')
+	          ->setCellValue('A10', 'Status');
+
+
+	     	  $objPHPExcel->setActiveSheetIndex(0)->mergeCells('A1:B1');
+	     	  $objPHPExcel->getActiveSheet()->getStyle('A1:B1')->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B2', $dataAll['nama']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B3', $dataAll['no_urut']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B4', $dataAll['tanggal_penerimaan']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B5', $dataAll['nomor']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B6', $dataAll['tanggal_surat']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B7', $dataAll['tujuan']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B8', $dataAll['isi_surat']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B9', $dataAll['keterangan']);
+
+
+
+
+
+		      $objPHPExcel->getActiveSheet()->getColumnDimension('A')->setWidth(40);
+		      $objPHPExcel->getActiveSheet()->getColumnDimension('B')->setWidth(40);
+
+		      if($dataAll['is_approve'] == 1){
+		      	$objPHPExcel->getActiveSheet()->setCellValue('B10', 'Approved');
+		      }else if($dataAll['is_approve'] == 2){
+		      	$objPHPExcel->getActiveSheet()->setCellValue('B10', 'Rejected');
+		      }else{
+		      	$objPHPExcel->getActiveSheet()->setCellValue('B10', 'Waiting Approval');
+		      }
+			}else if($indentity == '37'){
+	  		  $title = 'agenda-masuk-' . date('ymd') . '.xlsx';
+		      $dataAll = $this->web_dokumen_model->getDetailAgendaMasuk($id);
+		      $objPHPExcel = new PHPExcel();
+		      $objPHPExcel->setActiveSheetIndex(0)
+	          //mengisikan value pada tiap-tiap cell, A1 itu alamat cellnya 
+	          ->setCellValue('A1', 'Data Input Form Data Agenda Keluar')
+	          ->setCellValue('A2', 'Judul')
+	          ->setCellValue('A3', 'No urut')
+	          ->setCellValue('A4', 'Tanggal Penerimaan Surat')
+	          ->setCellValue('A5', 'Nomor')
+	          ->setCellValue('A6', 'Tanggal')
+	          ->setCellValue('A7', 'Pengirim')
+	          ->setCellValue('A8', 'Isi Surat')
+	          ->setCellValue('A9', 'Keterangan')
+	          ->setCellValue('A10', 'Status');
+
+
+	     	  $objPHPExcel->setActiveSheetIndex(0)->mergeCells('A1:B1');
+	     	  $objPHPExcel->getActiveSheet()->getStyle('A1:B1')->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B2', $dataAll['nama']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B3', $dataAll['no_urut']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B4', $dataAll['tanggal_penerimaan']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B5', $dataAll['nomor']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B6', $dataAll['tanggal_surat']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B7', $dataAll['pengirim']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B8', $dataAll['isi_surat']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B9', $dataAll['keterangan']);
+
+
+
+
+
+		      $objPHPExcel->getActiveSheet()->getColumnDimension('A')->setWidth(40);
+		      $objPHPExcel->getActiveSheet()->getColumnDimension('B')->setWidth(40);
+
+		      if($dataAll['is_approve'] == 1){
+		      	$objPHPExcel->getActiveSheet()->setCellValue('B10', 'Approved');
+		      }else if($dataAll['is_approve'] == 2){
+		      	$objPHPExcel->getActiveSheet()->setCellValue('B10', 'Rejected');
+		      }else{
+		      	$objPHPExcel->getActiveSheet()->setCellValue('B10', 'Waiting Approval');
+		      }
 		}
 
       
@@ -1157,7 +1296,44 @@ class Dokumen extends CI_Controller{
             }
             
 			$this->load->view('export_document/rencanapembangunan', $data);
+		}else if($indentity == '35'){
+			$dataDetail = $this->web_dokumen_model->getDetailPembangunan($id);
+            $data['pembangunan'] = $dataDetail;
+            if($dataDetail['is_approve'] == 1 ){ 
+            	$data['status'] = 'Approved'; 
+        	}else if($dataDetail['is_approve'] == 2){
+        		$data['status'] = 'Rejected';
+        	}else{
+        		$data['status'] = 'Waiting Approval';
+            }
+            
+			$this->load->view('export_document/pembangunan', $data);
+		}else if($indentity == '36'){
+			$dataDetail = $this->web_dokumen_model->getDetailAgendaKeluar($id);
+            $data['agenda'] = $dataDetail;
+            if($dataDetail['is_approve'] == 1 ){ 
+            	$data['status'] = 'Approved'; 
+        	}else if($dataDetail['is_approve'] == 2){
+        		$data['status'] = 'Rejected';
+        	}else{
+        		$data['status'] = 'Waiting Approval';
+            }
+            
+			$this->load->view('export_document/agendakeluar', $data);
+		}else if($indentity == '37'){
+			$dataDetail = $this->web_dokumen_model->getDetailAgendaMasuk($id);
+            $data['agenda'] = $dataDetail;
+            if($dataDetail['is_approve'] == 1 ){ 
+            	$data['status'] = 'Approved'; 
+        	}else if($dataDetail['is_approve'] == 2){
+        		$data['status'] = 'Rejected';
+        	}else{
+        		$data['status'] = 'Waiting Approval';
+            }
+            
+			$this->load->view('export_document/agendamasuk', $data);
 		}
+
     }
 
 	function dokumen_unlock($kat=1,$id=''){

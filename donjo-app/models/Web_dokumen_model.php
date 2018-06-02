@@ -719,6 +719,24 @@ class Web_dokumen_model extends CI_Model{
  			$data['attr'] = json_encode($data['attr']);
 			$data['updated_date']= date("Y-m-d h:i:s");
  			return $this->db->where('id',$id)->update('dokumen_RencanaKerjaPembangunan',$data);
+ 		}else if($kat == "35"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_Kegiatanpembangunan',$data);
+ 		}else if($kat == "36"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_Agendasuratkeluar',$data);
+ 		}else if($kat == "37"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_Agendasuratmasuk',$data);
 		}else{
 			if (!$this->upload_dokumen($data, $data['old_file']))
 			unset($data['satuan']);
@@ -828,7 +846,25 @@ class Web_dokumen_model extends CI_Model{
  			unlink(LOKASI_DOKUMEN . $old_dokumen);
  			else $_SESSION['success']=-1;
 		 						
+ 		}else if($kat == "35"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_Kegiatanpembangunan')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_Kegiatanpembangunan');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+ 		}else if($kat == "36"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_Agendasuratkeluar')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_Agendasuratkeluar');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
 
+ 		}else if($kat == "37"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_Agendasuratmasuk')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_Agendasuratmasuk');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
 		 
  			
  		}else{
@@ -1625,6 +1661,24 @@ class Web_dokumen_model extends CI_Model{
  			$data  = $query->row_array();
  			$data['attr'] = json_decode($data['attr'], true);
  			return $data;
+ 		}else if($kat == "35"){
+ 			$sql   = "SELECT * FROM dokumen_Kegiatanpembangunan WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;
+ 		}else if($kat == "36"){
+ 			$sql   = "SELECT * FROM dokumen_Agendasuratkeluar WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;
+ 		}else if($kat == "37"){
+ 			$sql   = "SELECT * FROM dokumen_Agendasuratmasuk WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;
  		}else{
  			$sql   = "SELECT * FROM dokumen WHERE id=?";
  			$query = $this->db->query($sql,$id);
@@ -1799,8 +1853,26 @@ class Web_dokumen_model extends CI_Model{
     }
 
     
+    function getDetailAgendaKeluar($id=0){
+    	$sql   = "SELECT * FROM  dokumen_Agendasuratkeluar WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+    }
 
 
+    function getDetailAgendaMasuk($id=0){
+    	$sql   = "SELECT * FROM  dokumen_Agendasuratmasuk WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+    }
+
+
+
+	
 	function list_kategori(){
 		return unserialize(KODE_KATEGORI);
 	}
