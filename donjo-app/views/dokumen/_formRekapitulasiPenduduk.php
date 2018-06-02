@@ -56,18 +56,24 @@
 
 <tr class="formEkspedisi">  
   <th>Laki - Laki (WNA) Lahir</th>
-  <td><input name="l_wna_lahir" id="l_wna_lahir" type="text" class="formEkspedisi inputbox" size="30" value="<?php echo $dokumen['l_wna_lahir']?>"/></td>
+  <td><input name="l_wni_lahir" id="l_wna_lahir" type="text" class="formEkspedisi inputbox" size="30" value="<?php echo $dokumen['l_wna_lahir']?>"/></td>
 </tr>
 
 
 <tr class="formEkspedisi">  
   <th>Perempuan (WNA) Lahir</th>
-  <td><input name="p_wna_lahir" id="p_wna_lahir" type="text" class="formEkspedisi inputbox" size="30" value="<?php echo $dokumen['p_wna_lahir']?>"/></td>
+  <td><input name="p_wni_lahir" id="p_wna_lahir" type="text" class="formEkspedisi inputbox" size="30" value="<?php echo $dokumen['p_wna_lahir']?>"/></td>
 </tr>
 
 
 <tr class="formEkspedisi">  
-  <th>Laki - Laki (WNI) Datang</th>
-  <td><input name="l_wni_datang" id="l_wni_datang" type="text" class="formEkspedisi inputbox" size="30" value="<?php echo $dokumen['l_wni_datang']?>"/></td>
+  <th>Laki - Laki (WNA) Datang</th>
+  <td><input name="l_wna_datang" id="l_wni_datang" type="text" class="formEkspedisi inputbox" size="30" value="<?php echo $dokumen['l_wni_datang']?>"/></td>
+</tr>
+
+
+<tr class="formEkspedisi">  
+  <th>Perempuan (WNA) Datang</th>
+  <td><input name="p_wna_datang" id="l_wni_datang" type="text" class="formEkspedisi inputbox" size="30" value="<?php echo $dokumen['l_wni_datang']?>"/></td>
 </tr>
 

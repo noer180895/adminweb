@@ -662,7 +662,14 @@ class Web_dokumen_model extends CI_Model{
 			$data['updated_date']= date("Y-m-d h:i:s");
  			return $this->db->where('id',$id)->update('dokumen_bukutamubpd',$data);
 
- 			
+
+ 		}else if($kat == "26"){
+ 			if (!$this->upload_dokumen($data, $data['old_file']))
+ 			unset($data['satuan']);
+ 			$data['attr'] = json_encode($data['attr']);
+			$data['updated_date']= date("Y-m-d h:i:s");
+ 			return $this->db->where('id',$id)->update('dokumen_rekapitulasipenduduk',$data);
+
 		}else{
 			if (!$this->upload_dokumen($data, $data['old_file']))
 			unset($data['satuan']);
@@ -713,6 +720,13 @@ class Web_dokumen_model extends CI_Model{
  		}else if($kat == "8"){
  			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_bukutamubpd')->row()->satuan;
  			$outp = $this->db->where('id',$id)->delete('dokumen_bukutamubpd');
+ 			if($outp)
+ 			unlink(LOKASI_DOKUMEN . $old_dokumen);
+ 			else $_SESSION['success']=-1;
+
+ 		}else if($kat == "26"){
+ 			$old_dokumen = $this->db->select('satuan')->where('id',$id)->get('dokumen_rekapitulasipenduduk')->row()->satuan;
+ 			$outp = $this->db->where('id',$id)->delete('dokumen_rekapitulasipenduduk');
  			if($outp)
  			unlink(LOKASI_DOKUMEN . $old_dokumen);
  			else $_SESSION['success']=-1;
@@ -1453,7 +1467,15 @@ class Web_dokumen_model extends CI_Model{
  			$data  = $query->row_array();
  			$data['attr'] = json_decode($data['attr'], true);
  			return $data;
+ 		}else if($kat == "26"){
+ 			$sql   = "SELECT * FROM dokumen_rekapitulasipenduduk WHERE id=?";
+ 			$query = $this->db->query($sql,$id);
+ 			$data  = $query->row_array();
+ 			$data['attr'] = json_decode($data['attr'], true);
+ 			return $data;
  		
+ 			
+
  			
 
  		}else{
@@ -1546,7 +1568,13 @@ class Web_dokumen_model extends CI_Model{
     }
 
     
-    
+    function getDetailRekapitulasi($id=0){
+    	$sql   = "SELECT * FROM dokumen_rekapitulasipenduduk WHERE id=?";
+		$query = $this->db->query($sql,$id);
+		$data  = $query->row_array();
+		$data['attr'] = json_decode($data['attr'], true);
+		return $data;
+    }
 
     
 

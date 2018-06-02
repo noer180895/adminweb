@@ -42,3 +42,12 @@ ERROR - 2018-06-02 01:35:29 --> 404 Page Not Found: Desa/upload
 ERROR - 2018-06-02 01:35:53 --> 404 Page Not Found: Desa/upload
 ERROR - 2018-06-02 01:36:38 --> 404 Page Not Found: Desa/upload
 ERROR - 2018-06-02 01:36:50 --> 404 Page Not Found: Assets/images
+ERROR - 2018-06-02 04:44:45 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-02 04:44:46 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-02 04:44:51 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-02 04:44:51 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-02 04:44:53 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-02 04:44:53 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-02 04:44:55 --> 404 Page Not Found: Desa/upload
+ERROR - 2018-06-02 10:03:14 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
+ERROR - 2018-06-02 10:03:14 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
