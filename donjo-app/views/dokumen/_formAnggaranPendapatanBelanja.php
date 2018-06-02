@@ -7,14 +7,15 @@
 <tr class="formEkspedisi">  
   <th>Uraian</th>
   <td>
-      <td><input name="uraian" id="uraian" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['uraian']?>"/></td>
+      
+         <textarea name="uraian" id="uraian" rows="4" cols="50"><?php echo $dokumen['uraian']?></textarea>
   </td>
 </tr>
 
 <tr class="formEkspedisi">  
   <th>Anggaran</th>
   <td>
-      <td><input name="anggaran" id="anggaran" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['anggaran']?>"/></td>
+      <input name="anggaran" id="anggaran" type="text" class="sk_kades inputbox datepicker2" value="<?php echo $dokumen['anggaran']?>"/>
   </td>
 </tr>
 

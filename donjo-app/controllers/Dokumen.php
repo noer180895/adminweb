@@ -676,6 +676,39 @@ class Dokumen extends CI_Controller{
             }else{
             	$objPHPExcel->getActiveSheet()->setCellValue('B20', 'Waiting Approval');
             }
+          }else if($indentity == '29'){
+        	$title = 'anggaran-pendapatan-belanja-desa-' . date('ymd') . '.xlsx';
+            $dataAll = $this->web_dokumen_model->getDetailAnggaran($id);
+            $objPHPExcel = new PHPExcel();
+            $objPHPExcel->setActiveSheetIndex(0)
+                        //mengisikan value pada tiap-tiap cell, A1 itu alamat cellnya 
+                        ->setCellValue('A1', 'Data Input Form Ktp Keluarga')
+                        ->setCellValue('A2', 'Judul')
+                        ->setCellValue('A3', 'Kode Rekening')
+                        ->setCellValue('A4', 'Uraian')
+                        ->setCellValue('A5', 'Anggaran')
+                        ->setCellValue('A6', 'keterangan')
+                        ->setCellValue('A7', 'Status');
+
+           	$objPHPExcel->setActiveSheetIndex(0)->mergeCells('A1:B1');
+           	$objPHPExcel->getActiveSheet()->getStyle('A1:B1')->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+            $objPHPExcel->getActiveSheet()->setCellValue('B2', $dataAll['nama']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B3', $dataAll['kode_rekening']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B4', $dataAll['uraian']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B5', $dataAll['anggaran']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B6', $dataAll['keterangan']);
+
+
+            $objPHPExcel->getActiveSheet()->getColumnDimension('A')->setWidth(40);
+            $objPHPExcel->getActiveSheet()->getColumnDimension('B')->setWidth(40);
+
+            if($dataAll['is_approve'] == 1){
+            	$objPHPExcel->getActiveSheet()->setCellValue('B7', 'Approved');
+            }else if($dataAll['is_approve'] == 2){
+            	$objPHPExcel->getActiveSheet()->setCellValue('B7', 'Rejected');
+            }else{
+            	$objPHPExcel->getActiveSheet()->setCellValue('B7', 'Waiting Approval');
+            }
          }
 
       
@@ -816,6 +849,18 @@ class Dokumen extends CI_Controller{
             }
             
 			$this->load->view('export_document/kartupendudukdankeluarga', $data);
+		}else if($indentity == '29'){
+			$dataDetail = $this->web_dokumen_model->getDetailAnggaran($id);
+            $data['anggaran'] = $dataDetail;
+            if($dataDetail['is_approve'] == 1 ){ 
+            	$data['status'] = 'Approved'; 
+        	}else if($dataDetail['is_approve'] == 2){
+        		$data['status'] = 'Rejected';
+        	}else{
+        		$data['status'] = 'Waiting Approval';
+            }
+            
+			$this->load->view('export_document/anggaran', $data);
 		}
     }
 
