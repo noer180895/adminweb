@@ -51,3 +51,4 @@ ERROR - 2018-06-02 04:44:53 --> 404 Page Not Found: Desa/upload
 ERROR - 2018-06-02 04:44:55 --> 404 Page Not Found: Desa/upload
 ERROR - 2018-06-02 10:03:14 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
 ERROR - 2018-06-02 10:03:14 --> Severity: error --> Exception: PHPExcel object unassigned. C:\xampp\htdocs\admindesa\donjo-app\libraries\Excel\PHPExcel\Writer\Excel2007.php 400
+ERROR - 2018-06-02 05:51:33 --> Severity: Parsing Error --> syntax error, unexpected 'public' (T_PUBLIC) C:\xampp\htdocs\admindesa\donjo-app\controllers\Dokumen.php 638
