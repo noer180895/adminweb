@@ -797,7 +797,50 @@ class Dokumen extends CI_Controller{
             }else{
             	$objPHPExcel->getActiveSheet()->setCellValue('B14', 'Waiting Approval');
             }
-         }
+        }else if($indentity == '32'){
+  			$title = 'kas-umum-kegiatan' . date('ymd') . '.xlsx';
+		      $dataAll = $this->web_dokumen_model->getDetailKasUmum($id);
+		      $objPHPExcel = new PHPExcel();
+		      $objPHPExcel->setActiveSheetIndex(0)
+		                  //mengisikan value pada tiap-tiap cell, A1 itu alamat cellnya 
+		                  ->setCellValue('A1', 'Data Input Form Kas Umum')
+		                  ->setCellValue('A2', 'Judul')
+		                  ->setCellValue('A3', 'No urut')
+		                  ->setCellValue('A4', 'Tanggal')
+		                  ->setCellValue('A5', 'Kode Rekening')
+		                  ->setCellValue('A6', 'Uraian')
+		                  ->setCellValue('A7', 'Penerimaan')
+		                  ->setCellValue('A8', 'Pengeluaran')
+		                  ->setCellValue('A9', 'Nomor Bukti')
+		                  ->setCellValue('A10', 'Jumlah Pengeluaran Komulatif')
+		                  ->setCellValue('A11', 'Saldo Kas')  
+		                  ->setCellValue('A12', 'Status');
+
+		     	$objPHPExcel->setActiveSheetIndex(0)->mergeCells('A1:B1');
+		     	$objPHPExcel->getActiveSheet()->getStyle('A1:B1')->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B2', $dataAll['nama']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B3', $dataAll['no_urut']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B4', $dataAll['tanggal']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B5', $dataAll['kode_rekening']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B6', $dataAll['uraian']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B7', $dataAll['penerimaan']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B8', $dataAll['pengeluaran']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B9', $dataAll['nomor_bukti']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B10', $dataAll['jml_pengeluaran_kumulatif']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B11', $dataAll['saldo_kas']);
+
+
+		      $objPHPExcel->getActiveSheet()->getColumnDimension('A')->setWidth(40);
+		      $objPHPExcel->getActiveSheet()->getColumnDimension('B')->setWidth(40);
+
+		      if($dataAll['is_approve'] == 1){
+		      	$objPHPExcel->getActiveSheet()->setCellValue('B12', 'Approved');
+		      }else if($dataAll['is_approve'] == 2){
+		      	$objPHPExcel->getActiveSheet()->setCellValue('B12', 'Rejected');
+		      }else{
+		      	$objPHPExcel->getActiveSheet()->setCellValue('B12', 'Waiting Approval');
+		      }
+		}
 
       
         //mulai menyimpan excel format xlsx, kalau ingin xls ganti Excel2007 menjadi Excel5          
@@ -973,6 +1016,18 @@ class Dokumen extends CI_Controller{
             }
             
 			$this->load->view('export_document/kaspembantu', $data);
+		}else if($indentity == '32'){
+			$dataDetail = $this->web_dokumen_model->getDetailKasUmum($id);
+            $data['kas'] = $dataDetail;
+            if($dataDetail['is_approve'] == 1 ){ 
+            	$data['status'] = 'Approved'; 
+        	}else if($dataDetail['is_approve'] == 2){
+        		$data['status'] = 'Rejected';
+        	}else{
+        		$data['status'] = 'Waiting Approval';
+            }
+            
+			$this->load->view('export_document/kasumum', $data);
 		}
     }
 
