@@ -892,9 +892,62 @@ class Dokumen extends CI_Controller{
 		      }else{
 		      	$objPHPExcel->getActiveSheet()->setCellValue('B15', 'Waiting Approval');
 		      }
+			}else if($indentity == '34'){
+	  		  $title = 'rencana-kerja-pembangunan-' . date('ymd') . '.xlsx';
+		      $dataAll = $this->web_dokumen_model->getDetailRencanaKerja($id);
+		      $objPHPExcel = new PHPExcel();
+		      $objPHPExcel->setActiveSheetIndex(0)
+	          //mengisikan value pada tiap-tiap cell, A1 itu alamat cellnya 
+	          ->setCellValue('A1', 'Data Input Form Data Rencana Kerja Pembangunan')
+	          ->setCellValue('A2', 'Judul')
+	          ->setCellValue('A3', 'No urut')
+	          ->setCellValue('A4', 'Kegiatan')
+	          ->setCellValue('A5', 'Lokasi')
+	          ->setCellValue('A6', 'Sumber Daya Pemerintah')
+	          ->setCellValue('A7', 'Sumber Daya Provinsi')
+	          ->setCellValue('A8', 'Sumber Daya Kab/Kota')
+	          ->setCellValue('A9', 'Sumber Daya Swadaya')
+	          ->setCellValue('A10', 'Jumlah')  
+	          ->setCellValue('A11', 'Pelaksanaan')
+	          ->setCellValue('A12', 'Manfaat')
+	          ->setCellValue('A13', 'Keterangan')
+	          ->setCellValue('A14', 'Status');
+
+
+	     	  $objPHPExcel->setActiveSheetIndex(0)->mergeCells('A1:B1');
+	     	  $objPHPExcel->getActiveSheet()->getStyle('A1:B1')->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B2', $dataAll['nama']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B3', $dataAll['no_urut']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B4', $dataAll['kegiatan']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B5', $dataAll['lokasi']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B6', $dataAll['sumber_daya_pemerintah']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B7', $dataAll['sumber_daya_provinsi']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B8', $dataAll['sumber_daya_kota']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B9', $dataAll['sumber_daya_swadaya']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B10', $dataAll['jumlah']);
+		      $objPHPExcel->getActiveSheet()->setCellValue('B11', $dataAll['pelaksanaan']);
+	          $objPHPExcel->getActiveSheet()->setCellValue('B12', $dataAll['manfaat']);
+	          $objPHPExcel->getActiveSheet()->setCellValue('B13', $dataAll['keterangan']);
+
+
+
+
+		      $objPHPExcel->getActiveSheet()->getColumnDimension('A')->setWidth(40);
+		      $objPHPExcel->getActiveSheet()->getColumnDimension('B')->setWidth(40);
+
+		      if($dataAll['is_approve'] == 1){
+		      	$objPHPExcel->getActiveSheet()->setCellValue('B14', 'Approved');
+		      }else if($dataAll['is_approve'] == 2){
+		      	$objPHPExcel->getActiveSheet()->setCellValue('B14', 'Rejected');
+		      }else{
+		      	$objPHPExcel->getActiveSheet()->setCellValue('B14', 'Waiting Approval');
+		      }
 		}
 
       
+
+
+
         //mulai menyimpan excel format xlsx, kalau ingin xls ganti Excel2007 menjadi Excel5          
         $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
         //sesuaikan headernya 
@@ -1092,6 +1145,18 @@ class Dokumen extends CI_Controller{
             }
             
 			$this->load->view('export_document/bankdesa', $data);
+		}else if($indentity == '34'){
+			$dataDetail = $this->web_dokumen_model->getDetailRencanaKerja($id);
+            $data['rencanapembangunan'] = $dataDetail;
+            if($dataDetail['is_approve'] == 1 ){ 
+            	$data['status'] = 'Approved'; 
+        	}else if($dataDetail['is_approve'] == 2){
+        		$data['status'] = 'Rejected';
+        	}else{
+        		$data['status'] = 'Waiting Approval';
+            }
+            
+			$this->load->view('export_document/rencanapembangunan', $data);
 		}
     }
 
